@@ -1,0 +1,90 @@
+#single-news {
+    display: block;
+    .main-section {
+        padding: 4rem 12rem 22rem 12rem;
+        @include media("sp") {
+            padding: 4rem 1.6rem 16rem 1.6rem;
+        }
+        .header-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3.8rem;
+            .date {
+                margin-right: 2.4rem;
+                color: #000;
+                font-family: "Montserrat";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.6rem; /* 100% */
+            }
+        }
+        .title {
+            margin-bottom: 6.4rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3.2rem; /* 100% */
+            letter-spacing: 2.4px;
+            @include media("sp") {
+                font-size: 2.2rem;
+                margin-bottom: 2.6rem;
+            }
+        }
+        .desc {
+            margin-bottom: 2.4rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 3.2rem; /* 200% */
+            letter-spacing: 1.6px;
+        }
+        img {
+            margin-bottom: 2.4rem;
+            height: auto;
+            @include media("sp") {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .subtitle {
+            padding-left: 2rem;
+            margin: 4rem 0;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3.6rem; /* 133.333% */
+            letter-spacing: 2.4px;
+            border-left: 4px solid #0099BD;
+        }
+        .sub-title {
+            margin: 3.6rem 0;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.4rem; /* 100% */
+            letter-spacing: 2px;
+            @include media("sp") {
+                margin: 3.0rem 0;
+            }
+        }
+        .btn-rightarrow {
+            width: fit-content;
+            margin: 4.8rem auto 0 auto;
+            transition: all 0.2s ease-in;
+            &:hover {
+                border-color: #0099BD;
+                background-color: #0099BD;
+                color: #fff;
+            }
+        }
+    }
+}

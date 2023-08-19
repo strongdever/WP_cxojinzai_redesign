@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*
+Theme Name: CxO人材バンク
+Author: Lovely-Dev
+Author URI: https://wordpress.org/
+Description: CxO人材バンクは、上場企業や上場準備企業など、成長企業、成長産業のCxOポジションに特化した人材紹介サービスを行っています。
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.0
+Text Domain: cxojinzai
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+/*
+ * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
+ * This results in a jumping cursor when typing in both the Classic and block
+ * editors. The following font-face override fixes the issue by manually inserting
+ * a custom font that includes just a Hoefler Text space replacement for that
+ * character instead.
+ */
+
+#wpadminbar {
+  display: none;
+}
+
+body#bodynews .header .header-nav .nav-menu > li:first-child .menu-link {
+  color: #0099BD;
+}
+
+body#bodyfeatures .header .header-nav .nav-menu > li:nth-child(2) .menu-link {
+  color: #0099BD;
+}
+
+body#bodycase .header .header-nav .nav-menu > li:nth-child(3) .menu-link {
+  color: #0099BD;
+}
+
+body#bodyflow .header .header-nav .nav-menu > li:nth-child(4) .menu-link {
+  color: #0099BD;
+}
+
+body#bodyinterview .header .header-nav .nav-menu > li:nth-child(5) .menu-link {
+  color: #0099BD;
+}
+
+body#bodycolumn .header .header-nav .nav-menu > li:nth-child(6) .menu-link {
+  color: #0099BD;
+}

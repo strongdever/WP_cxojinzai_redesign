@@ -1,0 +1,68 @@
+# Translation of Plugins - WP Basic Authentication - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - WP Basic Authentication - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-03-22 23:32:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WP Basic Authentication - Development (trunk)\n"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/wp-basic-authentication/"
+msgstr "https://ja.wordpress.org/plugins/wp-basic-authentication/"
+
+#: inc/class-wpba-setting.php:167
+msgid "<strong>Warning</strong>: If enable basic authentication for login page and forgot password, please see <a href=\"%s\" target=\"_blank\">FAQs in plugin page</a>"
+msgstr "<strong>警告</strong>: ログインページのベーシック認証を有効にしてパスワードを忘れた場合は、<a href=\"%s\" target=\"_blank\">プラグインページのFAQ</a>を参照してください"
+
+#: inc/class-wpba-setting.php:145
+msgid "Enable authentication for Front-End"
+msgstr "フロントエンドの認証を有効化"
+
+#: inc/class-wpba-setting.php:106
+msgid "Enable for Login page"
+msgstr "ログイン画面で有効化"
+
+#: inc/class-wpba-setting.php:98
+msgid "Password"
+msgstr "パスワード"
+
+#: inc/class-wpba-setting.php:90
+msgid "Username"
+msgstr "ユーザー名"
+
+#: inc/class-wpba-setting.php:82
+msgid "Enable"
+msgstr "有効"
+
+#: inc/class-wpba-setting.php:75
+msgid "Basic HTTP Authentication"
+msgstr "Basic HTTP 認証"
+
+#: inc/class-wpba-setting.php:30
+msgid "Authentication"
+msgstr "認証"
+
+#: inc/class-wpba-setting.php:29
+msgid "Basic Authentication Settings"
+msgstr "Basic 認証 設定"
+
+#. Author URI of the plugin
+msgid "https://nutttaro.com"
+msgstr "https://nutttaro.com"
+
+#. Author of the plugin
+msgid "NuttTaro"
+msgstr "NuttTaro"
+
+#. Description of the plugin
+msgid "Basic Authentication for protected your development WordPress site like .htpasswd"
+msgstr "開発中 WordPress サイト用の、.htpasswd のような Basic 認証"
+
+#. Plugin Name of the plugin
+msgid "WP Basic Authentication"
+msgstr "WP Basic Authentication"

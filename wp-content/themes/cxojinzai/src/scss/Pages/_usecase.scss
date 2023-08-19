@@ -1,0 +1,313 @@
+#usecase {
+    .content-wrapper {
+        display: block;
+        padding: 1.6rem;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: 0px 0px 6px 4px rgba(210, 210, 210, 0.25);
+        .interview-flag {
+            padding: 0.6rem;
+            width: fit-content;
+            height: 2.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            background-color: #0099BD;
+            border-radius: 4px;
+            font-family: Noto Sans CJK JP;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px; /* 100% */
+            margin-bottom: 1.2rem;
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.1rem;
+            img {
+                width: 4.8rem;
+                height: 4.8rem;
+                margin-right: 1.2rem;
+            }
+            .top-text {
+                .head {
+                    margin-bottom: 0.6rem;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 2.4rem; /* 150% */
+                }
+                .gender {
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.4rem; /* 100% */
+                }
+            }
+        }
+        .middle-section {
+            display: flex;
+            align-items: center;
+            .left {
+                position: relative;
+                width: 7.4rem;
+                height: 12.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #F4F4F4;
+                margin-right: 1.6rem;
+                color: #333;
+                font-family: "Noto Sans CJK JP";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.6rem; /* 100% */
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-image: url(../img/down-mark.png);
+                    width: 3.6rem;
+                    height: 2.2rem;
+                    left: calc(50% - 1.2rem);
+                    bottom: -0.2rem;
+                    transform: rotate(135deg);
+                }
+            }
+            .right {
+                width: 74%;
+                .top-text {
+                    margin-bottom: 0.65rem;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.0rem; /* 142.857% */
+                }
+                .middle-text {
+                    margin-bottom: 1.0rem;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.6rem; /* 100% */
+                }
+                .bottom-text {
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.4rem; /* 100% */
+                    letter-spacing: 0.56px;
+                    span {
+                        color: #333;
+                        font-family: "Montserrat";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.6rem; /* 100% */
+                        letter-spacing: 0.64px;
+                    }
+                }
+            }
+        }
+        .bottom-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.0rem;
+            .left {
+                width: 7.4rem;
+                height: 12.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #3472A1;
+                margin-right: 1.6rem;
+                color: #F4F4F4;
+                font-family: "Noto Sans CJK JP";
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.5rem; /* 100% */
+            }
+            .right {
+                width: 74%;
+                .top-text {
+                    margin-bottom: 0.6rem;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.0rem; /* 142.857% */
+                }
+                .middle-text {
+                    margin-bottom: 1.3rem;
+                    color: #3472A1;
+                    font-family: "Montserrat";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.6rem; /* 100% */
+                }
+                .bottom-text {
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.4rem; /* 100% */
+                    letter-spacing: 0.56px;
+                    span {
+                        color: #3472A1;
+                        font-family: "Montserrat";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 1.6rem; /* 100% */
+                        letter-spacing: 0.64px;
+                    }
+                }
+            }
+        }
+        .title {
+            margin-bottom: 1.0rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.4rem; /* 100% */
+        }
+        .desc {
+            margin-bottom: 2.0rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.4rem; /* 171.429% */
+        }
+    }
+    .section-title {
+        width: fit-content;
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.4rem; /* 100% */
+    }
+    .top.desc {
+        margin: 6.4rem 12rem 0 12rem;
+        @include media("sp") {
+            margin: 6.4rem 1.6rem 0 1.6rem;
+            text-align: center;
+        }
+    }
+    .pickup {
+        padding: 7.2rem 0;
+        background-color: #E6F5F8;
+        .section-title {
+            margin: 0 auto 4.8rem auto;        
+        }
+        .slider-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            .slider-item {
+                width: 37.3rem;
+                margin-right: 4rem;
+                border-radius: 6px;
+                background: #FFF;
+                box-shadow: 0px 0px 6px 4px rgba(210, 210, 210, 0.25);
+            }
+        }
+    }
+    .job-change {
+        padding: 8.8rem 12rem 20rem 12rem;
+        @include media("sp") {
+            padding: 8.8rem 1.6rem 16rem 1.6rem;
+        }
+        .section-title {
+            margin-bottom: 4.8rem;
+            @include media("sp") {
+                margin-bottom: 3.6rem;
+            }
+        }
+        .tabs {
+            display: flex;
+            position: relative;
+            width: 100%;
+            margin-bottom: 3.2rem;
+            .tab {
+                background: none;
+                width: 50%;
+                height: 6.4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #333;
+                font-family: "Noto Sans CJK JP";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.6rem; /* 100% */
+                cursor: pointer;
+                border-bottom: 1.5px solid #D3D3D3;
+                transition: all 0.1s ease-out;
+                &:hover {
+                    border-bottom: 2px solid #0099BD;;
+                }
+            }
+            .tab.active {
+                border-bottom: 2px solid #0099BD;
+                color:#0099BD
+            }
+        }
+        .pagination{
+            width: 100%;
+            margin-right: 0;
+            display: flex;
+            justify-content: flex-end;
+            .num {
+                height: 1.6rem;
+                padding-left: 2rem;
+                display: flex;
+                align-items: center;
+                color: #0099BD;
+                font-family: "Montserrat";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.6rem; /* 100% */
+            }
+            .num.active {
+                color: #424242;
+            }
+            & > .num:not(:last-child) {
+                padding-right: 2rem;
+                border-right: 2px solid #A8A8A8;
+            }
+        }
+        .case-wrapper {
+            margin: 2.4rem 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0px, 1fr));
+            grid-column-gap: 4.1rem;
+            grid-row-gap: 5.6rem;
+            @include media("sp") {
+                grid-template-columns: repeat(1, minmax(0px, 1fr));
+                grid-row-gap: 2.4rem;
+            }
+        }
+    }
+}

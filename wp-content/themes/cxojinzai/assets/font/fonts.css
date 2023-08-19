@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Public+Sans:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'YuGothic';
+    src: url('YuGothB.ttc') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'YuGothic';
+    src: url('YuGothM.ttc') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'DIN 2014 Demi';
+    src: url('DIN2014-DemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DIN 2014 Bold';
+    src: url('DIN2014-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	/* お好きな名前にしましょう */
+	src: url('Montserrat-Regular.ttf');
+	/* IE9以上用 */
+	src: url('Montserrat-Regular.ttf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('Montserrat-Regular.ttf') format('ttf'),
+		/* モダンブラウザ用 */
+		url('Montserrat-Regular.ttf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: normal;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}

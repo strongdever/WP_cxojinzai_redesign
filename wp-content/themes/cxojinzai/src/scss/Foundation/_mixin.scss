@@ -1,0 +1,7 @@
+//メディアクエリをmixin化
+$breakpoints: ( 'sp': 'only screen and (max-width: 768px)', 'tb': 'print,screen and (max-width: 991px)', 'tc': 'print,screen and (min-width: 992px)', 'lb': 'print,screen and (max-width: 1200px)', 'lc': 'print,screen and (min-width: 1201px)', 'max': 'print,screen and (max-width: 1720px)', 'min': 'print,screen and (min-width: 1721px)', 'full': 'print,screen and (max-width: 1920px)', 'pc': 'print,screen and (min-width: 769px)') !default;
+@mixin media($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
