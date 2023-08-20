@@ -12,7 +12,7 @@
         position: relative;
         z-index: 100;
         @include media("sp") {
-            padding-top: 4.8rem;
+            padding-top: 6.8rem;
             display: block;
             position: relative;
             float: none;
@@ -227,10 +227,10 @@
         @include media("sp") {
             position: absolute;
             width: 100%;
-            height: 38rem;
+            height: 28rem;
             object-fit: fill;
             right: 0;
-            top: 3rem;
+            top: 13rem;
         }
     }
     .top-background {
@@ -1277,7 +1277,7 @@
             margin-bottom: 0 !important;
         }
         .title-text {
-            text-align: end;
+            text-align: start;
             @include media("sp"){
                 margin-left: auto;
                 margin-right: 6.2rem;
@@ -1408,47 +1408,56 @@
                 & > li:first-child {
                     .desc {
                         font-weight: 500;
+                        margin-bottom: 0;
                     }
                     svg {
                         margin-left: auto;
                     }
                 }
                 li {
-                    display: flex;
-                    align-items: center;
-                    position: relative;
-                    margin: 0 1.6rem;
-                    padding: 2.4rem 2.3rem;
-                    width: auto;
-                    border-bottom: 1px solid #AEAEAE; 
-                    @include media("sp") {
-                        padding: 2.0rem 1.2rem;
-                    }             
-                    .title-wrap {
-                        width: 86%;
-                        margin-bottom: 0;
-                    }
-                    .number {
-                        width: 2%;
-                        display: block;
-                        margin-top: 0.8rem;
-                        margin-bottom: auto;
-                        margin-right: 2.4rem;
-                        color: #3472A1;
-                        text-align: center;
-                        font-family: "Montserrat";
-                        font-size: 1.8rem;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 18px; /* 100% */
+                    a {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        margin: 0 1.6rem;
+                        padding: 2.4rem 2.3rem;
+                        width: auto;
+                        border-bottom: 1px solid #AEAEAE;
+                        &:hover {
+                            .title, .desc {
+                                color: #1BA2C5;
+                            }
+                        }
                         @include media("sp") {
-                            margin-top: 0.2rem;
-                            font-size: 1.6rem;
-                            margin-right: 1.8rem;
+                            padding: 2.0rem 1.2rem;
+                        }             
+                        .title-wrap {
+                            width: 86%;
+                            margin-bottom: 0;
+                        }
+                        .number {
+                            width: 2%;
+                            display: block;
+                            margin-top: 0.8rem;
+                            margin-bottom: auto;
+                            margin-right: 2.4rem;
+                            color: #3472A1;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-size: 1.8rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 18px; /* 100% */
+                            @include media("sp") {
+                                margin-top: 0.2rem;
+                                font-size: 1.6rem;
+                                margin-right: 1.8rem;
+                            }
                         }
                     }
                     .desc {
                         @include media("sp") {
+                            margin-bottom: 0;
                             line-height: 2.4rem !important;
                         }
                     }
@@ -1480,7 +1489,7 @@
                 display: block;
                 position: relative;
                 margin-bottom: 2.4rem;
-                & > li:first-child {
+                & > li:first-child a {
                     .desc {
                         font-weight: 500;
                     }
@@ -1488,7 +1497,7 @@
                         margin-left: auto;
                     }
                 }
-                .article  {
+                .article a {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -1513,6 +1522,7 @@
                         .desc {
                             width: 90%;
                             @include media("sp") {
+                                margin-bottom: 0;
                                 font-size: 1.4rem !important;
                                 font-weight: 400;
                             }

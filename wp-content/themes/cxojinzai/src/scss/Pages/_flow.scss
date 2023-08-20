@@ -2,7 +2,7 @@
     .content {
         padding: 6.8rem 12rem 22.7rem 12rem;
         @include media("sp") {
-            padding: 6.8rem 1.6rem 16rem 1.6rem;  
+            padding: 3.2rem 1.6rem 4.8rem 1.6rem;  
         }
         .top.desc {
             margin-bottom: 3.3rem;            
@@ -45,7 +45,7 @@
             .each-step:not(:last-child) {
                 padding-bottom: 7.2rem;
                 @include media("sp") {
-                    padding-bottom: 6.0rem;
+                    padding-bottom: 3.2rem;
                 }
             }
             .each-step:not(:last-child)::before {
@@ -81,8 +81,9 @@
                     background-color: hsl(206, 51%, 42%);
                     border-radius: 50px;
                     @include media("sp") {
-                        width: 5.6rem;
-                        height: 5.6rem;
+                        margin-right: 1.6rem;
+                        width: 5.2rem;
+                        height: 5.2rem;
                     }
                     .label {
                         color: #FFF;
@@ -95,7 +96,7 @@
                         margin-top: 0.3rem;
                         margin-bottom: 0.3rem;
                         @include media("sp") {
-                            font-size: 1.1rem;
+                            font-size: 1.0rem;
                         }
                     }
                     .num {
@@ -107,7 +108,7 @@
                         line-height: 2.4rem;
                         letter-spacing: 3.8px;
                         @include media("sp") {
-                            font-size: 2.2rem;
+                            font-size: 2.4rem;
                         }
                     }
                 }
@@ -138,7 +139,7 @@
                         line-height: 2.4rem; /* 100% */
                         letter-spacing: 2.4px;
                         @include media("sp") {
-                            font-size: 2.0rem;
+                            font-size: 2.4rem;
                         }
                     }
                     .desc {
@@ -210,9 +211,12 @@
                     img {
                         display: flex;
                         width: 24.6rem;
-                        height: fit-content;
+                        height: fit-content !important;
                         align-items: flex-end;
                         align-content: flex-end;
+                        @include media("sp") {
+                            width: 100%;
+                        }
                     }
                 }
             }

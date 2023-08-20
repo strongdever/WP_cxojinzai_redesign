@@ -704,6 +704,9 @@
                     font-weight: 700;
                     line-height: 2rem; /* 133.333% */
                     letter-spacing: 1.5px;
+                    @include media("sp") {
+                        font-size: 1.3rem;
+                    }
                     span {
                         width: fit-content;
                         text-align: center;
@@ -736,6 +739,9 @@
                 width: 45%;
                 height: auto;
                 margin: 2rem auto;
+                @include media("sp") {
+                    width: 100%;
+                }
             }
         }
     }
@@ -841,7 +847,7 @@
                         margin-right: 4rem;
                         @include media("sp") {
                             margin: 0 auto 2.4rem auto;
-                            width: 80%;
+                            width: 100%;
                         }
                     }
                     .content {
@@ -1262,6 +1268,7 @@
         padding-top: 10rem;
         padding-bottom: 22.6rem;
         @include media("sp") {
+            padding-top: 1.2rem;
             padding-bottom: 16rem;
         }
         .part1 {
@@ -1409,6 +1416,10 @@
     .container {
         padding-top: 6.4rem;
         padding-bottom: 22.6rem;
+        @include media("sp") {
+            padding-top: 3.6rem;
+            padding-bottom: 0;
+        }
         .desc {
             margin-bottom: 4.8rem;
         }
@@ -1702,16 +1713,18 @@
                 @include media("sp") {
                     margin-bottom: 2.4rem;
                 }
-                .content-wrapper{
+                .content-wrapper {
                     display: grid;
                     width: 100%;
                     grid-template-columns: 100%;
                     grid-row-gap: 3.2rem;
                     .column {
                         display: flex;
+                        align-items: center;
                         padding: 0;
                         @include media("sp") {
                             flex-direction: column;
+                            align-items: flex-start;
                         }
                         .title {
                             width: 32%;
@@ -1729,6 +1742,8 @@
                             }
                         }
                         .content {
+                            display: flex;
+                            align-items: center;
                             width: auto;
                             color: #333;
                             font-family: "Noto Sans CJK JP";
@@ -1739,9 +1754,10 @@
                             letter-spacing: 1.6px;
                             @include media("sp") {
                                 font-size: 1.5rem;
+                                flex-wrap: wrap;
                             }
                             span {
-                                margin-right: 1.2rem;
+                                margin-right: 1.8rem;
                                 width: fit-content;
                                 height: fit-content;
                                 border-radius: 4px;
@@ -1753,6 +1769,19 @@
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: 1.4rem; /* 100% */
+                                text-wrap: nowrap;
+                                @include media("sp") {
+                                    margin-right: 0.8rem;
+                                }
+                            }
+                            .position {
+                                margin-right: 1.8rem;
+                                @include media("sp") {
+                                    margin-right: 0.8rem;
+                                }
+                            }
+                            .desc {
+                                text-wrap: nowrap;
                             }
                         }
                     }
@@ -1797,6 +1826,7 @@
                         letter-spacing: 1.6px;
                         @include media("sp") {
                             font-size: 1.5rem;
+                            line-height: 2.2rem;
                         }
                         span {
                             width: 3.2rem;
@@ -2136,39 +2166,48 @@
                         }
                     }
                     li {
-                        display: flex;
-                        align-items: center;
-                        position: relative;
-                        margin: 0 1.6rem;
-                        padding: 2.4rem 2.3rem;
-                        width: auto;
-                        border-bottom: 1px solid #AEAEAE; 
-                        @include media("sp") {
-                            padding: 2.0rem 1.2rem;
-                        }             
-                        .title-wrap {
-                            width: 86%;
-                            margin-bottom: 0;
-                        }
-                        .number {
-                            width: 2%;
-                            display: block;
-                            margin-top: 0.8rem;
-                            margin-bottom: auto;
-                            margin-right: 2.4rem;
-                            color: #3472A1;
-                            text-align: center;
-                            font-family: "Montserrat";
-                            font-size: 1.8rem;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 18px; /* 100% */
+                        a {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            margin: 0 1.6rem;
+                            padding: 2.4rem 2.3rem;
+                            width: auto;
+                            border-bottom: 1px solid #AEAEAE;
+                            &:hover {
+                                .title, .desc {
+                                    color: #1BA2C5;
+                                }
+                            }
                             @include media("sp") {
-                                margin-top: 0.1rem;
-                                font-size: 1.6rem;
+                                padding: 2.0rem 1.2rem;
+                            }             
+                            .title-wrap {
+                                width: 86%;
+                                margin-bottom: 0;
+                            }
+                            .number {
+                                width: 2%;
+                                display: block;
+                                margin-top: 0.8rem;
+                                margin-bottom: auto;
+                                margin-right: 2.4rem;
+                                color: #3472A1;
+                                text-align: center;
+                                font-family: "Montserrat";
+                                font-size: 1.8rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 18px; /* 100% */
+                                @include media("sp") {
+                                    margin-top: 0.2rem;
+                                    font-size: 1.6rem;
+                                    margin-right: 1.8rem;
+                                }
                             }
                         }
                         .desc {
+                            margin-bottom: 0;
                             @include media("sp") {
                                 line-height: 2.4rem !important;
                             }
@@ -2185,6 +2224,7 @@
                             @include media("sp") {
                                 font-size: 1.4rem;
                                 line-height: 2.0rem;
+                                margin-right: 1.2rem;
                             }
                             &:hover {
                                 color: #1BA2C5;
@@ -2200,7 +2240,7 @@
                     display: block;
                     position: relative;
                     margin-bottom: 2.4rem;
-                    & > li:first-child {
+                    & > li:first-child a {
                         .desc {
                             font-weight: 500;
                         }
@@ -2208,7 +2248,7 @@
                             margin-left: auto;
                         }
                     }
-                    .article  {
+                    .article a {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
@@ -2232,6 +2272,10 @@
                             justify-content: space-between;
                             .desc {
                                 width: 90%;
+                                @include media("sp") {
+                                    font-size: 1.4rem !important;
+                                    font-weight: 400;
+                                }
                             }
                             svg {
                                 width: 1.6rem;
@@ -2265,7 +2309,7 @@
                             font-weight: 500;
                             line-height: 3.2rem; /* 100% */
                             @include media("sp") {
-                                font-size: 1.4rem;
+                                font-size: 1.5rem;
                                 line-height: 2.0rem;
                             }
                             &:hover {
@@ -2293,6 +2337,10 @@
         padding-bottom: 22.6rem;
         display: block;
         position: relative;
+        @include media("sp") {
+            padding-top: 1.2rem;
+            padding-bottom: 4.8rem;
+        }
         .subtitle {
             text-align: center;
             margin-bottom: 4rem;
@@ -2300,6 +2348,9 @@
         .desc {
             text-align: center;
             margin-bottom: 6.4rem;
+            @include media("sp") {
+                margin-bottom: 3.6rem;
+            }
         }
         .categories {
             width: 90%;
@@ -2412,6 +2463,7 @@
                 }
                 .svg-wrapper {
                     justify-content: flex-end;
+                    margin-left: auto;
                     @include media("sp") {
                         display: none;
                     }
@@ -2563,10 +2615,10 @@
                     position: absolute;
                     content: "";
                     width: 5px;
-                    height: 80%;
+                    height: 100%;
                     background-color: #0099BD;
                     left: -2rem;
-                    top: 0.5rem;
+                    top: 0;
                 }
                 @include media("sp") {
                     margin-bottom: 2.4rem;

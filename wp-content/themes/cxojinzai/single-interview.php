@@ -81,9 +81,9 @@
                                 <?php
                                 endforeach;
                             endif;
-                                echo $position; ?>
-                                &nbsp;&nbsp;
-                                <?php echo $name; ?>
+                                ?>
+                                <p class="desc position"><?php echo $position; ?></p>
+                                <p class="desc name"><?php echo $name; ?></p>
                             </div>
                         </div>
                         <div class="column">

@@ -20,7 +20,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <div class="this-page">CxO人材バンク関連コミュニティ</div>
         </div>
         <div class="subpage-firstview">
-            <h3 class="section-title">CxO人材バンク関連コミュニティ</h3>
+            <h3 class="section-title">CxO人材バンク<br class="sp">関連コミュニティ</h3>
         </div>
         <div class="container">
             <div class="part1">

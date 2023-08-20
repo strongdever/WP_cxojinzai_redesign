@@ -220,9 +220,9 @@
     height: 22.51vw;
     padding-left: 12rem;
     @include media("sp") {
-        padding-left: 0;
+        padding-left: 2.6rem !important;
         background-image: url("../img/background-sp.png");
-        height: 89.3vw;
+        height: 44.3vw;
     }
     .section-title {
         margin-bottom: 2.4rem;
@@ -234,8 +234,10 @@
         line-height: 4rem; /* 100% */
         letter-spacing: 4px;
         @include media("sp") {
-            font-size: 3rem;
-            text-align: center;
+            margin-bottom: 0.8rem;
+            font-size: 2.4rem;
+            text-align: start;
+            letter-spacing: 0.05em;
         }
     }
     .eng-title {
@@ -247,7 +249,7 @@
         line-height: 1.6rem; /* 100% */
         letter-spacing: 1.6px;
         @include media("sp") {
-            text-align: center;
+            text-align: start;
         }
     }
 }
@@ -266,6 +268,9 @@
     @include media("sp") {
         background-image: url("../img/background02-sp.png");
         height: 49.6vw;
+        align-items: flex-start;
+        padding: 2.6rem;
+        object-fit: cover;
     }
     .section-title {
         margin-bottom: 2.4rem;
@@ -277,8 +282,9 @@
         line-height: 4rem; /* 100% */
         letter-spacing: 4px;
         @include media("sp") {
-            font-size: 3rem;
-            text-align: center;
+            font-size: 2.4rem;
+            text-align: start;
+            line-height: 3.2rem;
         }
     }
     .eng-title {
@@ -473,7 +479,7 @@
     line-height: 4rem; /* 166.667% */
     letter-spacing: 2.4px;
     @include media("sp") {
-        font-size: 2rem !important;
+        font-size: 2.2rem !important;
         line-height: 3.2rem !important;
         letter-spacing: 2.4px !important;
     }
@@ -525,25 +531,16 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2.4rem;
-    @include media("sp") {
-        justify-content: flex-start;
-    }
-    & > .category:not(:last-child) {
-        margin-right: 2.4rem;
-        @include media("sp") {
-            margin-right: 1.6rem;
-        }
-    }
     .category.active {
         color: #fff;
         background-color: #3472A1;
     }
     .category {
         padding: 1.2rem 3.2rem;
-        margin-bottom: 2.4rem;
+        margin: 1.2rem;
         @include media("sp") {
             padding: 0.6rem 1.8rem;
-            margin-bottom: 1.8rem;
+            margin: 0.8rem;
         }
         &:hover {
             color: #fff;
@@ -595,7 +592,7 @@ img {
             }
         }
         .svg-wrapper {
-            width: 10%;
+            width: 7%;
             display: flex;
             align-items: center;
             justify-content: center;
