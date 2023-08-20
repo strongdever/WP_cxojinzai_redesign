@@ -37,7 +37,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             具体的な転職相談とは
                         </h4>
                         <p class="content">
-                            現在、キャリアアップを目指している<br>
+                            現在、キャリアアップを目指している<br class="pc">
                             転職支援をご希望の方と<br>
                             面談から候補企業を選定し紹介を行っていきます。
                         </p>
@@ -47,7 +47,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             中長期のキャリア相談とは
                         </h4>
                         <p class="content">
-                            現在、キャリアアップを目指している<br>
+                            現在、キャリアアップを目指している<br class="pc">
                             転職支援をご希望の方と<br>
                             面談から候補企業を選定し紹介を行っていきます。
                         </p>
@@ -68,7 +68,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     今後のキャリアアップを目指す人材へのキャリア相談をお受けしています。
                 </p>
                 <h3 class="subtitle first">
-                    CxO人材バンクグループが運営するサービスとコミュニティ
+                    CxO人材バンクグループが<br class="sp">運営するサービスと<br class="sp">コミュニティ
                 </h3>
                 <img src="<?php echo T_DIRE_URI; ?>/assets/img/consults-differ01.png" class="img1 pc">
                 <img src="<?php echo T_DIRE_URI; ?>/assets/img/consults-differ01-sp.png" class="img1 sp">

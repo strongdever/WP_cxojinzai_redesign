@@ -3,7 +3,7 @@
     .main-section {
         padding: 4rem 12rem 22rem 12rem;
         @include media("sp") {
-            padding: 4rem 1.6rem 16rem 1.6rem;
+            padding: 4rem 1.6rem 12rem 1.6rem;
         }
         .header-text {
             display: flex;

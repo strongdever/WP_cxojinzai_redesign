@@ -6014,7 +6014,13 @@ body.mobile-nav-active #mobile-nav {
 
 #news .container {
   padding-top: 3.2rem;
-  margin-bottom: 17rem;
+  margin-bottom: 18rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #news .container {
+    margin-bottom: 12rem;
+  }
 }
 
 #news .news-wrapper {
@@ -6694,7 +6700,7 @@ body.mobile-nav-active #mobile-nav {
 
 @media only screen and (max-width: 768px) {
   .maintitle {
-    font-size: 2.6rem !important;
+    font-size: 2.4rem !important;
     line-height: 3.6rem !important;
     letter-spacing: 1px !important;
   }
@@ -7040,7 +7046,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #single-news .main-section {
-    padding: 4rem 1.6rem 16rem 1.6rem;
+    padding: 4rem 1.6rem 12rem 1.6rem;
   }
 }
 
@@ -7444,7 +7450,7 @@ img {
 }
 
 #usecase .top.desc {
-  margin: 6.4rem 12rem 0 12rem;
+  margin: 4.8rem 12rem 0 12rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -7486,7 +7492,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #usecase .job-change {
-    padding: 8.8rem 1.6rem 16rem 1.6rem;
+    padding: 5.2rem 1.6rem 12rem 1.6rem;
   }
 }
 
@@ -7606,7 +7612,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #flow .content {
-    padding: 3.2rem 1.6rem 4.8rem 1.6rem;
+    padding: 3.2rem 1.6rem 12rem 1.6rem;
   }
 }
 
@@ -7615,7 +7621,7 @@ img {
 }
 
 #flow .content .btn-rightarrow {
-  margin-bottom: 10.4rem;
+  margin-bottom: 4.8rem;
 }
 
 #flow .content .main-title {
@@ -7635,7 +7641,8 @@ img {
 
 @media only screen and (max-width: 768px) {
   #flow .content .main-title {
-    margin-bottom: 5.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
   }
 }
 
@@ -7652,6 +7659,12 @@ img {
   display: block;
   position: relative;
   margin-bottom: 10.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #flow .content .flow-steps {
+    margin-bottom: 4.8rem;
+  }
 }
 
 #flow .content .flow-steps .each-step {
@@ -7999,8 +8012,8 @@ img {
 
 @media only screen and (max-width: 768px) {
   #consults-differ .container {
-    padding-top: 9rem;
-    padding-bottom: 16rem;
+    padding-top: 4.8rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -8039,6 +8052,12 @@ img {
 
 #consults-differ .container .part1 {
   margin-bottom: 10.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #consults-differ .container .part1 {
+    margin-bottom: 5.6rem;
+  }
 }
 
 #consults-differ .container .part1 .desc {
@@ -8181,6 +8200,12 @@ img {
   letter-spacing: 1.6px;
 }
 
+@media only screen and (max-width: 768px) {
+  #consults-differ .container .part2 .content {
+    margin-bottom: 5.2rem;
+  }
+}
+
 #consults-differ .container .part2 .subtitle {
   margin-top: 9.6rem;
   margin-bottom: 4.0rem;
@@ -8220,7 +8245,7 @@ img {
 @media only screen and (max-width: 768px) {
   #consults-differ .container .part2 .sweet-blues .img2 {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto 2.4rem auto;
   }
 }
@@ -8372,7 +8397,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #flow-support .content {
-    padding: 6.8rem 1.6rem 16rem 1.6rem;
+    padding: 4.8rem 1.6rem 12rem 1.6rem;
   }
 }
 
@@ -8382,7 +8407,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #flow-support .content .part1 {
-    margin-bottom: 9rem;
+    margin-bottom: 5.6rem;
   }
 }
 
@@ -8410,6 +8435,12 @@ img {
   margin-bottom: 10.4rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #flow-support .content .part2 .flow-steps {
+    margin-bottom: 3.6rem;
+  }
+}
+
 #flow-support .content .part2 .flow-steps .each-step {
   display: block;
   position: relative;
@@ -8421,7 +8452,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #flow-support .content .part2 .flow-steps .each-step:not(:last-child) {
-    padding-bottom: 6.0rem;
+    padding-bottom: 3.2rem;
   }
 }
 
@@ -8481,6 +8512,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #flow-support .content .part2 .flow-steps .step-wrapper .step-number {
+    margin-right: 2rem;
     width: 5.6rem;
     height: 5.6rem;
   }
@@ -8683,6 +8715,9 @@ img {
 @media only screen and (max-width: 768px) {
   #flow-support .btn-rightarrow {
     width: 90%;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
     padding: 0.8rem 2.4rem 0.8rem 2.4rem;
     margin-right: auto;
     margin-left: auto;
@@ -9102,7 +9137,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #features .part4 {
-    margin: 0 1.6rem 8rem 1.6rem;
+    margin: 0 1.6rem 6rem 1.6rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -9301,7 +9336,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #features .part5 {
-    margin: 0 1.6rem 16rem 1.6rem;
+    margin: 0 1.6rem 12rem 1.6rem;
   }
 }
 
@@ -9312,8 +9347,8 @@ img {
 
 @media only screen and (max-width: 768px) {
   #features-background .container {
-    padding-top: 8rem;
-    padding-bottom: 16rem;
+    padding-top: 2.4rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -9782,7 +9817,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #features-background .container .overview {
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -9874,7 +9909,7 @@ img {
 @media only screen and (max-width: 768px) {
   #features-media .container {
     padding-top: 1.2rem;
-    padding-bottom: 16rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -10267,9 +10302,16 @@ img {
   border-color: #abb8c3;
 }
 
-#single-interview {
-  padding-top: 4.8rem;
-  padding-bottom: 22.6rem;
+#single-interview .container {
+  padding-top: 6rem;
+  padding-bottom: 22rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #single-interview .container {
+    padding-top: 4.8rem;
+    padding-bottom: 12rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -10946,16 +10988,27 @@ img {
 }
 
 #single-interview .btn-leftarrow {
-  display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 7.6rem auto 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  #single-interview .btn-leftarrow {
+    margin: 4.8rem auto 0 auto;
+  }
+}
+
 #column .container {
   padding-top: 4.8rem;
   padding-bottom: 22.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #column .container {
+    padding-bottom: 12rem;
+  }
 }
 
 #column .container .desc {
@@ -11366,7 +11419,7 @@ img {
 @media only screen and (max-width: 768px) {
   #column-consultaion .container {
     padding-top: 1.2rem;
-    padding-bottom: 4.8rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -11460,14 +11513,33 @@ img {
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  #column-research .container {
+    padding-top: 3.2rem;
+    padding-bottom: 12rem;
+  }
+}
+
 #column-research .container .desc {
   text-align: center;
   margin-bottom: 6.4rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #column-research .container .desc {
+    margin-bottom: 4.8rem;
+  }
+}
+
 #column-research .container .categories {
   width: 90%;
   margin: 0 auto 4.8rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #column-research .container .categories {
+    margin: 0 auto 3.2rem auto;
+  }
 }
 
 #column-research .container .articles-list {

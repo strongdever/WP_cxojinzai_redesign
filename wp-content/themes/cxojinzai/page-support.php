@@ -19,12 +19,12 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <div class="this-page">社外取締役・監査役への就任支援</div>
         </div>
         <div class="common-firstview">
-            <h3 class="section-title">社外取締役・監査役への就任支援
+            <h3 class="section-title">社外取締役・監査役への<br class="sp">就任支援
             </h3>
         </div>
         <section class="content">
             <div class="part1">
-                <h2 class="maintitle">社外取締役・監査役への就任支援</h2>
+                <h2 class="maintitle">社外取締役・監査役への<br class="sp">就任支援</h2>
                 <p class="top desc">2021年3月1日に施行された改正会社法に基づき、上場会社において社外取締役の選任が義務化されました。<br>
                     CxO人材バンクでは、成長企業、成長産業に特化したサービス展開を元に、成長企業の経営者との<br>
                     勉強会やコミュニティをつくり様々な形で交流を行っています。<br>

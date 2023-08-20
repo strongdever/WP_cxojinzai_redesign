@@ -1,7 +1,10 @@
 #news {
     .container {
         padding-top: 3.2rem;
-        margin-bottom: 17rem;
+        margin-bottom: 18rem;
+        @include media("sp") {
+            margin-bottom: 12rem;
+        }
     }
     .news-wrapper {
         margin-bottom: 4rem;
