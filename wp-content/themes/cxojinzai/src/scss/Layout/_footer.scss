@@ -51,29 +51,28 @@
                 height: 6.4rem;
                 margin: 0 auto;
                 background-color: #fff;
+                font-size: 1.8rem !important;
                 @include media("sp") {
+                    font-size: 1.4rem !important;
                     height: 5rem;
                     padding: 1.6rem 7.2rem;
                     width: fit-content !important;
                 }
-                span {
-                    color: #0099BD;
-                    @include media("sp") {
-                        font-size: 1.5rem;
-                    }
-                }
-                &:hover span {
-                    color: #fff;
-                }
             }
             .btn.female {
+                span {
+                    color: #0099BD;
+                }
                 &::before {
-                    background-color: #3472A1;
+                    background-color: #E6F5F8;
                 }
             }
             .btn.male {
+                span {
+                    color: #3472A1;
+                }
                 &::before {
-                    background-color: #0099BD;
+                    background-color: #EBF1F6;
                 }
             }
         }

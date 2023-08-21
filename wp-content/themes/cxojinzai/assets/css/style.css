@@ -329,8 +329,8 @@ figure img,
   text-decoration: none;
   border: none;
   outline: none;
-  -webkit-transition: all 0.2s cubic-bezier(0.8, 0, 0.2, 1);
-  transition: all 0.2s cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   overflow: hidden;
   cursor: pointer;
   z-index: 0;
@@ -349,8 +349,8 @@ figure img,
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  -webkit-transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
-  transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   padding-top: 0.2rem;
   z-index: 3;
 }
@@ -390,6 +390,7 @@ figure img,
   background: #E6F5F8;
   width: 100%;
   height: 100%;
+  border-radius: 3px;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
   transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
   transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
@@ -3816,14 +3817,23 @@ body.mobile-nav-active #mobile-nav {
 .mainview .introduction .contact-btns li .btn {
   width: 30rem !important;
   height: 6.4rem !important;
+  font-size: 1.8rem !important;
 }
 
 @media only screen and (max-width: 768px) {
   .mainview .introduction .contact-btns li .btn {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
     height: 4.8rem !important;
     width: 100% !important;
   }
+}
+
+.mainview .introduction .contact-btns li .long-term::before {
+  background: #E6F5F8 !important;
+}
+
+.mainview .introduction .contact-btns li .job-consult::before {
+  background: #EBF1F6 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -3972,9 +3982,10 @@ body.mobile-nav-active #mobile-nav {
 
 .mainview .top-background {
   position: absolute;
-  width: 100%;
+  width: 136%;
+  left: 0;
   right: 0;
-  top: 6.4rem;
+  top: 15.2rem;
 }
 
 .mainview .mans-couple {
@@ -6142,13 +6153,45 @@ body.mobile-nav-active #mobile-nav {
   margin: 0 auto;
 }
 
+.fixed-btns.window .end-wrapper .contact-btns li .long-term::before {
+  background: #E6F5F8 !important;
+}
+
+.fixed-btns.window .end-wrapper .contact-btns li .job-consult::before {
+  background: #EBF1F6 !important;
+}
+
 .fixed-btns.window .end-wrapper .contact-btns > li:first-child {
   margin-right: 2.4rem;
+}
+
+.fixed-btns.window .end-wrapper .contact-btns > li:first-child .desc {
+  color: #0099BD;
+}
+
+.fixed-btns.window .end-wrapper .contact-btns > li:last-child {
+  margin-right: 2.4rem;
+}
+
+.fixed-btns.window .end-wrapper .contact-btns > li:last-child .desc {
+  color: #3472A1;
 }
 
 .fixed-btns.window .end-wrapper img.male {
   width: 13.6rem;
   height: auto;
+}
+
+.contact-btns li .btn {
+  margin: 0 auto;
+}
+
+.contact-btns li .long-term::before {
+  background: #E6F5F8 !important;
+}
+
+.contact-btns li .job-consult::before {
+  background: #EBF1F6 !important;
 }
 
 .title-wrapper {
@@ -6792,7 +6835,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .categories {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .categories .category.active {
@@ -12172,10 +12221,12 @@ img {
   height: 6.4rem;
   margin: 0 auto;
   background-color: #fff;
+  font-size: 1.8rem !important;
 }
 
 @media only screen and (max-width: 768px) {
   #footer .contact-wrapper li .btn {
+    font-size: 1.4rem !important;
     height: 5rem;
     padding: 1.6rem 7.2rem;
     width: -webkit-fit-content !important;
@@ -12184,26 +12235,20 @@ img {
   }
 }
 
-#footer .contact-wrapper li .btn span {
+#footer .contact-wrapper li .btn.female span {
   color: #0099BD;
 }
 
-@media only screen and (max-width: 768px) {
-  #footer .contact-wrapper li .btn span {
-    font-size: 1.5rem;
-  }
-}
-
-#footer .contact-wrapper li .btn:hover span {
-  color: #fff;
-}
-
 #footer .contact-wrapper li .btn.female::before {
-  background-color: #3472A1;
+  background-color: #E6F5F8;
+}
+
+#footer .contact-wrapper li .btn.male span {
+  color: #3472A1;
 }
 
 #footer .contact-wrapper li .btn.male::before {
-  background-color: #0099BD;
+  background-color: #EBF1F6;
 }
 
 #footer .contact-wrapper > li:first-child {

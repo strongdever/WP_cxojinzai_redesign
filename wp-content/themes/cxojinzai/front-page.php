@@ -60,11 +60,10 @@
                     <div class="btn-desc">本気でキャリアアップを目指す人へ</div>
                 </div>
             </div>
-            <video autoplay muted loop id="myVideo">
+            <video playsinline loop muted autoplay id="myVideo">
                 <source src="<?php echo T_DIRE_URI; ?>/assets/img/background.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
             </video>
-            <!-- <img src="<?php echo T_DIRE_URI; ?>/assets/img/background-top-sp.png" class="top-background sp"> -->
+            <!-- <img src="/assets/img/background-sp.gif" class="top-background sp"> -->
             <a href="https://www.youtube.com/channel/UCimlVSKM9Y4cUZcTK4C-RIw"><img class="mans-couple pc" src="<?php echo T_DIRE_URI; ?>/assets/img/mans-couple.png" alt="CxO人材バンク"></a>
             <div class="section-title"></div>
         </section>
@@ -951,18 +950,5 @@
         </div>
 
     </main>
-    <script>
-        var video = document.getElementById("myVideo");
-
-        function playVideo() {
-            video.play();
-        }
-
-        // Add an event listener to trigger video playback when the user interacts with the page
-        document.addEventListener("DOMContentLoaded", function() {
-            document.addEventListener("touchstart", playVideo);
-            document.addEventListener("mousedown", playVideo);
-        });
-    </script>
 
 <?php get_footer(); ?>

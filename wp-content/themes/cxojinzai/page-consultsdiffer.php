@@ -18,9 +18,8 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <img src="<?php echo T_DIRE_URI; ?>/assets/img/goto-mark.png">
             <div class="this-page">2つの相談窓口の違い</div>
         </div>
-        <div class="common-firstview">
-            <h3 class="section-title">2つの相談窓口の違い
-            </h3>
+        <div class="subpage-firstview">
+            <h3 class="section-title">2つの相談窓口の違い</h3>
         </div>
         <div class="container">
             <div class="part1">
@@ -47,9 +46,9 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             中長期のキャリア相談とは
                         </h4>
                         <p class="content">
-                        今すぐ転職を考えていない方でも、<br class="pc">
-                        将来のキャリアアップのきっかけとして、<br class="pc">
-                        面談やイベントの開催を通じて情報提供を行なっています。
+                        今すぐ転職を希望しない方の<br class="pc">
+                        今後のキャリアアップ支援として、<br class="pc">
+                        面談やイベント開催を通じて、情報提供を行っています。
                         </p>
                     </li>
                 </ul>

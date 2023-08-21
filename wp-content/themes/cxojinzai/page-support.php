@@ -18,9 +18,8 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <img src="<?php echo T_DIRE_URI; ?>/assets/img/goto-mark.png">
             <div class="this-page">社外取締役・監査役への就任支援</div>
         </div>
-        <div class="common-firstview">
-            <h3 class="section-title">社外取締役・監査役への<br class="sp">就任支援
-            </h3>
+        <div class="subpage-firstview">
+            <h3 class="section-title">社外取締役・監査役への就任支援</h3>
         </div>
         <section class="content">
             <div class="part1">
@@ -57,13 +56,13 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                                 </p>
                                 <ul class="contact-btns">
                                     <li>
-                                        <a class="btn job-consult">
-                                            <span>具体的な転職相談をする</span>
+                                        <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
+                                            <span>中長期のキャリア相談をする</span>
                                         </a>    
                                     </li>
                                     <li>
-                                        <a class="btn long-term">
-                                            <span>中長期のキャリア相談をする</span>
+                                        <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
+                                            <span>具体的な転職相談をする</span>
                                         </a>    
                                     </li>
                                 </ul>

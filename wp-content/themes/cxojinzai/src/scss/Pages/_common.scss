@@ -67,14 +67,43 @@
                 .btn {
                     margin: 0 auto;
                 }
+                .long-term::before {
+                    background: #E6F5F8 !important;
+                }
+                .job-consult::before {
+                    background: #EBF1F6 !important;
+                }
             }
             & > li:first-child {
                 margin-right: 2.4rem;
+                .desc {
+                    color: #0099BD;
+                }
+            }
+            & > li:last-child {
+                margin-right: 2.4rem;
+                .desc {
+                    color: #3472A1;
+                }
             }
         }
         img.male {
             width: 13.6rem;
             height: auto;
+        }
+    }
+}
+
+.contact-btns {
+    li {
+        .btn {
+            margin: 0 auto;
+        }
+        .long-term::before {
+            background: #E6F5F8 !important;
+        }
+        .job-consult::before {
+            background: #EBF1F6 !important;
         }
     }
 }
@@ -530,7 +559,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.2rem;
+    @include media("sp") {
+        margin-bottom: 2.4rem;
+    }
     .category.active {
         color: #fff;
         background-color: #3472A1;
