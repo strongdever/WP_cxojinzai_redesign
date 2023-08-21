@@ -177,7 +177,7 @@
                         font-size: 1.4rem;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 1.4rem; /* 100% */
+                        line-height: 2.4rem;
                         letter-spacing: 1.4px;
                     }
                     .method {
@@ -218,7 +218,7 @@
                     img {
                         display: flex;
                         width: 24.6rem;
-                        height: fit-content !important;
+                        object-fit: contain !important;
                         align-items: flex-end;
                         align-content: flex-end;
                         @include media("sp") {

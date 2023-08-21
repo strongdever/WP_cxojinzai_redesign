@@ -55,7 +55,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     <?php endif; ?>
                     <div class="top-text">
                         <p class="head"><?php echo get_field("case_title"); ?></p>
-                        <p class="gender"><?php echo get_field("case_name"); ?>／<?php echo get_field("case_gender"); ?>／<?php echo get_field("case_age"); ?></p>
+                        <p class="gender"><?php echo get_field("case_name"); ?>／<?php echo get_field("case_gender"); ?>／<?php echo get_field("case_age"); ?>代</p>
                     </div>
                 </div>
                 <div class="middle-section">

@@ -32,8 +32,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female.png">
                         <div class="career-text">
                             <h3 class="title">
-                                CxO一覧と<br>
-                                CxO人材のキャリア
+                            CxO人材研究所
                             </h3>
                             <p class="desc">
                                 CxOとは何か、さらに各CxOの年収や<br class="pc">

@@ -100,23 +100,12 @@ $cat_slug = get_query_var('consult-category') ? get_query_var('consult-category'
         </div>
         <?php the_posts_pagination( array(
                 'next_text' => '<i class="fa fa-angle-right" style="font-size:36px"></i>',
-                'prev_text' => '<i class="fa fa-angle-left" style="font-size:36px"></i>',
+                'prev_text' => '<i class="fa fa-angle-left"font-size:36px"></i>',
             ) ); ?>
-        <?php wp_reset_query(); ?>  
+            
+        <?php wp_reset_query(); ?>
+
     </div>
 </main>
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-

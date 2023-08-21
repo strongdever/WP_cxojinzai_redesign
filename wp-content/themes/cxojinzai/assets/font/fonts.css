@@ -43,3 +43,51 @@
 	/* 念の為指定しておきます */
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Noto Sans CJK JP';
+	/* お好きな名前にしましょう */
+	src: url('NotoSansCJKjp-Regular.otf');
+	/* IE9以上用 */
+	src: url('NotoSansCJKjp-Regular.otf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('NotoSansCJKjp-Regular.otf') format('otf'),
+		/* モダンブラウザ用 */
+		url('NotoSansCJKjp-Regular.otf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: 400;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans CJK JP';
+	/* お好きな名前にしましょう */
+	src: url('NotoSansCJKjp-Medium.otf');
+	/* IE9以上用 */
+	src: url('NotoSansCJKjp-Medium.otf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('NotoSansCJKjp-Medium.otf') format('otf'),
+		/* モダンブラウザ用 */
+		url('NotoSansCJKjp-Medium.otf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: 500;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans CJK JP';
+	/* お好きな名前にしましょう */
+	src: url('NotoSansCJKjp-Bold.otf');
+	/* IE9以上用 */
+	src: url('NotoSansCJKjp-Bold.otf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('NotoSansCJKjp-Bold.otf') format('otf'),
+		/* モダンブラウザ用 */
+		url('NotoSansCJKjp-Bold.otf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: bold;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}

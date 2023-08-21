@@ -147,6 +147,7 @@ $cat_slug = get_query_var('interview-category') ? get_query_var('interview-categ
             'prev_text' => '<i class="fa fa-angle-left" style="font-size:36px"></i>',
         ) ); ?>
         </div>
+        
     </div>
 </main>
 

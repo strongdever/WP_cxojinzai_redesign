@@ -121,12 +121,15 @@
         $student_rows = $articles['student'];
         $adult_rows = $articles['adult'];
         ?>
+        <?php if( $articles ): ?>
         <div class="articles">
             <div class="label">インタビュー記事</div>
-            <?php if( $childhood_rows ): ?>
+            <?php  foreach( $articles as $row ) : ?>
             <div class="eara">
-                <div class="sub-title">幼少期</div>
-                <?php  foreach( $childhood_rows as $row ) : ?>
+                <div class="sub-title"><?php echo $row['article-title']; ?></div>
+                <?php $question_answer = $row['question-answer']; ?>
+                <?php if( $question_answer ): ?>
+                <?php  foreach( $question_answer as $row ) : ?>
                 <div class="question-wrapper">
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/features108.png">
                     <div class="q-message">
@@ -146,177 +149,13 @@
                     <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
+                <?php endif; ?>
             </div>
-            <?php endif; ?>
-            <?php if( $student_rows ): ?>
-                <div class="eara">
-                <div class="sub-title">学生時代</div>
-                <?php  foreach( $childhood_rows as $row ) : ?>
-                <div class="question-wrapper">
-                    <img src="<?php echo T_DIRE_URI; ?>/assets/img/features108.png">
-                    <div class="q-message">
-                        <div class="triangle-left"></div>
-                        <h3 class="question desc"><?php echo $row["question"]; ?></h3>
-                    </div>
-                </div>
-                <div class="answer-wrapper">
-                    <div class="a-message">
-                        <div class="triangle-right"></div>
-                        <p class="answer desc"><?php echo $row["answer"]; ?></p>
-                    </div>
-                    <?php if( has_post_thumbnail() ): ?>
-                    <img class="thumb" src="<?php echo get_the_post_thumbnail_url(); ?>">
-                    <?php else: ?>
-                    <img class="thumb" src="<?php echo catch_that_image(); ?>">
-                    <?php endif; ?>
-                </div>
-                <?php endforeach; ?>
-            </div>
-            <?php endif; ?>
-            <?php if( $adult_rows ): ?>
-                <div class="eara">
-                <div class="sub-title">社会人時代</div>
-                <?php  foreach( $childhood_rows as $row ) : ?>
-                <div class="question-wrapper">
-                    <img src="<?php echo T_DIRE_URI; ?>/assets/img/features108.png">
-                    <div class="q-message">
-                        <div class="triangle-left"></div>
-                        <h3 class="question desc"><?php echo $row["question"]; ?></h3>
-                    </div>
-                </div>
-                <div class="answer-wrapper">
-                    <div class="a-message">
-                        <div class="triangle-right"></div>
-                        <p class="answer desc"><?php echo $row["answer"]; ?></p>
-                    </div>
-                    <?php if( has_post_thumbnail() ): ?>
-                    <img class="thumb" src="<?php echo get_the_post_thumbnail_url(); ?>">
-                    <?php else: ?>
-                    <img class="thumb" src="<?php echo catch_that_image(); ?>">
-                    <?php endif; ?>
-                </div>
-                <?php endforeach; ?>
-            </div>
-            <?php endif; ?>
+            <?php endforeach; ?>
 
             <p class="thanks-word desc"><?php echo get_field("footer_text"); ?></p>
         </div>
-        <!-- <div class="private-info">
-            <div class="label">西脇さんのパーソナルデータ</div>
-            <div class="wrapper">
-                <div class="column">
-                    <h4 class="title">
-                        趣味・特技
-                    </h4>
-                    <p class="content">
-                        ロードバイク（含むロードレース観戦）、ダーツ（含むプロダーツPDC観戦）、ベース演奏、バスケNBA観戦など
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        よく聞く曲
-                    </h4>
-                    <p class="content">
-                        Red Hot Chili Peppers:Can’t Stop / Mr.BIG:Green-Tinted Sixties Mind /澤野弘之:UNICORN
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        休日の過ごし方
-                    </h4>
-                    <p class="content">
-                        外出が難しい状況なので、自宅でベース演奏やNBA観戦が多くなっている
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        好きな食べ物
-                    </h4>
-                    <p class="content">
-                        餃子と焼肉
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        苦手な食べ物
-                    </h4>
-                    <p class="content">
-                        生野菜、特にきゅうりは天敵。マヨネーズとか・・・好き嫌い多いです
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        行きつけの飲食店
-                    </h4>
-                    <p class="content">
-                        焼肉赤門（千葉県ローカルの名店）
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        尊敬する人
-                    </h4>
-                    <p class="content">
-                        小川孔輔先生（大学のゼミでガチで学ぶ楽しさを教えていただいた）
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        おすすめ書籍
-                    </h4>
-                    <p class="content">
-                        シン・デジタル教育 松林弘治著（かんき出版）：著者の松林さんと某プロジェクトで楽しくご一緒しました
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        座右の銘
-                    </h4>
-                    <p class="content">
-                        日々自己新記録
-                    </p>
-                </div>
-                <div class="column">
-                    <h4 class="title">
-                        若者へのメッセージ
-                    </h4>
-                    <p class="content">
-                        自分が関わる仕事で誰かの何かが変わっていくって素晴らしいと思います。誰かのためになれる自分って素敵やん。それから、なんでも気合でどうにかできますよ、本当に。
-                    </p>
-                </div>
-            </div>
-        </div> -->
-        <?php $social_group = get_field("social");
-        if ( !empty($social_group['twitter']) || !empty($social_group['line']) || !empty($social_group['facebook']) ) :
-        ?>
-        <div class="social-share">
-            <div class="label">この記事をシェアする</div>
-            <ul class="socials">
-                <?php if(!empty($social_group['twitter'])) : ?>
-                <li>
-                    <a class="twitter" href="<?php echo $social_group['twitter']; ?>">
-                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/twitter.png">
-                    </a>                    
-                </li>
-                <?php endif; ?>
-                <?php if(!empty($social_group['line'])) : ?>
-                <li>
-                    <a class="line" href="<?php echo $social_group['line']; ?>">
-                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/line.png">
-                    </a>                    
-                </li>
-                <?php endif; ?>
-                <?php if(!empty($social_group['facebook'])) : ?>
-                <li>
-                    <a class="facebook" href="<?php echo $social_group['facebook']; ?>">
-                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/facebook.png">
-                    </a>                    
-                </li>
-                <?php endif; ?>
-            </ul>
-        </div>
         <?php endif; ?>
-
         <?php
         $args = array(
             'post_type'         => 'interview',
@@ -327,6 +166,11 @@
         );
         $related_query = new WP_Query($args);
         ?> 
+
+        <?php if (shortcode_exists('addtoany')) : ?>
+            <?php echo do_shortcode('[addtoany]'); ?>
+        <?php endif; ?>
+
         <?php if( $related_query->have_posts() ):
         ?>
         <div class="goto-part">

@@ -43,7 +43,6 @@
     $(document).ready(function(){
         if(check) {
             $(".slider-wrapper").slick({
-                dots: false,
                 autoplay: true,
                 prevArrow: '<div class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left" style="color: #687872;"></i></div>',
                 nextArrow: '<div class="slick-next slick-arrow"><i class="fa-solid fa-chevron-right" style="color: #687872;"></i></div>',
@@ -52,11 +51,10 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrow: true,
-                dots: true
+                dots: false
             });
         } else {
             $(".slider-wrapper").slick({
-                dots: false,
                 autoplay: true,
                 prevArrow: '<div class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left" style="color: #687872;"></i></div>',
                 nextArrow: '<div class="slick-next slick-arrow"><i class="fa-solid fa-chevron-right" style="color: #687872;"></i></div>',
@@ -71,7 +69,6 @@
 
         // if(check) {
         //     $(".top-case-slider").slick({
-        //         dots: false,
         //         autoplay: true,
         //         prevArrow: '<div class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left" style="color: #687872;"></i></div>',
         //         nextArrow: '<div class="slick-next slick-arrow"><i class="fa-solid fa-chevron-right" style="color: #687872;"></i></div>',
@@ -80,7 +77,7 @@
         //         slidesToShow: 1,
         //         slidesToScroll: 1,
         //         arrow: true,
-        //         dots: true
+        //         dots: false
         //     });
         // }
     }); 

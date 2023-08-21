@@ -1,38 +1,36 @@
 .mainview {
-    margin-top: 15rem;
+    margin-top: 14.8rem;
+    padding-top: 3.2rem;
     padding-left: 8rem;
     position: relative;
     width: 100%;
     @include media("sp") {
-        margin-top: 0rem;
+        margin-top: 7.6rem;
         margin-left: 0;
-        padding: 0 2.2rem 0 2.6rem;
+        padding: 3.2rem 2.2rem 0 2.6rem;
     }
     .introduction {
         position: relative;
         z-index: 100;
         @include media("sp") {
-            padding-top: 6.8rem;
             display: block;
             position: relative;
             float: none;
         }
         .top-text {
+            margin-bottom: 3.2rem;
             color: #333;
-            margin-top: 20.6rem;
             font-family: "Noto Sans CJK JP";
-            font-size: 3.2rem;
+            font-size: 4rem;
             font-style: normal;
             font-weight: 900;
             line-height: 3.2rem; /* 100% */
             @include media("sp") {
-                margin-top: 2.4rem;
-                margin-bottom: 0.6rem;
+                margin-bottom: 0.9rem;
                 font-size: 2.1rem;
             }
         }
         .top-title {
-            margin-top: 4rem;
             margin-bottom: 5.6rem;
             color: #333;
             font-family: "Noto Sans CJK JP";
@@ -42,7 +40,7 @@
             line-height: 8rem; /* 100% */
             @include media("sp") {
                 margin-top: 0;
-                margin-bottom: 2.8rem;
+                margin-bottom: 3.6rem;
                 font-size: 4.0rem;
                 line-height: 4.0rem;
             }
@@ -221,16 +219,15 @@
     }
     #myVideo {
         position: absolute;
-        width: 70%;
+        width: 85%;
         right: 0;
         top: 0;
         @include media("sp") {
             position: absolute;
-            width: 100%;
-            height: 28rem;
-            object-fit: fill;
+            width: 136%;
+            left: 0;
             right: 0;
-            top: 13rem;
+            top: 15.2rem;
         }
     }
     .top-background {
@@ -283,7 +280,9 @@
             align-items: flex-end !important;
         }
         .main-title {
-            right: 0;
+            text-wrap: nowrap;
+            left: auto;
+            right: 12rem !important;
             @include media("sp") {
                 font-size: 2.2rem;
             }
@@ -965,10 +964,13 @@
             }
         }
         .main-title {
-            left: calc(50% + 26.2rem);
+            text-wrap: nowrap;
+            left: auto;
+            right: 12rem !important;
             @include media("sp") {
                 font-size: 2.2rem;
                 top: -3.8rem !important;
+                right: auto !important;
             }
         }
     }

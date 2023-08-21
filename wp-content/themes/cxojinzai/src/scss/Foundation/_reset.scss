@@ -9,10 +9,11 @@
 html {
     font-size: 10px;
     font-size: clamp(6px, 0.75757576vw, 10px);
-    margin: 0;
+    margin: 0 !important;
     @include media('sp') {
         font-size: 10px;
         font-size: clamp(8px, 2.666666666667vw, 16px);
+        margin: 0 !important;
     }
 }
 

@@ -329,8 +329,8 @@ figure img,
   text-decoration: none;
   border: none;
   outline: none;
-  -webkit-transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
-  transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 0.2s cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.8, 0, 0.2, 1);
   overflow: hidden;
   cursor: pointer;
   z-index: 0;
@@ -387,7 +387,7 @@ figure img,
   top: 0;
   left: 0;
   display: block;
-  background: #68d5f6;
+  background: #E6F5F8;
   width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
@@ -3327,6 +3327,10 @@ body.wp-autoresize .related-blog .wrap-inline .date {
   background-color: #0099BD;
 }
 
+.contact-btns li:first-child .btn:hover {
+  color: #0099BD;
+}
+
 @media only screen and (max-width: 768px) {
   .contact-btns li:last-child {
     margin: 0 0.8rem 0 0;
@@ -3336,6 +3340,10 @@ body.wp-autoresize .related-blog .wrap-inline .date {
 .contact-btns li:last-child .btn {
   color: #fff;
   background-color: #3472A1;
+}
+
+.contact-btns li:last-child .btn:hover {
+  color: #3472A1;
 }
 
 .mobile-nav-toggle {
@@ -3628,7 +3636,8 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .mainview {
-  margin-top: 15rem;
+  margin-top: 14.8rem;
+  padding-top: 3.2rem;
   padding-left: 8rem;
   position: relative;
   width: 100%;
@@ -3636,9 +3645,9 @@ body.mobile-nav-active #mobile-nav {
 
 @media only screen and (max-width: 768px) {
   .mainview {
-    margin-top: 0rem;
+    margin-top: 7.6rem;
     margin-left: 0;
-    padding: 0 2.2rem 0 2.6rem;
+    padding: 3.2rem 2.2rem 0 2.6rem;
   }
 }
 
@@ -3649,7 +3658,6 @@ body.mobile-nav-active #mobile-nav {
 
 @media only screen and (max-width: 768px) {
   .mainview .introduction {
-    padding-top: 6.8rem;
     display: block;
     position: relative;
     float: none;
@@ -3657,10 +3665,10 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .mainview .introduction .top-text {
+  margin-bottom: 3.2rem;
   color: #333;
-  margin-top: 20.6rem;
   font-family: "Noto Sans CJK JP";
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 900;
   line-height: 3.2rem;
@@ -3669,14 +3677,12 @@ body.mobile-nav-active #mobile-nav {
 
 @media only screen and (max-width: 768px) {
   .mainview .introduction .top-text {
-    margin-top: 2.4rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
     font-size: 2.1rem;
   }
 }
 
 .mainview .introduction .top-title {
-  margin-top: 4rem;
   margin-bottom: 5.6rem;
   color: #333;
   font-family: "Noto Sans CJK JP";
@@ -3690,7 +3696,7 @@ body.mobile-nav-active #mobile-nav {
 @media only screen and (max-width: 768px) {
   .mainview .introduction .top-title {
     margin-top: 0;
-    margin-bottom: 2.8rem;
+    margin-bottom: 3.6rem;
     font-size: 4.0rem;
     line-height: 4.0rem;
   }
@@ -3949,7 +3955,7 @@ body.mobile-nav-active #mobile-nav {
 
 .mainview #myVideo {
   position: absolute;
-  width: 70%;
+  width: 85%;
   right: 0;
   top: 0;
 }
@@ -3957,12 +3963,10 @@ body.mobile-nav-active #mobile-nav {
 @media only screen and (max-width: 768px) {
   .mainview #myVideo {
     position: absolute;
-    width: 100%;
-    height: 28rem;
-    -o-object-fit: fill;
-       object-fit: fill;
+    width: 136%;
+    left: 0;
     right: 0;
-    top: 13rem;
+    top: 15.2rem;
   }
 }
 
@@ -4034,7 +4038,9 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .features .title-wrapper .main-title {
-  right: 0;
+  text-wrap: nowrap;
+  left: auto;
+  right: 12rem !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -4992,13 +4998,16 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .interview .title-wrapper .main-title {
-  left: calc(50% + 26.2rem);
+  text-wrap: nowrap;
+  left: auto;
+  right: 12rem !important;
 }
 
 @media only screen and (max-width: 768px) {
   .interview .title-wrapper .main-title {
     font-size: 2.2rem;
     top: -3.8rem !important;
+    right: auto !important;
   }
 }
 
@@ -7866,8 +7875,7 @@ img {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4rem;
-  /* 100% */
+  line-height: 2.4rem;
   letter-spacing: 1.4px;
 }
 
@@ -7924,9 +7932,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 24.6rem;
-  height: -webkit-fit-content !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -8071,10 +8078,20 @@ img {
 }
 
 #consults-differ .container .part1 .concept {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0px, 1fr))[2];
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  grid-column-gap: 6.4rem;
+  grid-row-gap: 2.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #consults-differ .container .part1 .concept {
+    -ms-grid-columns: (minmax(0px, 1fr))[1];
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -8090,14 +8107,32 @@ img {
   width: 100%;
 }
 
-#consults-differ .container .part1 .concept .specific {
-  margin-right: 6.4rem;
+#consults-differ .container .part1 .concept li .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 16rem;
+  text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  #consults-differ .container .part1 .concept li .content {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   #consults-differ .container .part1 .concept .specific {
     margin-right: 0;
-    margin-bottom: 2.4rem;
   }
 }
 
@@ -8155,7 +8190,7 @@ img {
 }
 
 #consults-differ .container .part1 .concept .content {
-  padding: 2.4rem 4.7rem 4.4rem 4.7rem;
+  padding: 2.4rem 4.7rem 2.4rem 4.7rem;
   text-align: center;
   color: #333;
   font-family: "Noto Sans CJK JP";
@@ -8785,7 +8820,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   #features .part1 img {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -11554,6 +11589,10 @@ img {
   padding: 1.6rem 2.4rem;
 }
 
+#column-research .container .articles-list .article:hover {
+  opacity: 0.8;
+}
+
 @media only screen and (max-width: 768px) {
   #column-research .container .articles-list .article {
     padding: 1.2rem 0.6rem;
@@ -11588,6 +11627,11 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+#column-research .container .articles-list .article .title-wrap .category-wrapper .category:hover {
+  background-color: #D5E3EC;
+  color: #333;
 }
 
 @media only screen and (max-width: 768px) {

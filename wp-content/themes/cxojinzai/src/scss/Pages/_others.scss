@@ -44,19 +44,34 @@
                 }
             }
             .concept {
-                display: flex;
                 width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0px, 1fr));
+                grid-column-gap: 6.4rem;    
+                grid-row-gap: 2.4rem;
+                @include media("sp") {
+                    grid-template-columns: repeat(1, minmax(0px, 1fr));
+                }
                 @include media("sp") {
                     flex-direction: column;
                 }
                 li {
                     width: 100%;
+                    .content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 16rem;
+                        text-wrap: nowrap;
+                        @include media("sp") {
+                            height: fit-content;
+                            text-wrap: wrap;
+                        }
+                    }
                 }
                 .specific {
-                    margin-right: 6.4rem;
                     @include media("sp") {
                         margin-right: 0;
-                        margin-bottom: 2.4rem;
                     }
                     .title {
                         background-color: #3472A1;
@@ -100,7 +115,7 @@
                     }
                 }
                 .content {
-                    padding: 2.4rem 4.7rem 4.4rem 4.7rem;
+                    padding: 2.4rem 4.7rem 2.4rem 4.7rem;
                     text-align: center;
                     color: #333;
                     font-family: "Noto Sans CJK JP";
@@ -541,7 +556,7 @@
             width: 62%;
             margin: 0 auto;
             @include media("sp") {
-                width: 85%;
+                width: 100%;
             }
         }
     }
@@ -2449,6 +2464,9 @@
                 position: relative;
                 width: 100%;
                 padding: 1.6rem 2.4rem;
+                &:hover {
+                    opacity: 0.8;
+                }
                 @include media("sp") {
                     padding: 1.2rem 0.6rem;
                     flex-direction: column;
@@ -2465,6 +2483,10 @@
                         .category {
                             margin-right: 1.8rem;
                             width: fit-content;
+                            &:hover {
+                                background-color: #D5E3EC;
+                                color: #333;
+                            }
                             @include media("sp") {
                                 margin-right: 0;
                                 margin-bottom: 0.2rem;

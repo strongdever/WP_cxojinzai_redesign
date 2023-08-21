@@ -30,36 +30,6 @@
                 <h3 class="subtitle"><?php the_title(); ?></h3>
             </div>
             <?php the_content(); ?>
-            <?php $social_group = get_field("social");
-            if ( !empty($social_group['twitter']) || !empty($social_group['line']) || !empty($social_group['facebook']) ) :
-            ?>
-            <div class="social-share">
-                <div class="label">この記事をシェアする</div>
-                <ul class="socials">
-                    <?php if(!empty($social_group['twitter'])) : ?>
-                    <li>
-                        <a class="twitter" href="<?php echo $social_group['twitter']; ?>">
-                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/twitter.png">
-                        </a>                    
-                    </li>
-                    <?php endif; ?>
-                    <?php if(!empty($social_group['line'])) : ?>
-                    <li>
-                        <a class="line" href="<?php echo $social_group['line']; ?>">
-                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/line.png">
-                        </a>                    
-                    </li>
-                    <?php endif; ?>
-                    <?php if(!empty($social_group['facebook'])) : ?>
-                    <li>
-                        <a class="facebook" href="<?php echo $social_group['facebook']; ?>">
-                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/facebook.png">
-                        </a>                    
-                    </li>
-                    <?php endif; ?>
-                </ul>
-            </div>
-                <?php endif; ?>
             
             <?php endwhile; ?>
             <?php endif; ?>

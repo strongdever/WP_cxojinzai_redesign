@@ -44,7 +44,7 @@
                         </a>    
                     </li>
                 </ul>
-                <a class="btn-rightarrow">
+                <a class="btn-rightarrow" href="<?php echo HOME . 'consultsdiffer'; ?>">
                     2つの相談の違いについて
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M14.0306 8.53061L9.53063 13.0306C9.38973 13.1715 9.19863 13.2507 8.99938 13.2507C8.80012 13.2507 8.60902 13.1715 8.46813 13.0306C8.32723 12.8897 8.24807 12.6986 8.24807 12.4994C8.24807 12.3001 8.32723 12.109 8.46813 11.9681L11.6875 8.74999H2.5C2.30109 8.74999 2.11032 8.67097 1.96967 8.53032C1.82902 8.38967 1.75 8.1989 1.75 7.99999C1.75 7.80108 1.82902 7.61031 1.96967 7.46966C2.11032 7.329 2.30109 7.24999 2.5 7.24999H11.6875L8.46937 4.02999C8.32848 3.88909 8.24932 3.69799 8.24932 3.49874C8.24932 3.29948 8.32848 3.10838 8.46937 2.96749C8.61027 2.82659 8.80137 2.74744 9.00062 2.74744C9.19988 2.74744 9.39098 2.82659 9.53187 2.96749L14.0319 7.46749C14.1018 7.53726 14.1573 7.62016 14.1951 7.71142C14.2329 7.80269 14.2523 7.90052 14.2522 7.99931C14.252 8.09809 14.2324 8.19588 14.1944 8.28706C14.1564 8.37824 14.1007 8.46101 14.0306 8.53061Z" fill="#1BA2C5"/>
@@ -467,7 +467,7 @@
             <div class="container">
                 <h3 class="sub-title pc">
                     これまでお会いした<br class="sp">CxOと呼ばれる<br class="pc">
-                    ビジネスパーソンは14万人<br>
+                    ビジネスパーソンは1万人超え<br>
                     彼らに共通する仕事とキャリアをインタビュー
                 </h3>
                 <p class="desc">
@@ -698,8 +698,7 @@
                             <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female.png">
                             <div class="career-text">
                                 <h3 class="title">
-                                    CxO一覧と<br>
-                                    CxO人材のキャリア
+                                CxO人材研究所
                                 </h3>
                                 <p class="desc">
                                     CxOとは何か、さらに各CxOの年収や<br class="pc">
@@ -952,5 +951,18 @@
         </div>
 
     </main>
+    <script>
+        var video = document.getElementById("myVideo");
+
+        function playVideo() {
+            video.play();
+        }
+
+        // Add an event listener to trigger video playback when the user interacts with the page
+        document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("touchstart", playVideo);
+            document.addEventListener("mousedown", playVideo);
+        });
+    </script>
 
 <?php get_footer(); ?>

@@ -470,6 +470,9 @@
         .btn {
             color: #fff;
             background-color: #0099BD;
+            &:hover {
+                color: #0099BD;
+            }
         }
     }
 
@@ -481,6 +484,9 @@
         .btn {
             color: #fff;
             background-color: #3472A1;
+            &:hover {
+                color: #3472A1;
+            }
         }
     }
 }
