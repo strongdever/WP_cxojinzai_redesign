@@ -408,6 +408,11 @@
             }
         }
     }
+    .btn-rightarrow {
+        width: fit-content !important;
+        margin-right: auto !important;
+        justify-content: flex-start !important;
+    }
 }
 
 .community {
@@ -1634,7 +1639,7 @@
                 margin-bottom: 0;
             }
             .left-wrapper {
-                width: 49%;
+                width: 52.8%;
                 @include media("sp") {
                     width: 100%;
                 }
@@ -1659,7 +1664,7 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 3.6rem; /* 225% */
-                    letter-spacing: 1.6px;
+                    letter-spacing: 0.5px;
                     @include media("sp") {
                         margin-bottom: 2.4rem;
                     }
@@ -1670,7 +1675,7 @@
                 }
             }
             .right-wrapper {
-                width: 46%;
+                width: 43.6%;
                 @include media("sp") {
                     width: 100%;
                 }
@@ -1679,7 +1684,7 @@
                 }
             }
             .btn-rightarrow.sp {
-                margin: 0 auto 2.4rem auto;
+                margin: 0 0 2.4rem auto;
                 @include media("sp") {
                     display: flex !important;
                     margin: 2.8rem auto 3.8rem auto;

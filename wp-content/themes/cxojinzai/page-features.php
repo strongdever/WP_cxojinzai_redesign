@@ -27,10 +27,8 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
         成長支援を行うIR Roboticsの人材支援部門です
         </h2>
         <p class="desc">
-        これまでIPO・経営戦略やIR活動支援に関する支援を通じて、多くの経営者と日々コミュニケーションをとる中で、<br>
+        これまでIPO・経営戦略やIR活動に関する支援を通じて、多くの経営者と日々コミュニケーションをとる中で、<br class="pc">
         事業を拡大するうえで必要な人材についてご相談を頂き、CxO人材バンクを立ち上げました。
-
-
         </p>
         <img src="<?php echo T_DIRE_URI; ?>/assets/img/aboutus-right.png">
     </div>
@@ -130,7 +128,8 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 <li>
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/features06.png">
                     <h5 class="desc">
-                    初回はFace to Faceでのご面談となります。
+                    初回はFace to Faceでのご面談となります。<br>
+                    （9割がオンラインで実施しております）
                     </h5>
                 </li>
                 <li>
@@ -170,9 +169,8 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature001.png">
                     <div class="content">
                         <p class="desc">
-                            CxO人材バンクは、IR活動支援とIR支援を通じて出会う成長企業の経営者〇〇〇名との<br>
-                            定期的な交流を通じ、経営者との深い関係から得られる成長に必要な人物像を熟知しています。<br>
-                            これまでのキャリアを踏まえ、経営者の右腕へとキャリアアップできるCxO人材に特化したキャリア支援を行っています。
+                        CxO人材バンクは、IPOやIR、経営戦略の支援を通じて出会う成長企業の経営者と定期的に交流しているため、各企業の成長に必要な人物像を熟知しています。<br><br>
+                        これまでのキャリアを踏まえ、経営者の右腕へとキャリアアップできるCxO人材に特化したキャリア支援を行っています。
                         </p>
                         <h4 class="sub-title">
                             ご依頼いただく企業ステージ例
@@ -252,8 +250,9 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
                     <div class="content">
                         <p class="desc">
-                            CxO人材バンクは、IR活動支援とIR支援を通じて出会う成長企業の経営者〇〇〇名との定期的な交流を通じ、経営者との深い関係から得られる成長に必要な人物像を熟知しています。<br>
-                            これまでのキャリアを踏まえ、経営者の右腕へとキャリアアップできるCxO人材に特化したキャリア支援を行っています。
+                        CxO人材バンクは、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>
+                        そのため、単に求人案件を紹介するだけでなく、オフラインイベントも実施しており、コンサルタントと対面で交流できる機会も創っています。<br>
+                        また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
                         </p>
                         <h4 class="sub-title">
                             開催しているコミュニティ

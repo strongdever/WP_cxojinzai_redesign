@@ -85,18 +85,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo HOME . 'column/research'; ?>" class="menu-link">
-                                    <span>CxO研究所</span>
+                                <a href="<?php echo HOME . 'research'; ?>" class="menu-link">
+                                    <span>CxO人材研究所</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo HOME . 'column/consultation'; ?>" class="menu-link">
+                                <a href="<?php echo HOME . 'consult'; ?>" class="menu-link">
                                     <span>転職相談室</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo HOME . 'case'; ?>" class="menu-link">
-                                    <span>転職成功事例</span>
                                 </a>
                             </li>
                         </ul>

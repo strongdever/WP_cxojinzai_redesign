@@ -147,8 +147,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                                 転職相談室
                             </h3>
                             <p class="desc">
-                            転職希望者の皆様からの不安やお悩みに、<br class="pc">
-                            一問一答形式でお答えします。
+                            転職の不安やお悩みに、<br>一問一答形式でお答えします。
                             </p>
                         </div>
                     </div>

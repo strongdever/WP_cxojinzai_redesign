@@ -31,9 +31,8 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     ビジネスプラットフォームを多数、運営しています
                 </h2>
                 <p class="desc">
-                    CxO人材バンクは株式会社ベクトルと株式会社ミンカブ・ジ・インフォノイドのジョイントベンチャー「IR Robotics」が運営しています。<br>
-                    成長企業がより成長するための支援として、サービスの提供先を、<br>
-                    「上場企業」「上場準備企業」「将来の上場を考えている企業」という3つのカテゴリーに絞った事業展開をしています。
+                CxO人材バンクは、株式会社ベクトルと株式会社ミンカブ・ジ・インフォノイドのジョイントベンチャー「株式会社IR Robotics」が運営しています。<br>
+                成長企業がより成長するための支援として、サービスの提供先を、「上場企業」「上場準備中企業」「将来の上場を考えている企業」という3つのカテゴリーに絞った事業展開をしています。
                 </p>
             </div>
             <div class="part2">
@@ -56,7 +55,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 </h2>
                 <div class="window">
                     <h4 class="title">
-                    IPO 経営戦略支援事業
+                    IPO・経営戦略支援
                     </h4>
                     <div class="content">
                         <div class="wrapper">

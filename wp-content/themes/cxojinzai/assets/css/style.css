@@ -4214,6 +4214,16 @@ body.mobile-nav-active #mobile-nav {
   /* 225% */
 }
 
+.features .btn-rightarrow {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-right: auto !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
 .community {
   background-color: #DCEEE6;
   padding-bottom: 1rem;
@@ -5950,7 +5960,7 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .aboutus .container .content-wrapper .left-wrapper {
-  width: 49%;
+  width: 52.8%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -5985,7 +5995,7 @@ body.mobile-nav-active #mobile-nav {
   font-weight: 500;
   line-height: 3.6rem;
   /* 225% */
-  letter-spacing: 1.6px;
+  letter-spacing: 0.5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -6002,7 +6012,7 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .aboutus .container .content-wrapper .right-wrapper {
-  width: 46%;
+  width: 43.6%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -6016,7 +6026,7 @@ body.mobile-nav-active #mobile-nav {
 }
 
 .aboutus .container .content-wrapper .btn-rightarrow.sp {
-  margin: 0 auto 2.4rem auto;
+  margin: 0 0 2.4rem auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -8401,7 +8411,17 @@ img {
 }
 
 #consults-differ .container .part3 .img3 {
-  width: 100%;
+  width: 89.7rem;
+  height: 50rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #consults-differ .container .part3 .img3 {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 #consults-differ .container .related-label {
@@ -9012,7 +9032,7 @@ img {
 }
 
 #features .part3 .top-wrapper, #features .part3 .bottom-wrapper {
-  width: 85%;
+  width: 120rem;
   margin: 0 auto 0 auto;
   border-radius: 6px;
   background-color: #E6F5F8;
@@ -9060,8 +9080,18 @@ img {
 }
 
 #features .part3 .top-wrapper .imgs li img, #features .part3 .bottom-wrapper .imgs li img {
-  width: 100%;
+  width: 35.7rem;
+  height: 23.5rem;
   margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #features .part3 .top-wrapper .imgs li img, #features .part3 .bottom-wrapper .imgs li img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 #features .part3 .top-wrapper .imgs > li:not(:last-child), #features .part3 .bottom-wrapper .imgs > li:not(:last-child) {
