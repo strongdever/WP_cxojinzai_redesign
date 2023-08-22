@@ -310,12 +310,12 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             役員
                         </h4>
                         <p class="content">
-                            代表取締役金 成柱<br>
-                            取締役 管理本部長孫 大基（公認会計士）<br>
-                            社外取締役上木 英典<br>
-                            常勤社外監査役亀田 雅博<br>
-                            社外監査役森 博司<br>
-                            監査役後藤 洋介。
+                        代表取締役　金 成柱<br>
+                        取締役 管理本部長　孫 大基（公認会計士）<br>
+                        社外取締役　上木 英典<br>
+                        常勤社外監査役　亀田 雅博<br>
+                        社外監査役　森 博司<br>
+                        監査役　後藤 洋介
                         </p>
                     </div>
                     <div class="column">
@@ -341,7 +341,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             【IRメディア】<br>
                             ・YouTubeチャンネル「<u>Japan Stock Channel</u>」の企画・運営（2019年1月～）<br>
                             ・株式情報メディア「<u>Next ten-Bagger 未来の10倍"成長"株を探せ。</u>」の企画・運営（2020年1月～）<br>
-                            【クリエイティブ】<br><br>
+                            【クリエイティブ】<br>
                             ・<u>IR用ビジネスモデル解説動画</u>の作成<br>
                             ・上場企業／上場準備中企業向けコーポレートサイトの制作<br><br>
                             <b>2）エデュケーション事業</b><br>

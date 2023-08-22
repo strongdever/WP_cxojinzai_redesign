@@ -6008,7 +6008,10 @@ body.mobile-nav-active #mobile-nav {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 2.4rem auto;
+  margin: 0 auto 2.4rem 0;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+      justify-content: flex-start;
 }
 
 .aboutus .container .content-wrapper .right-wrapper {
@@ -6185,6 +6188,8 @@ body.mobile-nav-active #mobile-nav {
 
 .fixed-btns.window .end-wrapper .contact-btns > li:last-child .desc {
   color: #3472A1;
+  text-wrap: nowrap !important;
+  white-space: nowrap !important;
 }
 
 .fixed-btns.window .end-wrapper img.male {
@@ -9032,7 +9037,7 @@ img {
 }
 
 #features .part3 .top-wrapper, #features .part3 .bottom-wrapper {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto 0 auto;
   border-radius: 6px;
   background-color: #E6F5F8;
@@ -9080,9 +9085,12 @@ img {
 }
 
 #features .part3 .top-wrapper .imgs li img, #features .part3 .bottom-wrapper .imgs li img {
-  width: 35.7rem;
-  height: 23.5rem;
-  margin-bottom: 1.2rem;
+    max-width: 35.7rem;
+    max-height: 23.5rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 @media only screen and (max-width: 768px) {
@@ -12319,10 +12327,6 @@ img {
   width: auto;
 }
 
-#footer .footer-main .footer-wrapper > li:not(:last-child) {
-  margin-right: 5.6rem;
-}
-
 @media only screen and (max-width: 768px) {
   #footer .footer-main .footer-wrapper > li:not(:last-child) {
     margin-right: 0;
@@ -12334,10 +12338,6 @@ img {
 
 #footer .footer-main .footer-wrapper > li:last-child {
   margin-bottom: 0;
-}
-
-#footer .footer-main .footer-wrapper > li {
-  margin-right: 12.6rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -12465,7 +12465,6 @@ img {
 }
 
 #footer .footer-main .footer-wrapper .footer-nav .nav-menu > li span {
-  text-wrap: nowrap;
   color: #4C4949;
   font-family: "Noto Sans CJK JP";
   font-size: 1.4rem;

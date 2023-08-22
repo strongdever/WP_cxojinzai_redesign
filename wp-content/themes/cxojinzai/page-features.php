@@ -128,22 +128,19 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 <li>
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/features06.png">
                     <h5 class="desc">
-                    初回はFace to Faceでのご面談となります。<br>
-                    （9割がオンラインで実施しております）
+                    初回はFace to Faceでのご面談となります。（9割がオンラインで実施しております）
                     </h5>
                 </li>
                 <li>
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/features07.png">
                     <h5 class="desc">
                     定期的に開催している「sweet19Blues」にご招待！当社コンサルタントや他の候補者様との交流を深められます。
-
                     </h5>
                 </li>
                 <li>
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/features08.png">
                     <h5 class="desc">
-                    ご転職後は、ご入社先の経営陣としてお付き合いが始まります。場合によっては採用のお手伝いをさせていただくことも、、<br>
-                    （CxO履歴書チャンネルへのご出演、NICへのご出席など）
+                    ご転職後は、ご入社先の経営陣としてお付き合いが始まります。場合によっては採用のお手伝いをさせていただくことも、、（CxO履歴書チャンネルへのご出演、NICへのご出席など）
                     </h5>
                 </li>
             </ul>
@@ -169,11 +166,10 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature001.png">
                     <div class="content">
                         <p class="desc">
-                        CxO人材バンクは、IPOやIR、経営戦略の支援を通じて出会う成長企業の経営者と定期的に交流しているため、各企業の成長に必要な人物像を熟知しています。<br><br>
-                        これまでのキャリアを踏まえ、経営者の右腕へとキャリアアップできるCxO人材に特化したキャリア支援を行っています。
+                        CxO人材バンクは、IPOやIR、経営戦略の支援を通じて出会う成長企業の経営者と定期的に交流しているため、各企業の成長に必要な人物像を熟知しています。<br>経営者の右腕へとキャリアアップできるCxO人材に特化した支援を行っています。
                         </p>
                         <h4 class="sub-title">
-                            ご依頼いただく企業ステージ例
+                        ご依頼いただく企業例
                         </h4>
                         <p class="sub-desc">
                         ・SaaS系企業<br>
@@ -221,9 +217,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature003.png">
                     <div class="content">
                         <p class="desc">
-                            CxO人材バンクでは、企業様との面接には必ず同席し、より高い評価を得られるよう、ご自身のキャリアにおける評価ポイントをしっかり伝えます。<br>
-                            成長企業の経営者と成長企業で自身の力を試したい双方の想いを中立な立場で伝えることで、正しい評価を勝ち取れるように支援します。
-
+                        CxO人材バンクでは、企業様との面接には原則同席し、より高い評価を得られるよう、ご自身のキャリアにおける評価ポイントをしっかり伝えます。<br>成長企業の経営者と成長企業で自身の力を試したい双方の想いを中立な立場で伝えることで、正しい評価を勝ち取れるように支援します。
                         </p>
                         <h4 class="sub-title">
                         キャリアアドバイザーが同席するメリット
@@ -250,9 +244,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
                     <div class="content">
                         <p class="desc">
-                        CxO人材バンクは、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>
-                        そのため、単に求人案件を紹介するだけでなく、オフラインイベントも実施しており、コンサルタントと対面で交流できる機会も創っています。<br>
-                        また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
+                        CxO人材バンクは、単に求人案件を紹介するだけでなく、コンサルタントとオフラインで交流できる機会も創っており、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
                         </p>
                         <h4 class="sub-title">
                             開催しているコミュニティ
