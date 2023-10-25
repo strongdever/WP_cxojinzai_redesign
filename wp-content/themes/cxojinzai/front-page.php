@@ -15,32 +15,32 @@
                 <h3 class="top-text">CxO人材の転職なら</h3>
                 <h1 class="top-title">CxO人材バンク</h1>
                 <p class="desc-top top1">
-                自分を高く評価してくれる<br>
-                <span>上場企業・上場準備中企業の経営者と</span><br>
-                仕事ができる
+                <!-- 自分を高く評価してくれる<br> -->
+                <span>上場企業・上場準備中企業の<br class="sp"> 経営層として</span><br>
+                さらなる企業の成長に携わる
                 </p>
-                <p class="desc-top top2">自分のキャリア史上、最も高い評価と最も高いステージへ</p>
+                <!-- <p class="desc-top top2">自分のキャリア史上、最も高い評価と最も高いステージへ</p> -->
                 <ul class="contact-btns pc">
                     <li>
-                        <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
+                        <a class="btn long-term" href="<?php echo HOME . 'pre-entry'; ?>">
                             <span>中長期のキャリア相談をする</span>
                         </a>    
                     </li>
                     <li>
-                        <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
+                        <a class="btn job-consult" href="<?php echo HOME . 'entry'; ?>">
                             <span>具体的な転職相談をする</span>
                         </a>    
                     </li>
                 </ul>
                 <ul class="contact-btns sp">
                     <li>
-                        <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
-                            <span>具体的な転職相談</span>
+                        <a class="btn long-term" href="<?php echo HOME . 'pre-entry'; ?>">
+                            <span>中長期のキャリア相談</span>
                         </a>    
                     </li>
                     <li>
-                        <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
-                            <span>中長期のキャリア相談</span>
+                        <a class="btn job-consult" href="<?php echo HOME . 'entry'; ?>">
+                            <span>具体的な転職相談</span>
                         </a>    
                     </li>
                 </ul>
@@ -52,9 +52,9 @@
                 </a>
                 <div class="goto-channel sp">
                     <div class="play-wrapper">
-                        <a class="btn-play" href="https://www.youtube.com/channel/UCimlVSKM9Y4cUZcTK4C-RIw">
+                        <a class="btn-play" href="https://www.youtube.com/channel/UCimlVSKM9Y4cUZcTK4C-RIw" target="_blank">
                             <img src="<?php echo T_DIRE_URI; ?>/assets/img/red-play.png">
-                            <span>CxO履歴書チャンネル配信中</span>
+                            <span>CxOの履歴書チャンネル配信中</span>
                         </a>
                     </div>
                     <div class="btn-desc">本気でキャリアアップを目指す人へ</div>
@@ -64,7 +64,7 @@
                 <source src="<?php echo T_DIRE_URI; ?>/assets/img/background.mp4" type="video/mp4">
             </video>
             <!-- <img src="/assets/img/background-sp.gif" class="top-background sp"> -->
-            <a href="https://www.youtube.com/channel/UCimlVSKM9Y4cUZcTK4C-RIw"><img class="mans-couple pc" src="<?php echo T_DIRE_URI; ?>/assets/img/mans-couple.png" alt="CxO人材バンク"></a>
+            <a href="https://www.youtube.com/channel/UCimlVSKM9Y4cUZcTK4C-RIw" target="_blank"><img class="mans-couple pc" src="<?php echo T_DIRE_URI; ?>/assets/img/mans-couple.png" alt="CxO人材バンク"></a>
             <div class="section-title"></div>
         </section>
         
@@ -77,18 +77,15 @@
                 <div class="feature-wrapper type1">
                     <div class="image-wrapper">
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature001.png">
-                        <p class="desc">↑候補者情報を経営者の方たちに見ていただいています。</p>
+                        <p class="desc">↑ 転職希望者の情報をまとめ、経営者に直接提案をしています。</p>
                     </div>
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>01</span></h4>
                         <h3 class="second-title">
-                            成長真っ只中の上場企業、<br>
-                            上場準備中企業の経営者から<br>
-                            直接オファーがもらえる
+                        成長真っ只中の上場企業、上場準備中企業の経営者からオファーがもらえる
                         </h3>
                         <p class="desc">
-                        CxO人材バンクは、IPOやIR、経営戦略の支援を通じて出会う成長企業の経営者と定期的に交流しているため、各企業の成長に必要な人物像を熟知しています。<br>
-                        経営者の右腕へとキャリアアップできるCxO人材に特化した支援を行っています。
+                        CxO人材バンクは上場企業・上場準備中企業のIPO・経営戦略やIR活動に関する支援を通じて、経営者、経営層との深い繋がりを築いてきました。<br>経営者本人に転職希望者の提案をしますので、彼らからの面談オファーがもらえます。
                         </p>
                     </div>
                 </div>
@@ -96,13 +93,10 @@
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>02</span></h4>
                         <h3 class="second-title">
-                            年収800万円以上の、<br>
-                            経営者を支える<br class="pc">
-                            CxOに<br class="sp">特化したポジションを紹介
+                        年収800万円以上の、経営に携わる「CxOポジション」を中心にご紹介
                         </h3>
                         <p class="desc">
-                            これまでの実績を加味し、より高い評価を得られるステージへとキャリアップ支援を行っています。<br>
-                            IPO支援や新興上場企業など、成長企業の経営者にとって、自社の成長に欠かせない人材を紹介するため、自身のキャリアを最も高い評価で活かせるポジションを用意します。
+                        CxO人材バンクがご紹介するのは、いずれも経営の中枢を担う「CxOポジション」が中心となります。<br>上場企業・上場準備中企業の経営者にとって、自社の成長に欠かせない存在であるため、スキル、カルチャーなど様々な面から、マッチする企業をご紹介します。
                         </p>
                     </div>
                     <div class="image-wrapper">
@@ -116,12 +110,9 @@
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>03</span></h4>
                         <h3 class="second-title">
-                            キャリアアドバイザーが<br>
-                            面接に同席し、<br class="sp">評価の高いポイントを企業に伝える
-                        </h3>
+                        コンサルタントが選考に同席することでその場の状況に応じて、適切なフォローアップが可能</h3>
                         <p class="desc">
-                        CxO人材バンクでは、企業様との面接には原則同席し、より高い評価を得られるよう、ご自身のキャリアにおける評価ポイントをしっかり伝えます。<br>
-                        成長企業の経営者と成長企業で自身の力を試したい双方の想いを中立な立場で伝えることで、正しい評価を勝ち取れるように支援します。
+                        コンサルタントは、企業との選考面接※には原則同席します。<br>同席することで、選考の雰囲気や双方の温度感がダイレクトにわかり、その後のフォローアップの精度が上がります。<br>※企業から許可された場合、1次面接とオファー面談には原則同席します。
                         </p>
                     </div>
                 </div>
@@ -129,17 +120,15 @@
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>04</span></h4>
                         <h3 class="second-title">
-                        履歴書のやり取りだけじゃない<br>
-                        オフラインの交流を通じたキャリア支援
+                        単なる求人紹介や情報提供だけではなくオフラインの交流などを通じた中長期でのお付き合い
                         </h3>
                         <p class="desc">
-                        CxO人材バンクは、単に求人案件を紹介するだけでなく、コンサルタントとオフラインで交流できる機会も創っており、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>
-                        また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
+                        CxO人材バンクは、単に求人案件を紹介するだけでなく、コンサルタントとオフラインで交流できる機会も創っており、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
                         </p>
                     </div>
                     <div class="image-wrapper">
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
-                        <p class="desc">↑候補者との宴「Sweet 19 blues」の第1回目</p>
+                        <p class="desc">↑候補者との交流会「Sweet 19 Blues」の第1回目</p>
                     </div>
                 </div>
                 <a class="btn-rightarrow" href="<?php echo HOME . 'features'; ?>">
@@ -154,31 +143,25 @@
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>01</span></h4>
                         <h3 class="second-title">
-                            成長真っ只中の上場企業、<br>
-                            上場準備中企業の経営者から<br>
-                            直接オファーがもらえる
+                        成長真っ只中の上場企業、上場準備中企業の経営者からオファーがもらえる
                         </h3>
                         <p class="desc">
-                        CxO人材バンクは、IPOやIR、経営戦略の支援を通じて出会う成長企業の経営者と定期的に交流しているため、各企業の成長に必要な人物像を熟知しています。<br>
-                        経営者の右腕へとキャリアアップできるCxO人材に特化した支援を行っています。
+                        CxO人材バンクは上場企業・上場準備中企業のIPO・経営戦略やIR活動に関する支援を通じて、経営者、経営層との深い繋がりを築いてきました。<br>経営者本人に転職希望者の提案をしますので、彼らからの面談オファーがもらえます。
                         </p>
                     </div>
                     <div class="image-wrapper">
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature001.png">
-                        <p class="desc">↑候補者情報を経営者の方たちに見ていただいています。</p>
+                        <p class="desc">↑ 転職希望者の情報をまとめ、経営者に直接提案をしています。</p>
                     </div>
                 </div>
                 <div class="feature-wrapper type2">
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>02</span></h4>
                         <h3 class="second-title">
-                            年収800万円以上の、<br>
-                            経営者を支える<br class="pc">
-                            CxOに<br class="sp">特化したポジションを紹介
+                        年収800万円以上の、経営に携わる「CxOポジション」を中心にご紹介
                         </h3>
                         <p class="desc">
-                            これまでの実績を加味し、より高い評価を得られるステージへとキャリアップ支援を行っています。<br class="pc">
-                            IPO支援や新興上場企業など、成長企業の経営者にとって、自社の成長に欠かせない人材を紹介するため、自身のキャリアを最も高い評価で活かせるポジションを用意します。
+                        CxO人材バンクがご紹介するのは、いずれも経営の中枢を担う「CxOポジション」が中心となります。<br>上場企業・上場準備中企業の経営者にとって、自社の成長に欠かせない存在であるため、スキル、カルチャーなど様々な面から、マッチする企業をご紹介します。
                         </p>
                     </div>
                     <div class="image-wrapper">
@@ -188,12 +171,9 @@
                 <div class="feature-wrapper type1">
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>03</span></h4>
-                        <h3 class="second-title">
-                            キャリアアドバイザーが<br>
-                            面接に同席し、評価の高い<br class="sp">ポイントを企業に伝える
-                        </h3>
+                        <h3 class="second-title">コンサルタントが選考に同席することでその場の状況に応じて、適切なフォローアップが可能</h3>
                         <p class="desc">
-                        CxO人材バンクでは、企業様との面接には原則同席し、より高い評価を得られるよう、ご自身のキャリアにおける評価ポイントをしっかり伝えます。<br>成長企業の経営者と成長企業で自身の力を試したい双方の想いを中立な立場で伝えることで、正しい評価を勝ち取れるように支援します。
+                        コンサルタントは、企業との選考面接※には原則同席します。<br>同席することで、選考の雰囲気や双方の温度感がダイレクトにわかり、その後のフォローアップの精度が上がります。<br>※企業から許可された場合、1次面接とオファー面談には原則同席します。
                         </p>
                     </div>
                     <div class="image-wrapper">
@@ -204,8 +184,7 @@
                     <div class="content-wrapper">
                         <h4 class="first-title">CxO人材バンクの特長<span>04</span></h4>
                         <h3 class="second-title">
-                        履歴書のやり取りだけじゃない<br>
-                        オフラインの交流を通じたキャリア支援
+                        単なる求人紹介や情報提供だけではなくオフラインの交流などを通じた中長期でのお付き合い
                         </h3>
                         <p class="desc">
                         CxO人材バンクは、単に求人案件を紹介するだけでなく、コンサルタントとオフラインで交流できる機会も創っており、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
@@ -213,8 +192,7 @@
                     </div>
                     <div class="image-wrapper">
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
-                        <p class="desc">↑候補者との宴「Sweet 19 blues」の第1回目
-</p>
+                        <p class="desc">↑候補者との交流会「Sweet 19 Blues」の第1回目</p>
                     </div>
                 </div>
                 <a class="btn-rightarrow" href="<?php echo HOME . 'features'; ?>">
@@ -232,10 +210,11 @@
                 <h2 class="main-title">CxO人材バンクの<br class="sp">メディア＆コミュニティ</h2>
                 <img src="<?php echo T_DIRE_URI; ?>/assets/img/female-alone.png">
             </div>
-            <p class="desc">
-            上場企業や上場準備中企業、将来上場を考えている企業向けの複数のビジネスプラットフォームや<br class="pc">
-            メディアを運営する中で経営者が必要とする人材に特化したキャリア支援を行っています。
-            </p>
+            <div class="container">
+                <p class="desc">
+                CxO人材バンクは、単に求人案件を紹介するだけでなく、コンサルタントとオフラインで交流できる機会も創っており、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。<br>また、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをさせて頂いております。
+                </p>
+            </div>
             <div class="top-community slider-wrapper">
                 <div class="slider-item">
                     <div class="item-wrapper">
@@ -265,7 +244,7 @@
                         <div class="content-wrapper">
                             <h4 class="title">Sweet 19 Blues</h4>
                             <p class="content">
-                                CxOとして転職した方、転職支援中の方々をお招きする毎月19日*に開催される宴
+                            CxO人材バンク経由で転職された方々、転職支援中の方々をお招きして、毎月19日に開催される交流会（金曜日・土日祝は除く）
                             </p>
                         </div>
                     </div>
@@ -285,9 +264,9 @@
                     <div class="item-wrapper">
                         <img classs="thumb" src="<?php echo T_DIRE_URI; ?>/assets/img/community005.png">
                         <div class="content-wrapper">
-                            <h4 class="title">CxOの履歴書</h4>
+                            <h4 class="title">CxOの履歴書チャンネル</h4>
                             <p class="content">
-                                上場企業やIPO準備中企業で活躍するCxOにこれまでのキャリアをインタビューする番組
+                            上場企業や上場準備中企業でご活躍している経営者やCxOに、これまでのキャリアや仕事論についてMCが深堀りしていく番組
                             </p>
                         </div>
                     </div>
@@ -374,8 +353,7 @@
                 <h2 class="main-title">CxO人材への転職成功事例</h2>
             </div>
             <p class="desc pc">
-                紹介先となる企業は、業界内で今、まさにステージを上げて成長する企業です。<br>
-                これまでの肩書きにとらわれず、実体に相応しいキャリアへのステップアップを実現しています
+            紹介先となる企業は、業界内で今、まさにステージを上げて成長する企業です。<br>経営層としてご活躍するためのご転職を実現しています。
             </p>
             <?php
                 $args = [
@@ -462,15 +440,10 @@
             </div>
             <div class="container">
                 <h3 class="sub-title pc">
-                    これまでお会いした<br class="sp">CxOと呼ばれる<br class="pc">
-                    ビジネスパーソンは1万人超え<br>
-                    彼らに共通する仕事とキャリアをインタビュー
+                これまでお会いした経営者やCxOは1万人超え<br>彼らに共通する仕事とキャリアをインタビュー
                 </h3>
                 <p class="desc">
-                    優秀であり、能力ある方々のキャリアや仕事論を、分析・言語化し、<br class="pc">
-                    「CxOとして企業で活躍したい！」「本気でキャリアアップを目指したい！」という方に役立つ情報をお届けしています。<br class="pc">
-                    実際の上場企業CxO経験者からお聞きした“キャリア”や”仕事論”をお聞きしながらその方たちの転職のタイミングや、意思決定した理由などをインタビューしました。<br class="pc">
-                    ”CxOになるまでの裏側”や”CxOとして活躍し続けるための共通項”を紐解くことで、本気でキャリアアップを目指す皆様のキャリアアップを支援します。
+                上場企業や上場準備中企業で活躍する経営者やCxOに“キャリア”や”仕事論”をお聞きしながら、転職のタイミングや意思決定のプロセスなどをインタビューしました。<br>「CxOとして活躍したい！」「本気でキャリアアップを目指したい！」という方に役立つ記事になっていますので、ぜひご覧ください。
                 </p>
             </div>
             <?php
@@ -605,10 +578,7 @@
                     中長期のキャリア相談を<br class="sp">踏まえたイベント参加もOK
                 </h3>
                 <p class="desc">
-                    キャリア相談のエントリー後、まずはキャリアコンサルタントとの面談で、<br>
-                    現在の状況や希望をお聞きします。<br>
-                    具体的なポジションの紹介だけでなく、中長期のキャリア相談や、<br>
-                    毎月開催されるCxO人材に転職した方との交流会への参加希望の方もエントリーください。
+                キャリア相談のエントリー後、まずはコンサルタントとの面談で、現在の状況や希望をお聞きします。<br>具体的な求人の紹介だけでなく、中長期のキャリア相談や情報交換も可能です。
                 </p>
                 <div class="content-wrapper">
                     <img class="pc" src="<?php echo T_DIRE_URI; ?>/assets/img/flow.png" alt="">
@@ -622,7 +592,7 @@
                                         <p class="step-number">01</p>
                                     </div>
                                     <div class="step-content">
-                                        転職・キャリア相談のご登録
+                                    転職・キャリア相談のお申込み
                                     </div>
                                 </div>
                             </li>
@@ -633,7 +603,7 @@
                                         <p class="step-number">02</p>
                                     </div>
                                     <div class="step-content">
-                                        面談およびこれまでのキャリアの棚卸し
+                                    コンサルタントとの面談
                                     </div>
                                 </div>
                             </li>
@@ -644,7 +614,7 @@
                                         <p class="step-number">03</p>
                                     </div>
                                     <div class="step-content">
-                                        候補先の選定およびオファーの受付
+                                    企業の選定および紹介
                                     </div>
                                 </div>
                             </li>
@@ -655,7 +625,7 @@
                                         <p class="step-number">04</p>
                                     </div>
                                     <div class="step-content">
-                                        候補先企業との面談
+                                    選考
                                     </div>
                                 </div>
                             </li>
@@ -666,7 +636,7 @@
                                         <p class="step-number">05</p>
                                     </div>
                                     <div class="step-content">
-                                        ポストおよび条件調整のうえご入社
+                                    オファー
                                     </div>
                                 </div>
                             </li>
@@ -691,7 +661,6 @@
                 <ul class="contents">
                     <li class="content-item">
                         <div class="career-wrapper">
-                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female.png">
                             <div class="career-text">
                                 <h3 class="title">
                                 CxO人材研究所
@@ -701,6 +670,7 @@
                                     キャリアプランについて説明しています。
                                 </p>
                             </div>
+                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female.png">
                         </div>
                         <h3 class="article-text">
                             よく読まれている記事
@@ -803,15 +773,15 @@
                     </li>
                     <li class="content-item">
                         <div class="career-wrapper">
-                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-male.png">
                             <div class="career-text">
                                 <h3 class="title">
                                     転職相談室
                                 </h3>
                                 <p class="desc">
-                                転職の不安やお悩みに、一問一答形式でお答えします。
+                                転職の不安やお悩みに、<br>一問一答形式でお答えします。
                                 </p>
                             </div>
+                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-male.png">
                         </div>
                         <h3 class="article-text">
                             よく読まれている記事
@@ -879,7 +849,7 @@
                             IR Roboticsの人材支援サービスです
                         </h2>
                         <p class="desc">
-                        上場企業・上場準備企業の経営者コミュニティの運営を通じて、これまで1万人超の急成長するタイミングでの経営者との深いつながりを構築してきました。<br>彼らとの交流を通じて得た成長企業に相応しい人材の発掘し人材を紹介することで成長企業と成長産業を支えるサービスを行っています。
+                        上場企業・上場準備企業のIPO・経営戦略やIR活動に関する支援を通じて、これまで1万人超の経営者と深いつながりを構築してきました。<br>彼らとの交流を通じて得た潜在的＆顕在的ニーズから、成長企業が必要とする人材をご紹介するサービスを展開しています。
                         </p>
                         <a class="btn-rightarrow pc" href="<?php echo HOME . 'features/background'; ?>">
                             CxO人材バンクについて
@@ -898,49 +868,9 @@
                         </svg>
                     </a>
                 </div>
-                <img class="aboutus-img pc" src="<?php echo T_DIRE_URI; ?>/assets/img/aboutus.png">
+                <img class="aboutus-img" src="<?php echo T_DIRE_URI; ?>/assets/img/aboutus.png">
             </div>
         </section>
-
-        <div class="fixed-btns mobile">
-            <ul class="contact-btns">
-                <li>
-                    <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
-                        <span>中長期のキャリア相談</span>
-                    </a>    
-                </li>
-                <li>
-                    <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
-                        <span>具体的な転職相談</span>
-                    </a>    
-                </li>
-            </ul>
-        </div>
-
-        <div class="fixed-btns window">
-            <div class="end-wrapper">
-                <img class="female" src="<?php echo T_DIRE_URI; ?>/assets/img/female-half.png" alt="">
-                <ul class="contact-btns">
-                    <li>
-                        <p class="desc">
-                            ＼ まずはご相談から始めたい方はこちら ／
-                        </p>
-                        <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
-                            <span>中長期のキャリア相談</span>
-                        </a>    
-                    </li>
-                    <li>
-                        <p class="desc">
-                        ＼ CxO人材として転職したい方はこちら ／
-                        </p>   
-                        <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
-                            <span>具体的な転職相談</span>
-                        </a>
-                    </li>
-                </ul>
-                <img class="male" src="<?php echo T_DIRE_URI; ?>/assets/img/male-half.png" alt="">
-            </div>
-        </div>
 
     </main>
 

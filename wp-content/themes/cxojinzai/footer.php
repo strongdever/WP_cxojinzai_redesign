@@ -1,18 +1,57 @@
+<div class="fixed-btns mobile">
+            <ul class="contact-btns">
+                <li>
+                    <a class="btn long-term" href="<?php echo HOME . 'pre-entry'; ?>">
+                        <span>中長期のキャリア相談</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="btn job-consult" href="<?php echo HOME . 'entry'; ?>">
+                        <span>具体的な転職相談</span>
+                    </a>    
+                </li>
+            </ul>
+        </div>
+
+        <div class="fixed-btns window">
+            <div class="end-wrapper">
+                <img class="female" src="<?php echo T_DIRE_URI; ?>/assets/img/female-half.png" alt="">
+                <ul class="contact-btns">
+                    <li>
+                        <p class="desc">
+                        ＼気軽な相談からはじめたい方／
+                        </p>
+                        <a class="btn long-term" href="<?php echo HOME . 'pre-entry'; ?>">
+                            <span>中長期のキャリア相談</span>
+                        </a>    
+                    </li>
+                    <li>
+                        <p class="desc">
+                        ＼CxO人材として転職したい方／
+                        </p>   
+                        <a class="btn job-consult" href="<?php echo HOME . 'entry'; ?>">
+                            <span>具体的な転職相談</span>
+                        </a>
+                    </li>
+                </ul>
+                <img class="male" src="<?php echo T_DIRE_URI; ?>/assets/img/male-half.png" alt="">
+            </div>
+        </div>
 <footer id="footer">
         <ul class="contact-wrapper">
             <li>
                 <img src="<?php echo T_DIRE_URI; ?>/assets/img/female.png">
                 <p class="desc">
-                    ＼ まずはご相談から始めたい方はこちら ／
+                ＼気軽な相談からはじめたい方／
                 </p>
-                <a class="btn female" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7"><span>中長期のキャリア相談をする</span></a>
+                <a class="btn female" href="<?php echo HOME . 'pre-entry'; ?>"><span>中長期のキャリア相談をする</span></a>
             </li>
             <li>
                 <img src="<?php echo T_DIRE_URI; ?>/assets/img/male.png">
                 <p class="desc">
-                    ＼ CxO人材として転職したい方はこちら ／
+                ＼CxO人材として転職したい方／
                 </p>
-                <a class="btn male" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc"><span>具体的な転職相談をする</span></a>
+                <a class="btn male" href="<?php echo HOME . 'entry'; ?>"><span>具体的な転職相談をする</span></a>
             </li>
         </ul>
         <div class="footer-main">
@@ -23,8 +62,8 @@
                             <a href=""><img class="logo" src="<?php echo T_DIRE_URI; ?>/assets/img/logo.png" alt="CxO人材バンク"></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/cxo_jinzaibank"><img class="social twitter" src="<?php echo T_DIRE_URI; ?>/assets/img/twitter.png" alt="CxO人材バンク"></a>
-                            <a href="https://www.youtube.com/@CxORirekishoChannel"><img class="social instegram" src="<?php echo T_DIRE_URI; ?>/assets/img/instegram.png" alt="CxO人材バンク"></a>
+                            <a href="https://twitter.com/cxo_jinzaibank" target="_blank"><img class="social twitter" src="<?php echo T_DIRE_URI; ?>/assets/img/twitter.png" alt="CxO人材バンク"></a>
+                            <a href="https://www.youtube.com/@CxORirekishoChannel" target="_blank"><img class="social instegram" src="<?php echo T_DIRE_URI; ?>/assets/img/instegram.png" alt="CxO人材バンク"></a>
                         </li>
                         <li>
                             <img class="mark" src="<?php echo T_DIRE_URI; ?>/assets/img/mark.png" alt="CxO人材バンク">
@@ -60,13 +99,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo HOME . 'interview'; ?>" class="menu-link">
-                                    <span>CxOインタビュー</span>
+                                <a href="<?php echo HOME . 'features/background'; ?>" class="menu-link">
+                                    <span>CxO人材バンクのバックグラウンド</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo HOME . 'column'; ?>" class="menu-link">
-                                    <span>転職コラム</span>
+                                <a href="<?php echo HOME . 'features/media'; ?>" class="menu-link">
+                                    <span>CxO人材バンク関連コミュニティ</span>
                                 </a>
                             </li>
                         </ul>
@@ -105,17 +144,17 @@
                                 <span>採用担当者の方へ</span>
                             </li>
                             <li>
-                                <a href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3c38" class="menu-link active">
+                                <a href="<?php echo HOME . 'contact'; ?>" class="menu-link active">
                                     <span>採用担当者様(正社員雇用)</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3c38" class="menu-link">
+                                <a href="<?php echo HOME . 'contact'; ?>" class="menu-link">
                                     <span>採用担当者様(CxO人材バンク for 業務委託)</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3c38" class="menu-link">
+                                <a href="<?php echo HOME . 'contact'; ?>" class="menu-link">
                                     <span>採用担当者様(社外取締役・監査役)</span>
                                 </a>
                             </li>
@@ -140,7 +179,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo HOME . 'privacy'; ?>" class="menu-link">
+                                <a href="https://ir-robotics.co.jp/privacypolicy/" class="menu-link" target="_blank">
                                     <span>プライバシーポリシー</span>
                                 </a>
                             </li>

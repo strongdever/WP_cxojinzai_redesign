@@ -1,0 +1,6 @@
+.interview-dashboard-avatar img {
+    border-radius: 50% !important;
+    width: 128px !important;
+    height: 128px !important;
+    object-fit: cover !important;
+}

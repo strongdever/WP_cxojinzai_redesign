@@ -107,19 +107,7 @@ $cat_slug = get_query_var('research-category') ? get_query_var('research-categor
             ) ); ?>
         <?php wp_reset_query(); ?>     
     </div>
+    
 </main>
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-

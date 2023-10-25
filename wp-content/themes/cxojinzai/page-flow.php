@@ -21,7 +21,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <h5 class="eng-title">FLOW</h5>
         </div>
         <section class="content">
-            <p class="top desc">CxO人材バンクでは、今後のキャリアアップを考える方と成長企業との縁をつなぐにあたって、現在の人材の方々と背景を考え、具体的な転職相談と中長期のキャリア相談という2つの支援内容を用意しています。
+            <p class="top desc">CxO人材バンクでは、転職への温度感に応じて、2つの窓口をご用意しております。
             </p>
             <a class="btn-rightarrow" href="<?php echo HOME . 'flow/consultsdiffer'; ?>">
                 2つの相談窓口の違い
@@ -43,16 +43,16 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             <h3 class="step-title">
                                 エントリー
                             </h3>
-                            <p class="desc">「具体的な転職相談をする」または「中長期のキャリア相談」のどちらかお選びのうえ、ご連絡ください。どちらからの相談フォームよりご連絡くいただければ、CxO人材バンク担当より、順次ご面談日時調整のご連絡を差し上げます。
+                            <p class="desc">「具体的な転職相談をする」または「中長期のキャリア相談をする」のどちらかからお問い合わせください。担当コンサルタントより、ご連絡を差し上げます。
                             </p>
                             <ul class="contact-btns">
                                 <li>
-                                    <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
+                                    <a class="btn job-consult" href="<?php echo HOME . 'pre-entry'; ?>">
                                         <span>中長期のキャリア相談をする</span>
                                     </a>    
                                 </li>
                                 <li>
-                                    <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
+                                    <a class="btn long-term" href="<?php echo HOME . 'entry'; ?>">
                                         <span>具体的な転職相談をする</span>
                                     </a>    
                                 </li>
@@ -94,13 +94,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                                 <h3 class="step-title">
                                     候補企業の紹介
                                 </h3>
-                                <p class="desc">CxO人材バンクは、成長企業、成長産業に特化した多くの経営者との強いパイプがあります。<br>
-                                企業の紹介は以下のような方法があります。その他、マッチングの縁は多数です。
-
-
-
-
-                                
+                                <p class="desc">CxO人材バンクは、上場企業・上場準備中企業の経営者との強いパイプがあります。<br>企業の紹介は以下のような方法があります。
                                 </p>
                                 <div class="method">
                                     <h3 class="title">
@@ -137,8 +131,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                                     よくある流れ
                                     </h3>
                                     <p class="content">
-                                        社長面談→役員・部長クラスと面談→会食兼オファー面談<br>
-                                        役員・部長クラスと面談→社長面談→オファー面談
+                                    ・社長面談→役員・部長クラスと面談→会食兼オファー面談<br>・役員・部長クラスと面談→社長面談→オファー面談
                                     </p>
                                 </div>
                             </div>

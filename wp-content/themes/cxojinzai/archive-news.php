@@ -95,55 +95,8 @@ $cat_slug = get_query_var('news-category') ? get_query_var('news-category') : ""
         	    ) ); ?>
         	    <?php wp_reset_query(); ?>
             </ul>
-            <!-- <div class="pagination-wrapper">
-                <ul class="pagination">
-                    <li>
-                        <a class="pagi-item before">
-                            <i class="fa fa-angle-left" style="font-size:36px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="pagi-item num">
-                            1
-                        </a>
-                    </li>
-                    <li>
-                        <a class="pagi-item num active">
-                            2
-                        </a>
-                    </li>
-                    <li>
-                        <a class="pagi-item num">
-                            3
-                        </a>
-                    </li>
-                    <li>
-                        <a class="pagi-item num">
-                            4
-                        </a>
-                    </li>
-                    <li>
-                        <a class="pagi-item next">
-                            <i class="fa fa-angle-right" style="font-size:36px"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div> -->
         </div>
 
     </main>
 
 	<?php get_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-

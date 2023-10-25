@@ -105,6 +105,7 @@ $cat_slug = get_query_var('consult-category') ? get_query_var('consult-category'
         <?php wp_reset_query(); ?>
 
     </div>
+
 </main>
 
 <?php get_footer(); ?>

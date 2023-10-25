@@ -17,17 +17,20 @@
         </div>
         <div class="content">
             <div class="part1">
-                <?php
-                $post_cats = get_the_terms(get_the_ID(), "research-category");
-                if( $post_cats ) :
-                    foreach( $post_cats as $post_cat ) : 
-                ?>
-                <a class="category"><?php echo $post_cat->name; ?></a>
-                <?php 
-                endforeach; 
-                endif;
-                ?>
-                <h3 class="subtitle"><?php the_title(); ?></h3>
+                <div class="date-cat">
+                    <div class="date"><?php the_time('Y.m.d'); ?></div>
+                    <?php
+                    $post_cats = get_the_terms(get_the_ID(), "research-category");
+                    if( $post_cats ) :
+                        foreach( $post_cats as $post_cat ) : 
+                    ?>
+                    <a class="category"><?php echo $post_cat->name; ?></a>
+                    <?php 
+                    endforeach; 
+                    endif;
+                    ?>
+                </div>
+                <h3 class="title"><?php the_title(); ?></h3>
             </div>
             <?php the_content(); ?>
             

@@ -1,0 +1,1559 @@
+# Translation of Plugins - Jetpack Search - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Jetpack Search - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-08-28 14:22:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Jetpack Search - Stable (latest release)\n"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:251
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Show post date"
+msgstr "投稿日を表示"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:41
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:50
+msgctxt "Jetpack product name"
+msgid "Security"
+msgstr "セキュリティ"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2506
+msgid "Sorry, something is wrong with your Jetpack connection."
+msgstr "Jetpack 接続に問題が発生しました。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:170
+msgid "Something went wrong. Please try again."
+msgstr "エラーが発生しました。 もう一度お試しください。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:59
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:68
+msgid "Comprehensive site security, including VaultPress Backup, Scan, and Akismet Anti-spam."
+msgstr "VaultPress バックアップ、スキャン、Akismet アンチスパムなどの総合的なサイトセキュリティ。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:62
+msgid "Jetpack VaultPress Backup"
+msgstr "Jetpack VaultPress バックアップ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:53
+msgid "VaultPress Backup"
+msgstr "VaultPress バックアップ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:61
+msgid "Jetpack Akismet Anti-spam"
+msgstr "Jetpack Akismet アンチスパム"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:52
+msgid "Akismet Anti-spam"
+msgstr "Akismet アンチスパム"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:987
+msgid "Blog"
+msgstr "ブログ"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:244
+msgctxt "label for filtering posts"
+msgid "Blogs"
+msgstr "ブログ"
+
+#: src/class-jetpack-search-plugin.php:49
+msgid "Settings"
+msgstr "設定"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:984
+msgid "Author"
+msgstr "投稿者"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:132
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Open when user submits the form (recommended)"
+msgstr "ユーザーがフォームを送信したときに開く (おすすめ)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-module-control.php:95
+msgid "Setting not updated."
+msgstr "設定は更新されていません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-module-control.php:87
+msgid "Connect your site to use Jetpack Search."
+msgstr "サイトに接続して、Jetpack 検索を使用します。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-module-control.php:84
+msgid "Jetpack Search can not be used in offline mode."
+msgstr "Jetpack 検索はオフラインモードでは使用できません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:240
+msgctxt "label for filtering posts"
+msgid "Authors"
+msgstr "投稿者"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:106
+msgctxt "Backup Product Disclaimer"
+msgid "Learn more"
+msgstr "さらに詳しく"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:105
+msgctxt "Backup Product Disclaimer"
+msgid "* Subject to your usage and storage limit."
+msgstr "* 使用量とストレージの制限が適用されます。"
+
+#. translators: URL to contact Jetpack support.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:229
+msgid "As always, feel free to <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">contact our support team</a> if you have any questions."
+msgstr "何か質問がありましたら、<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">サポートチームにお問い合わせください</a>。"
+
+#. translators: URL to Jetpack support doc regarding the primary user.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:213
+msgid "<a href='%s' target='_blank' rel='noopener noreferrer'>Learn more</a> about the connection owner and what will break if you do not have one."
+msgstr "連携の所有者の詳細、および所有者がいない場合に発生する問題については、<a href='%s' target='_blank' rel='noopener noreferrer'>こちらをご覧ください</a>。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:206
+msgid "Connect to WordPress.com"
+msgstr "WordPress.com と連携"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:203
+msgid "Every Jetpack site needs at least one connected admin for the features to work properly. Please connect to your WordPress.com account via the button below. Once you connect, you may refresh this page to see an option to change the connection owner."
+msgstr "機能が適切に動作するためには、すべての Jetpack サイトに1人以上の管理者が連携される必要があります。 下のボタンを使用して WordPress.com アカウントに連携してください。 連携後にこのページを更新すると、連携の所有者を変更するオプションが表示されます。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:187
+msgid "Success!"
+msgstr "成功しました！"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:143
+msgid "Set new connection owner"
+msgstr "新しい連携の所有者を設定する"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:125
+msgid "You can choose to transfer connection ownership to one of these already-connected admins:"
+msgstr "すでに連携されている管理者のいずれかに、連携の所有権を譲渡できます。"
+
+#. translators: WordPress User, if available.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:119
+msgid "Warning! You are about to delete the Jetpack connection owner (%s) for this site, which may cause some of your Jetpack features to stop working."
+msgstr "警告 ! このサイトの Jetpack 連携の所有者 (%s) を削除しようとしています。削除すると、Jetpack の機能の一部が動作しなくなります。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-connection-notice.php:116
+msgid "Important notice about your Jetpack connection:"
+msgstr "Jetpack 連携に関する重要なお知らせ:"
+
+#: jetpack_vendor/automattic/jetpack-jitm/src/class-post-connection-jitm.php:62
+msgid "New free service: Show Canada Post shipping rates on your store!"
+msgstr "新無料サービス: カナダ郵政省の配送料をストアで表示"
+
+#: jetpack_vendor/automattic/jetpack-jitm/src/class-post-connection-jitm.php:59
+msgid "New free service: Show USPS shipping rates on your store! Added bonus: print shipping labels without leaving WooCommerce."
+msgstr "新無料サービス: 米国郵政公社の配送料をストアで表示。さらに WooCommerce 内で配送用ラベルを印刷できます。"
+
+#: jetpack_vendor/automattic/jetpack-jitm/src/class-jitm.php:158
+msgid "Activating"
+msgstr "有効化中"
+
+#: jetpack_vendor/automattic/jetpack-jitm/src/class-jitm.php:157
+msgid "Activated"
+msgstr "有効化済み"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:62
+msgid "Search (Jetpack)"
+msgstr "検索 (Jetpack)"
+
+#: jetpack_vendor/automattic/jetpack-jitm/src/class-jitm.php:156
+#: jetpack_vendor/automattic/jetpack-my-jetpack/build/index.js:5
+#: jetpack_vendor/automattic/jetpack-my-jetpack/build/index.js:9
+msgid "Activate"
+msgstr "有効化"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/modules/class-plugins.php:245
+msgid "Unknown Plugin Update Failure"
+msgstr "理由不明なプラグインの更新失敗"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:296
+msgid "Do we want the checksum or object ids."
+msgstr "チェックサムまたはオブジェクト ID が必要です。"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:291
+msgid "Should only range endges be returned"
+msgstr "範囲の終端のみを返すべき"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:286
+msgid "Shared Salt to use when generating checksum"
+msgstr "チェックサムを生成するときに共有ソルトを使用する"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:281
+msgid "Strip non-ascii characters?"
+msgstr "ASCII 以外の文字を除去しますか ?"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:276
+msgid "End ID for the histogram"
+msgstr "ヒストグラムの終了 ID"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:271
+msgid "Start ID for the histogram"
+msgstr "ヒストグラムの開始 ID"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:266
+msgid "Number of histogram buckets."
+msgstr "ヒストグラムバケットの数。"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:256
+msgid "Column mappings"
+msgstr "カラムの割り当て"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:238
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:301
+msgid "If text fields should be converted to latin1 in checksum calculation."
+msgstr "チェックサム計算でテキストフィールドを latin1に変換する必要がある場合。"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:220
+msgid "Size of batches"
+msgstr "バッチのサイズ"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:215
+msgid "Name of Sync module."
+msgstr "同期モジュールの名前。"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:157
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:197
+msgid "Name of Sync queue."
+msgstr "同期キューの名前。"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:139
+msgid "Objects Identifiers"
+msgstr "オブジェクト識別子"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:134
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:261
+msgid "Object Type"
+msgstr "オブジェクトタイプ"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:129
+msgid "Name of Sync module"
+msgstr "同期モジュールの名前"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:93
+msgid "New Sync health status"
+msgstr "新しい同期ヘルスステータス"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:75
+msgid "Comma seperated list of additional fields that should be included in status."
+msgstr "ステータスに含まれるべき、追加フィールドのコンマ区切りのリスト。"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:57
+msgid "Comment IDs to include in Full Sync"
+msgstr "完全同期に含めるコメント ID"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:52
+msgid "Post IDs to include in Full Sync"
+msgstr "完全同期に含める投稿 ID"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:48
+msgid "User IDs to include in Full Sync or \"initial\""
+msgstr "完全同期に含めるユーザー ID または「initial」"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:43
+msgid "Data Modules that should be included in Full Sync"
+msgstr "完全同期に含まれるべきデータモジュール"
+
+#. translators: %s is UTC offset, e.g. "+1"
+#: jetpack_vendor/automattic/jetpack-sync/src/class-functions.php:540
+msgid "UTC%s"
+msgstr "UTC%s"
+
+#. translators: %d is an integer indicating the number of minutes.
+#: jetpack_vendor/automattic/jetpack-sync/src/class-actions.php:628
+msgid "Every %d minutes"
+msgstr "%d分毎"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-actions.php:626
+msgid "Every minute"
+msgstr "毎分"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-actions.php:531
+msgid "Sync has been blocked from WordPress.com because it would cause an identity crisis"
+msgstr "アイデンティティの衝突を引き起こす可能性があるため、WordPress.com との同期をブロック中です"
+
+#: jetpack_vendor/automattic/jetpack-sync/src/class-actions.php:470
+msgid "Sync has been aborted because the IXR client is missing."
+msgstr "IXR クライアントが見つからないため、同期が中止されました。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1088
+msgid "Remove"
+msgstr "削除"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1073
+msgid "Maximum number of filters (1-50):"
+msgstr "フィルターの最大数 (1-50):"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1060
+msgid "Title:"
+msgstr "タイトル:"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1052
+msgid "Year"
+msgstr "年"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1049
+msgid "Month"
+msgstr "月"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1046
+msgid "Choose an interval:"
+msgstr "間隔を選択してください:"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1038
+msgid "Modified GMT"
+msgstr "更新日 (GMT)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1035
+msgid "Modified"
+msgstr "最終編集"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1032
+msgid "Date GMT"
+msgstr "日付 (GMT)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1026
+msgid "Choose a field:"
+msgstr "フィールドを選択してください:"
+
+#. translators: %1$s is the taxonomy name, %2s is the name of its type to help
+#. distinguish between several taxonomies with the same name, e.g. category and
+#. tag.
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1010
+msgctxt "A label for a taxonomy selector option"
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1000
+msgid "Choose a taxonomy:"
+msgstr "タクソノミーを選択してください:"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:991
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:1029
+msgid "Date"
+msgstr "日付"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:980
+msgid "Post Type"
+msgstr "投稿タイプ"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:977
+msgid "Taxonomy"
+msgstr "タクソノミー"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:974
+msgid "Filter Type:"
+msgstr "フィルタータイプ:"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:850
+msgid "Why aren't my filters appearing?"
+msgstr "フィルターが表示されない場合"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:844
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:902
+msgid "Adding filters requires JavaScript!"
+msgstr "フィルターの追加には JavaScript が必要です。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:839
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:894
+msgid "Add a filter"
+msgstr "フィルターを追加"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:813
+msgid "Default sort order:"
+msgstr "デフォルトソート順:"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:797
+msgid "Post types to search (minimum of 1):"
+msgstr "検索する投稿タイプ (1個以上):"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:792
+msgid "Show sort selection dropdown"
+msgstr "ソート選択ドロップダウンを表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:779
+msgid "Show search box"
+msgstr "検索ボックスを表示する"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:760
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:874
+msgid "Title (optional):"
+msgstr "タイトル (オプション):"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:383
+msgid "Sort by"
+msgstr "並び替え"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:294
+msgid "Jetpack Search not supported in Offline Mode"
+msgstr "Jetpack Search は、オフラインモードではサポートされていません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:193
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:20
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:9
+#: jetpack_vendor/automattic/jetpack-search/build/instant-search/jp-search.js:1
+msgid "Relevance"
+msgstr "関連性"
+
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:70
+msgid "Instant search and filtering to help visitors quickly find relevant answers and explore your site."
+msgstr "クイック検索とフィルター機能により、訪問者はすぐに関連する回答を見つけ、サイトの閲覧を続けることができます。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/instant-search/class-instant-search.php:136
+msgid "Customize the sidebar inside the Jetpack Search overlay"
+msgstr "Jetpack Search のオーバーレイ表示内のサイドバーをカスタマイズ"
+
+#: jetpack_vendor/automattic/jetpack-search/src/instant-search/class-instant-search.php:134
+msgid "Jetpack Search Sidebar"
+msgstr "Jetpack Search サイドバー"
+
+#. translators: %s: Method name.
+#: jetpack_vendor/automattic/jetpack-search/src/initializers/class-initializer.php:222
+msgid "Method '%s' not implemented. Must be overridden in subclass."
+msgstr "メソッド「%s」は実装されていません。 サブクラスで上書きする必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/dashboard/class-dashboard.php:131
+msgid "Your Jetpack Search dashboard requires JavaScript to function properly."
+msgstr "Jetpack 検索ダッシュボードを正しく機能させるには、JavaScript が必要です。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/dashboard/class-dashboard.php:102
+#: jetpack_vendor/automattic/jetpack-search/src/dashboard/class-dashboard.php:113
+msgctxt "product name shown in menu"
+msgid "Search"
+msgstr "検索"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:273
+msgid "Display \"Powered by Jetpack\""
+msgstr "「Powered by Jetpack」を表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:231
+msgid "Enable infinite scrolling"
+msgstr "無限スクロールを有効にする"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:209
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Show sort selector"
+msgstr "並べ替えセレクターを表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:189
+msgid "Additional Jetpack Search Settings"
+msgstr "その他の Jetpack Search 設定"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:173
+msgid "Choose a color to highlight matching search terms."
+msgstr "一致する検索キーワードを強調表示する色を選択します。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:172
+msgid "Highlight Search Terms"
+msgstr "検索キーワードを強調表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:152
+msgid "Excluded Post Types"
+msgstr "除外した投稿タイプ"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:151
+msgid "Choose post types to exclude from search results. You must leave at least one post type unchecked."
+msgstr "検索結果から除外する投稿タイプを選択します。 少なくとも1つの投稿タイプでチェックボックスをオフのままにしておく必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:133
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Open when user starts typing"
+msgstr "ユーザーが入力を開始したときに開く"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:128
+msgid "Select when your overlay should appear."
+msgstr "オーバーレイを表示するタイミングを選択してください。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:127
+msgid "Search Input Overlay Trigger"
+msgstr "検索入力オーバーレイトリガー"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:109
+msgid "Default Sort"
+msgstr "デフォルト表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:108
+msgid "Pick the initial sort for your search results."
+msgstr "検索結果のデフォルト表示を選択してください。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:106
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:195
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Oldest first"
+msgstr "古いものから表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:105
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:194
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Newest first"
+msgstr "新しいものから表示"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:104
+#: jetpack_vendor/automattic/jetpack-search/src/widgets/class-search-widget.php:193
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Relevance (recommended)"
+msgstr "関連性の高さ (推奨)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:87
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Product (for WooCommerce stores)"
+msgstr "製品名 (WooCommerce ストア用)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:86
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Expanded (shows images)"
+msgstr "展開表示 (画像を提示)"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:85
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+msgid "Minimal"
+msgstr "ミニマル"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:81
+msgid "Choose how the search results look."
+msgstr "検索結果の見た目を選択してください。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:80
+msgid "Result Format"
+msgstr "結果の形式"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:63
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:12
+msgid "Dark"
+msgstr "ダーク"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:62
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:12
+msgid "Light"
+msgstr "ライト"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:58
+msgid "Select a theme for your search overlay."
+msgstr "検索オーバーレイのテーマを選択してください。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:57
+msgid "Theme"
+msgstr "テーマ"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customberg/class-customberg.php:100
+msgid "Your Jetpack Search customization page requires JavaScript to function properly."
+msgstr "Jetpack 検索カスタマイズページを正しく機能させるには、JavaScript が必要です。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/customberg/class-customberg.php:94
+msgid "Loading&hellip;"
+msgstr "読み込み中&hellip;"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-template-tags.php:124
+msgid "< Clear Filters"
+msgstr "< フィルターをクリア"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-rest-controller.php:299
+msgid "The arguments passed in are invalid."
+msgstr "渡された引数は無効です。"
+
+#. translators: %s are the setting name that not updated.
+#: jetpack_vendor/automattic/jetpack-search/src/class-rest-controller.php:276
+msgid "Some settings ( %s ) not updated."
+msgstr "一部の設定 (%s) が更新されていません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-rest-controller.php:216
+msgid "You are not allowed to perform this action."
+msgstr "この操作を実行する権限がありません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-module-control.php:135
+msgid "Your plan does not support Instant Search."
+msgstr "ご利用のプランはクイック検索をサポートしていません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-module-control.php:132
+msgid "Search module needs to be activated before enabling instant search."
+msgstr "クイック検索を有効化する前に検索モジュールを有効化する必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-module-control.php:90
+msgid "Your plan does not support Jetpack Search."
+msgstr "ご利用のプランは Jetpack 検索をサポートしていません。"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:236
+msgctxt "label for filtering posts"
+msgid "Post Types"
+msgstr "投稿タイプ"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:211
+msgctxt "label for filtering posts"
+msgid "Month"
+msgstr "月"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:210
+msgctxt "label for filtering posts"
+msgid "Month Updated"
+msgstr "更新月"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:205
+msgctxt "label for filtering posts"
+msgid "Year"
+msgstr "年"
+
+#: jetpack_vendor/automattic/jetpack-search/src/class-helper.php:204
+msgctxt "label for filtering posts"
+msgid "Year Updated"
+msgstr "更新年"
+
+#: jetpack_vendor/automattic/jetpack-plugins-installer/src/class-plugins-installer.php:98
+msgid "An unknown error occurred during installation"
+msgstr "インストール中に不明なエラーが発生しました"
+
+#: jetpack_vendor/automattic/jetpack-plugins-installer/src/class-plugins-installer.php:92
+msgid "There was an error installing your plugin"
+msgstr "プラグインをインストールする際にエラーが発生しました"
+
+#: jetpack_vendor/automattic/jetpack-plugins-installer/src/class-plugins-installer.php:74
+msgid "You are not allowed to install plugins on this site."
+msgstr "このサイトにプラグインをインストールする権限がありません。"
+
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:254
+msgid "Your password is too weak: Looks like you are including easy to guess information about yourself. Try something a little more unique."
+msgstr "パスワードが簡単すぎます。個人を推測しやすい情報が含まれているようです。 より推測しにくいパスワードにしてみてください。"
+
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:248
+msgid "This is a very common password. Choose something that will be harder for others to guess."
+msgstr "よく使われるパスワードです。他のユーザーが推測しにくいパスワードを指定してください。"
+
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:240
+msgid "This password is too easy to guess: you can improve it by including special characters such as !#=?*&."
+msgstr "パスワードが簡単すぎます:!#=?*& などの特殊文字を含めることによって強力にできます。"
+
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:235
+msgid "This password is too easy to guess: you can improve it by mixing both letters and numbers."
+msgstr "パスワードが簡単すぎます:文字と数字を両方含めることによって強力にできます。"
+
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:230
+msgid "This password is too easy to guess: you can improve it by adding additional uppercase letters, lowercase letters, or numbers."
+msgstr "パスワードが簡単すぎます:大文字、小文字、または数字を追加することで強力にできます。"
+
+#. translators: %d is a number of characters in the password.
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:224
+msgid "Password must be at least %d characters."
+msgstr "%d文字以上のパスワードを選んでください。"
+
+#: jetpack_vendor/automattic/jetpack-password-checker/src/class-password-checker.php:217
+msgid "Passwords may not contain the character \"\\\"."
+msgstr "パスワードに \"\\\" という文字を含めることはできません。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:103
+msgctxt "VideoPress Product Feature"
+msgid "Unlimited users"
+msgstr "無制限のユーザー"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:102
+msgctxt "VideoPress Product Feature"
+msgid "Ad-free and customizable player"
+msgstr "広告非表示のカスタマイズ可能なプレーヤー"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:101
+msgctxt "VideoPress Product Feature"
+msgid "Built into WordPress editor"
+msgstr "WordPress エディターに組み込み済み"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:100
+msgctxt "VideoPress Product Feature"
+msgid "1TB of storage"
+msgstr "1TB のストレージ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:90
+msgid "High-quality, ad-free video built specifically for WordPress."
+msgstr "WordPress 専用の、広告非表示の高品質動画。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:81
+msgid "High quality, ad-free video"
+msgstr "広告非表示の高品質動画"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:72
+msgid "Jetpack VideoPress"
+msgstr "Jetpack VideoPress"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-videopress.php:63
+msgid "VideoPress"
+msgstr "VideoPress"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:95
+msgid "Supports the major social networks"
+msgstr "主要なソーシャルネットワークに対応"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:94
+msgid "Schedule publishing"
+msgstr "投稿を予約"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:93
+msgid "Post to social networks"
+msgstr "ソーシャルネットワークの投稿"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:83
+msgid "Promote your content on social media by automatically publishing when you publish on your site."
+msgstr "コンテンツをサイトで公開する際に、ソーシャルメディアにも自動的に掲載してコンテンツを宣伝します。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:74
+msgid "Reach your audience on social media"
+msgstr "ソーシャルメディアでオーディエンスにリーチ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:65
+msgid "Jetpack Social"
+msgstr "Jetpack ソーシャル"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-social.php:56
+msgid "Social"
+msgstr "ソーシャル"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:81
+msgctxt "Security Product Feature"
+msgid "Comment & form spam protection"
+msgstr "コメントとフォームのスパム対策"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:80
+msgctxt "Security Product Feature"
+msgid "One-click fixes for most threats"
+msgstr "ほとんどの脅威を1クリックで修正"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:79
+msgctxt "Security Product Feature"
+msgid "Automated real-time malware scan"
+msgstr "自動リアルタイムマルウェアスキャン"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-security.php:78
+msgctxt "Security Product Feature"
+msgid "Real-time cloud backups with 10GB storage"
+msgstr "10GB のストレージでリアルタイムのクラウドバックアップを実現"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:107
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:31
+msgid "Spelling correction"
+msgstr "スペル修正"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:106
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:31
+msgid "Supports 38 languages"
+msgstr "38言語をサポート"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:105
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:31
+msgid "Powerful filtering"
+msgstr "優れたフィルター機能"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:104
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:31
+msgid "Instant search and indexing"
+msgstr "クイック検索とインデックス付け"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:94
+msgid "Help your site visitors find answers instantly so they keep reading and buying. Great for sites with a lot of content."
+msgstr "訪問者が答えを迅速に見つけるのに役立てば、引き続き購読および購入していただけます。 多くのコンテンツを含むサイトに最適"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:85
+msgid "Help them find what they need"
+msgstr "必要なものを見つけやすく"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:67
+#: jetpack_vendor/automattic/jetpack-search/src/customberg/class-customberg.php:63
+#: jetpack_vendor/automattic/jetpack-search/src/instant-search/class-instant-search.php:618
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:16
+#: jetpack_vendor/automattic/jetpack-search/build/instant-search/jp-search.chunk-main-payload.js:5
+msgid "Search"
+msgstr "検索"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:82
+msgctxt "Scan Product Feature"
+msgid "Access to latest Firewall rules"
+msgstr "最新のファイアウォールルールにアクセスする"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:81
+msgctxt "Scan Product Feature"
+msgid "Instant email notifications"
+msgstr "即時にメール通知"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:80
+msgctxt "Scan Product Feature"
+msgid "One-click fixes for most issues"
+msgstr "ほとんどの問題を1クリックで修正"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:79
+msgctxt "Scan Product Feature"
+msgid "Automated daily scanning"
+msgstr "自動日次スキャン"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:69
+msgid "Automatic scanning and one-click fixes keep your site one step ahead of security threats and malware."
+msgstr "自動スキャンとワンクリック修正で、サイトをセキュリティの脅威とマルウェアから守ります。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:60
+msgid "Stay one step ahead of threats"
+msgstr "脅威を未然に回避"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:51
+msgid "Jetpack Scan"
+msgstr "Jetpack Scan"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-scan.php:42
+msgid "Scan"
+msgstr "スキャン"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:95
+msgid "Easy to navigate and use"
+msgstr "操作しやすく使いやすい"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:94
+msgid "Check plugin and theme version status"
+msgstr "プラグインとテーマバージョンのステータスを確認する"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:93
+msgid "Daily automatic scans"
+msgstr "日次自動スキャン"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:92
+msgid "Over 20,000 listed vulnerabilities"
+msgstr "20,000件超のリスト済み脆弱性"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:82
+msgid "Protect your site and scan for security vulnerabilities listed in our database."
+msgstr "サイトを保護し、データベースにリストされているセキュリティの脆弱性をスキャンしましょう。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:73
+msgid "Protect your site and scan for security vulnerabilities."
+msgstr "サイトを保護し、セキュリティの脆弱性をスキャンしましょう。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:64
+msgid "Jetpack Protect"
+msgstr "Jetpack プロテクト"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-protect.php:55
+msgid "Protect"
+msgstr "保護"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-product.php:441
+msgid "My Jetpack dashboard"
+msgstr "Jetpack ダッシュボード"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-product.php:373
+#: jetpack_vendor/automattic/jetpack-plugins-installer/src/class-plugins-installer.php:53
+msgid "You are not allowed to activate plugins on this site."
+msgstr "このサイトでプラグインを有効化する権限がありません。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-module-product.php:109
+msgid "Error activating Jetpack plugin"
+msgstr "Jetpack プラグインを有効化する際にエラーが発生しました"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-hybrid-product.php:123
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-module-product.php:115
+msgid "Error activating Jetpack module"
+msgstr "Jetpack モジュールを有効化する際にエラーが発生しました"
+
+#. translators: %s is the product name. e.g. Jetpack Search.
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-hybrid-product.php:119
+msgid "Your plan does not support %s."
+msgstr "ご利用のプランは %sをサポートしていません。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-hybrid-product.php:91
+msgid "Activation failed. Plugin is not installed"
+msgstr "有効化に失敗しました。 プラグインがインストールされていません"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:87
+msgid "Enhance your site with dozens of other features"
+msgstr "その他多数の機能でサイトを強化"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:86
+msgid "Get notifications if your site goes offline"
+msgstr "サイトがオフラインになった場合に通知を受信"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:85
+msgid "Protect your site against bot attacks"
+msgstr "ボットの攻撃からサイトを保護"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:84
+msgid "Speed up your site with optimized images"
+msgstr "画像を最適化してサイトをスピードアップ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:83
+msgid "Measure your impact with beautiful stats"
+msgstr "見やすい統計情報で効果を測定"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:73
+msgid "Secure and speed up your site for free with Jetpack's powerful WordPress tools."
+msgstr "Jetpack の強力な WordPress ツールで、サイトを無料で保護し、スピードアップしましょう。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:64
+msgid "Basic tools for a successful site"
+msgstr "サイトを成功させるためのベーシックツール"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:55
+msgid "Jetpack Extras"
+msgstr "Jetpack Extras"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-extras.php:46
+msgid "Extras"
+msgstr "特別"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:91
+msgid "Infinitely customizable with integrations and extensions"
+msgstr "統合と拡張機能で無限にカスタマイズ可能"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:90
+msgid "Fully integrated with WordPress & WooCommerce"
+msgstr "WordPress、WooCommerce と完全統合"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:89
+msgid "Manage billing and create invoices"
+msgstr "請求の管理とインボイスの作成"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:88
+msgid "Manage unlimited contacts"
+msgstr "無制限の連絡先の管理"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:78
+msgid "All of your contacts in one place. Build better relationships with your customers and clients."
+msgstr "すべての連絡先を1か所で管理 顧客やクライアントとさらに良好な関係を築きましょう。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:69
+msgid "Connect with your people"
+msgstr "人とつながる"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:60
+msgid "Jetpack CRM"
+msgstr "Jetpack CRM"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-crm.php:51
+msgid "CRM"
+msgstr "CRM"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:93
+msgid "Standalone free plugin for those focused on speed"
+msgstr "スピードを重視するユーザー向けのスタンドアロン無料プラグイン"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:92
+msgid "Enable improvements in one click"
+msgstr "ワンクリックでパフォーマンスを向上"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:91
+msgid "Check your site performance"
+msgstr "サイトのパフォーマンスを確認"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:81
+msgid "Jetpack Boost gives your site the same performance advantages as the world’s leading websites, no developer required."
+msgstr "Jetpack ブーストでは、世界の主要サイトと同じパフォーマンスを実現できます。開発者は必要ありません。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:72
+msgid "Instant speed and SEO"
+msgstr "即時高速化と SEO"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:63
+msgid "Jetpack Boost"
+msgstr "Jetpack ブースト"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-boost.php:54
+msgid "Boost"
+msgstr "ブースト"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:93
+msgctxt "Backup Product Feature"
+msgid "One-click restores"
+msgstr "ワンクリックの復元"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:92
+msgctxt "Backup Product Feature"
+msgid "30-day archive & activity log*"
+msgstr "30日分のアーカイブとアクティビティログ*"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:91
+msgctxt "Backup Product Feature"
+msgid "10GB of backup storage"
+msgstr "10GB のバックアップストレージ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:90
+msgctxt "Backup Product Feature"
+msgid "Real-time cloud backups"
+msgstr "リアルタイムのクラウドバックアップ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:80
+msgid "Never lose a word, image, page, or time worrying about your site with automated backups & one-click restores."
+msgstr "自動バックアップとワンクリックの復元により、テキスト、画像、ページが失われることがなくなり、サイトへの影響の心配は不要となります。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-backup.php:71
+msgid "Save every change"
+msgstr "すべての変更を保存"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:92
+msgctxt "Anti-Spam Product Feature"
+msgid "Advanced stats"
+msgstr "高度な統計"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:91
+msgctxt "Anti-Spam Product Feature"
+msgid "Block spam without CAPTCHAs"
+msgstr "CAPTCHA なしでスパムをブロック"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:90
+msgctxt "Anti-Spam Product Feature"
+msgid "Powered by Akismet"
+msgstr "Akismetより提供"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:89
+msgctxt "Anti-Spam Product Feature"
+msgid "Comment and form spam protection"
+msgstr "コメントとフォームのスパム対策"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:79
+msgid "Save time and get better responses by automatically blocking spam from your comments and forms."
+msgstr "コメントとフォームで自動でスパムをブロックして、時間を節約し応答性を高めましょう。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-anti-spam.php:70
+msgid "Stop comment and form spam"
+msgstr "コメントやフォームのスパムを阻止"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-wpcom-products.php:75
+msgid "Unable to fetch the products list from WordPress.com"
+msgstr "WordPress.com から製品リストを取得できません"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-rest-purchases.php:47
+msgid "Your site is not connected to Jetpack."
+msgstr "あなたのサイトは Jetpack に連携していません。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-rest-products.php:168
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-rest-products.php:194
+msgid "The product class handler is not implemented"
+msgstr "製品クラスハンドラが実行されていません"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-rest-products.php:112
+msgid "The product argument must be a string."
+msgstr "商品の引数は文字列である必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-products.php:134
+msgid "Production action to execute"
+msgstr "実施する生産アクション"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-products.php:127
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-rest-products.php:34
+msgid "Product slug"
+msgstr "商品スラッグ"
+
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-initializer.php:59
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/class-initializer.php:60
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-product.php:440
+#: src/class-jetpack-search-plugin.php:54
+msgid "My Jetpack"
+msgstr "My Jetpack"
+
+#. translators: %s is a comma-separated list of license keys.
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-licensing.php:230
+msgid "The following Jetpack licenses are invalid, already in use, or revoked: %s"
+msgstr "次の Jetpack ライセンスは無効、使用中、または取り消されています: %s"
+
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-licensing.php:211
+msgid "Failed to attach your Jetpack license(s). Please try reconnecting Jetpack."
+msgstr "Jetpack ライセンスを添付できませんでした。 Jetpack に再接続してください。"
+
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-licensing.php:180
+msgid "License attach request failed."
+msgstr "ライセンス添付リクエストに失敗しました。"
+
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-licensing.php:170
+msgid "Jetpack doesn't have a connected owner."
+msgstr "Jetpack には連携の所有者がありません。"
+
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:403
+msgid "Missing parameter \"last_detached_count\"."
+msgstr "パラメーター \"last_detached_count\" がありません。"
+
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:348
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:383
+msgid "Unable to fetch the requested data."
+msgstr "リクエストされたデータを取得できません。"
+
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:314
+msgid "Could not set this license key. Please try again."
+msgstr "このライセンスキーを設定できませんでした。 もう一度お試しください。"
+
+#. translators: %s: The literal parameter name. Should not be translated.
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:258
+msgid "%s must be a non-negative integer."
+msgstr "%s は負ではない整数にする必要があります。"
+
+#. translators: %s: The literal parameter name. Should not be translated.
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:235
+msgid "%s must be a string."
+msgstr "%s は文字列にしてください。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-rest-endpoints.php:118
+msgid "Could not confirm migration."
+msgstr "移行を確認できませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-rest-endpoints.php:104
+msgid "Could not delete sync error option."
+msgstr "同期エラーオプションを削除できませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-rest-endpoints.php:87
+msgid "Could not confirm safe mode."
+msgstr "セーフモードを確認できませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1158
+#: jetpack_vendor/automattic/jetpack-identity-crisis/build/index.js:5
+msgid "An administrator of this site can take Jetpack out of Safe Mode."
+msgstr "このサイトの管理者は Jetpack のセーフモードを解除できます。"
+
+#. translators: %s: Safe mode docs URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1132
+msgid "Jetpack has been placed into Safe Mode. Learn more about <a href=\"%1$s\">Safe Mode</a>."
+msgstr "Jetpack はセーフモードになっています。<a href=\"%1$s\">セーフモード</a>の詳細。"
+
+#. translators: %s: Safe mode docs URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1103
+msgid "Unsure what to do? <a href=\"%1$s\">Read more about Jetpack Safe Mode</a>"
+msgstr "どうすればよいかよく分からない場合は、<a href=\"%1$s\">Jetpack セーフモードについて詳しくご覧ください</a>。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1081
+msgid "Start Fresh &amp; Create New Connection"
+msgstr "新規連携を作成する"
+
+#. translators: %s: Site URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1055
+msgid "No. <a href=\"%1$s\">%2$s</a> is a new and different website that's separate from <a href=\"%3$s\">%4$s</a>. It requires  a new connection to WordPress.com for new stats and subscribers."
+msgstr "いいえ。<a href=\"%1$s\">%2$s</a> は新しい異なるウェブサイトで、<a href=\"%3$s\">%4$s</a> とは別のものです。   では、新しい統計や購読者のために WordPress.com と新しくつながる必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1033
+msgid "Migrate Stats &amp; Subscribers"
+msgstr "統計や購読者を移管"
+
+#. translators: %s: Site URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:1007
+msgid "Yes. <a href=\"%1$s\">%2$s</a> is replacing <a href=\"%3$s\">%4$s</a>. I would like to migrate my stats and subscribers from <a href=\"%3$s\">%4$s</a> to <a href=\"%1$s\">%2$s</a>."
+msgstr "はい。<a href=\"%1$s\">%2$s</a> は <a href=\"%3$s\">%4$s</a> に置き換わります。 自分の統計や購読者を <a href=\"%3$s\">%4$s</a> から <a href=\"%1$s\">%2$s</a> に移管したいのですが。"
+
+#. translators: %s: Site URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:982
+msgid "Is %1$s the new home of %2$s?"
+msgstr "%1$s は %2$s の新しいアドレスですか ?"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:961
+msgid "Fix Jetpack's Connection"
+msgstr "Jetpack 連携を修正"
+
+#. translators: %s: Site URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:937
+msgid "If this is a separate and new website, or the new home of <a href=\"%1$s\">%2$s</a>, we recommend turning Safe Mode off, and re-establishing your connection to WordPress.com."
+msgstr "これが別の新しいサイトである場合、または <a href=\"%1$s\">%2$s</a> の新しいアドレスである場合、セーフモードをオフにし、WordPress.com との連携を再構築することをお勧めします。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:915
+msgid "Confirm Safe Mode"
+msgstr "セーフモードを確認"
+
+#. translators: %s: Site URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:891
+msgid "Is this website a temporary duplicate of <a href=\"%1$s\">%2$s</a> for the purposes of testing, staging or development? If so, we recommend keeping it in Safe Mode."
+msgstr "このサイトは、テスト、ステージング、開発いずれかのために <a href=\"%1$s\">%2$s</a> を一時的に複製したものですか ? その場合には、セーフモードにしておくことをお勧めします。"
+
+#. translators: %s: Safe mode docs URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:865
+msgid "Please confirm Safe Mode or fix the Jetpack connection. Select one of the options below or <a href=\"%1$s\">learn more about Safe Mode</a>."
+msgstr "セーフモードであることを確認するか Jetpack 接続を修正してください。 次のオプションのうちいずれかを選ぶか、<a href=\"%1$s\">セーフモードの詳細をご覧ください</a>。"
+
+#. translators: %s: Safe mode docs URL and site URL.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:837
+msgid "Jetpack has been placed into <a href=\"%1$s\">Safe mode</a> because we noticed this is an exact copy of <a href=\"%2$s\">%3$s</a>."
+msgstr "これが <a href=\"%2$s\">%3$s</a> の完全な複製であることが認識されたため、Jetpack は<a href=\"%1$s\">セーフモード</a>になっています。"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:733
+msgid "Try Again"
+msgstr "もう一度お試しください"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:728
+msgid "Something went wrong:"
+msgstr "エラー:"
+
+#. translators: %s: URL to parse.
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:458
+msgid "Cannot parse URL %s"
+msgstr "URL %s を解析できません"
+
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:252
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-identity-crisis.php:704
+msgid "Jetpack Safe Mode"
+msgstr "Jetpack セーフモード"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tracking.php:85
+msgid "No valid event name or type."
+msgstr "有効なイベント名またはタイプがありません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tracking.php:78
+msgid "You aren’t authorized to do that."
+msgstr "この操作を行う権限がありません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:460
+msgid "Invalid blog token"
+msgstr "ブログのトークンが無効です"
+
+#. translators: %d is the user ID.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:458
+msgid "Invalid token for user %d"
+msgstr "ユーザー %d のトークンが無効です"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:431
+msgid "No blog token found"
+msgstr "ブログのトークンが見つかりません"
+
+#. translators: %1$d is the ID of the requested user. %2$d is the user ID found
+#. in the token.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:400
+msgid "Requesting user_id %1$d does not match token user_id %2$d"
+msgstr "リクエストする user_id %1$d がトークンの user_id %2$d と一致しません"
+
+#. translators: %s is the user ID.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:396
+msgid "Token for user %d is malformed"
+msgstr "ユーザー %d のトークンが不正な形式になっています"
+
+#. translators: %s is the user ID.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:391
+msgid "No token for user %d"
+msgstr "ユーザーのトークンがありません %d"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:386
+msgid "No primary user defined"
+msgstr "メインユーザーが定義されていません"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:381
+msgid "No user tokens found"
+msgstr "ユーザーのトークンが見つかりません"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:137
+msgid "You need to register your Jetpack before connecting it."
+msgstr "連携前に Jetpack を登録する必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:132
+msgid "An administrator for this blog must set up the Jetpack connection."
+msgstr "ブログの管理者が Jetpack 連携を設定する必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:257
+msgid "Secret mismatch"
+msgstr "シークレットが一致しません"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:249
+msgid "Verification secrets are incomplete"
+msgstr "認証シークレットが不完全です"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:238
+msgid "Verification secrets are empty"
+msgstr "認証シークレットが空です"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:230
+msgid "Verification took too long"
+msgstr "認証に時間がかかり過ぎています"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:222
+msgid "Verification secrets not found"
+msgstr "認証シークレットが見つかりません"
+
+#. translators: "%s" is the name of a paramter. It can be either "secret_1" or
+#. "state".
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:195
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:214
+msgid "The required \"%s\" parameter is malformed."
+msgstr "必須変数 “%s” が不正な形式になっています。"
+
+#. translators: "%s" is the name of a paramter. It can be either "secret_1" or
+#. "state".
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:186
+#: jetpack_vendor/automattic/jetpack-connection/src/class-secrets.php:205
+msgid "The required \"%s\" parameter is missing."
+msgstr "必須変数 “%s” が指定されていません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:791
+msgid "Failed to disconnect the site as it appears already disconnected."
+msgstr "すでに解除されているようだったため、サイトとの連携を解除できませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:748
+msgid "Site is not connected"
+msgstr "サイトが連携されていません"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:742
+msgid "Invalid user id is provided"
+msgstr "無効なユーザー ID が指定されています"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:736
+msgid "Invalid user token is provided"
+msgstr "無効なユーザートークンが指定されています"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:654
+msgid "Unable to verify your request."
+msgstr "リクエストを確認できませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:244
+msgid "New owner"
+msgstr "新しいオーナー"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:226
+msgid "Is connection owner"
+msgstr "連携のオーナー"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:221
+msgid "New user token"
+msgstr "新しいユーザートークン"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:187
+msgid "Indicates from what plugin the request is coming from"
+msgstr "どのプラグインからリクエストが来ているかを示します"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:183
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:204
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-rest-endpoints.php:59
+msgid "URI of the admin page where the user should be redirected after connection flow"
+msgstr "接続フローの確立後、ユーザーがリダイレクトされる管理画面の URI"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:178
+msgid "The registration nonce"
+msgstr "登録 nonce"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:174
+msgid "Indicates where the registration action was triggered for tracking/segmentation purposes"
+msgstr "登録操作が追跡またはセグメント化のためにトリガーされたことを示します"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:113
+msgid "The isActive argument should be set to false."
+msgstr "isActive 引数は false に設定する必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:108
+msgid "Set to false will trigger the site to disconnect."
+msgstr "false に設定すると、サイトとの連携が解除されます。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-connector.php:55
+#: jetpack_vendor/automattic/jetpack-identity-crisis/src/class-rest-endpoints.php:178
+#: jetpack_vendor/automattic/jetpack-licensing/src/class-endpoints.php:35
+#: jetpack_vendor/automattic/jetpack-sync/src/class-rest-endpoints.php:808
+msgid ""
+"You do not have the correct user permissions to perform this action.\n"
+"\t\t\tPlease contact your site admin if you think this is a mistake."
+msgstr ""
+"この操作を行う適切なユーザー権限がありません。\n"
+"\t\t\tこれが間違いであると思われる場合、サイト管理者に連絡してください。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-authentication.php:178
+msgid "The request is not signed correctly."
+msgstr "リクエストの署名が正しくありません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-authentication.php:144
+msgid "This request method does not support body parameters."
+msgstr "このリクエストメソッドは body のパラメーターをサポートしていません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-authentication.php:136
+msgid "This request method is not supported."
+msgstr "このリクエストメソッドはサポートされていません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-rest-authentication.php:123
+msgid "The request method is missing."
+msgstr "リクエストメソッドがありません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-plugin-storage.php:149
+msgid "You cannot call this method until Jetpack Config is configured"
+msgstr "このメソッドを使用する前にまずは Jetpack Config を設定しましょう"
+
+#. translators: Error description string.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2435
+#: jetpack_vendor/automattic/jetpack-connection/src/class-tokens.php:225
+msgid "Error Details: %s"
+msgstr "エラー詳細:  %s"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2286
+msgid "The Client ID/WP.com Blog ID of this site"
+msgstr "このサイトのクライアント ID / WP.com ブログ ID"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2280
+msgid "Jetpack Plugin Version"
+msgstr "Jetpack プラグインバージョン"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2258
+msgid "The number of sites of the connected WP.com user"
+msgstr "連携中の WordPress.com ユーザーのサイト数"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2253
+msgid "The WP.com user email of the connected user"
+msgstr "連携中のユーザーの WordPress.com ユーザーメールアドレス"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2248
+msgid "The WP.com username of the connected user"
+msgstr "連携中のユーザーの WordPress.com ユーザー名"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2243
+msgid "The WP.com user ID of the connected user"
+msgstr "連携中のユーザーの WordPress.com ユーザー ID"
+
+#. translators: %1$s is a domain name.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2151
+msgid "Domain `%1$s` just failed is_usable_domain check as it is a subdomain of WordPress.com."
+msgstr "ドメイン `%1$s` は WordPress.com のサブドメインのため、is_usable_domain チェックに通りませんでした。"
+
+#. translators: %1$s is a domain name.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2136
+msgid "Domain `%1$s` just failed is_usable_domain check as it uses an invalid top level domain."
+msgstr "ドメイン `%1$s` は無効な TLD のため、is_usable_domain チェックに通りませんでした。"
+
+#. translators: %1$s is a domain name.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2121
+msgid "Domain `%1$s` just failed is_usable_domain check as it is in the forbidden array."
+msgstr "ドメイン `%1$s` は禁止された配列を使っているため、is_usable_domain チェックに通りませんでした。"
+
+#. translators: %1$s is a domain name.
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:2087
+msgid "Domain `%1$s` just failed is_usable_domain check as it is empty."
+msgstr "ドメイン `%1$s` は空のため、is_usable_domain チェックに通りませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:1745
+msgid "Invalid Registration State"
+msgstr "無効な登録状態"
+
+#. translators: %s is an error message string
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:1354
+msgid "Error Details: Jetpack ID begins with a numeral. Do not publicly post this error message! %s"
+msgstr "エラー詳細: Jetpack ID の先頭が数字になっています。このエラーメッセージは公開フォーラムなどに投稿しないでください。%s"
+
+#. translators: %s is an error message string
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:1347
+msgid "Error Details: Jetpack ID is not a scalar. Do not publicly post this error message! %s"
+msgstr "エラー詳細: Jetpack ID がスカラー形式のデータではありません。このエラーメッセージは公開フォーラムなどに投稿しないでください。%s"
+
+#. translators: %s is an error message string
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:1340
+msgid "Error Details: Jetpack ID is empty. Do not publicly post this error message! %s"
+msgstr "エラー詳細: Jetpack ID が空です。このエラーメッセージは公開フォーラムなどに投稿しないでください。%s"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:1319
+msgid "PHP's XML extension is not available. Jetpack requires the XML extension to communicate with WordPress.com. Please contact your hosting provider to enable PHP's XML extension."
+msgstr "PHP の XML 拡張が使用できません。Jetpack は、WordPress.com との通信に XML 拡張を必要とします。PHP の XML 拡張を有効にするよう、ホスティングプロバイダーに問い合わせてください。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:1053
+msgid "Jetpack experienced an issue trying to save options (cannot_save_secrets). We suggest that you contact your hosting provider, and ask them for help checking that the options table is writable on your site."
+msgstr "Jetpack でオプションを保存しようとして問題が発生しました (cannot_save_secrets)。 ホスティングサービスに連絡して、サイトでオプションテーブルが書き込み可能であることを確認するためのサポートを依頼してください。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:962
+msgid "Could not confirm new owner."
+msgstr "新しいオーナーを確認できませんでした。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:942
+msgid "New owner is not connected"
+msgstr "新しいオーナーが接続されていません"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:934
+msgid "New owner is same as existing owner"
+msgstr "新しいオーナーが既存のオーナーと同じです"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-manager.php:924
+msgid "New owner is not admin"
+msgstr "新しいオーナーが管理者ではありません"
+
+#. translators: %s is the full datetime of the last heart beat e.g. 2020-01-01
+#. 12:21:23
+#: jetpack_vendor/automattic/jetpack-connection/src/class-heartbeat.php:249
+msgid "Last heartbeat sent at: %s"
+msgstr "最近の heartbeat 送信日時: %s"
+
+#. translators: %s is a command like "prompt"
+#: jetpack_vendor/automattic/jetpack-connection/src/class-heartbeat.php:229
+msgid "%s is not a valid command."
+msgstr "%s は無効なコマンドです。"
+
+#: jetpack_vendor/automattic/jetpack-connection/src/class-error-handler.php:677
+msgid "Your connection with WordPress.com seems to be broken. If you're experiencing issues, please try reconnecting."
+msgstr "WordPress.com との連携が切れてしまったようです。 問題が発生している場合は、再接続をお試しください。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:530
+msgid "The required \"local_user\" parameter is missing."
+msgstr "必須変数 “local_user” が指定されていません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:500
+msgid "Failed to fetch user token from WordPress.com."
+msgstr "WordPress.com からのユーザートークン取得に失敗しました。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:476
+msgid "A non-empty nonce must be supplied."
+msgstr "空ではない Nonce を指定する必要があります。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:465
+msgid "Valid user is required."
+msgstr "有効なユーザーを入力してください。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:452
+msgid "Jetpack is already connected."
+msgstr "Jetpack と既に連携しています。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:367
+msgid "Blog is already registered"
+msgstr "ブログはすでに登録されています"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:342
+msgid "There was an unspecified error registering the site"
+msgstr "サイト登録の際に不明なエラーが発生しました"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:321
+msgid "There was an issue validating this request."
+msgstr "このリクエストの検証中に問題が発生しました。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:297
+msgid "The required \"nonce\" parameter is missing."
+msgstr "必須変数 “nonce” が指定されていません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:284
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:385
+msgid "Valid user is required"
+msgstr "有効なユーザーを入力してください。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:175
+msgid "User not found."
+msgstr "ユーザーが見つかりません。"
+
+#: jetpack_vendor/automattic/jetpack-connection/legacy/class-jetpack-xmlrpc-server.php:162
+msgid "Invalid user identifier."
+msgstr "無効なユーザー ID です。"
+
+#. translators: %1$s is a PHP class name.
+#: jetpack_vendor/automattic/jetpack-config/src/class-config.php:190
+msgid "Unable to load class %1$s. Please add the package that contains it using composer and make sure you are requiring the Jetpack autoloader"
+msgstr "クラス %1$s を読み込めません。 Composer を使用してそれを含むパッケージを追加し、Jetpack autoloader が必要であることを確認してください"
+
+#. translators: 1: wp_default_scripts. 2: Name of the domain being aliased.
+#: jetpack_vendor/automattic/jetpack-assets/src/class-assets.php:554
+msgid "Textdomain aliases should be registered before the %1$s hook. This notice was triggered by the %2$s domain."
+msgstr "textdomain のエイリアスは %1$s フックの前に登録する必要があります。 この通知は %2$s ドメインによってトリガーされました。"
+
+#. translators: %s is the script handle.
+#: jetpack_vendor/automattic/jetpack-assets/src/class-assets.php:389
+msgid "Script \"%s\" depends on wp-i18n but does not specify \"textdomain\""
+msgstr "スクリプト \"%s\" には wp-i18n が必要ですが、\"textdomain\" を指定しません"
+
+#: jetpack_vendor/automattic/jetpack-admin-ui/src/class-admin-menu.php:63
+msgid "Anti-Spam"
+msgstr "スパム対策"
+
+#. translators: Placeholder is a link to a support document.
+#: jetpack-search.php:71
+msgid "Your installation of Jetpack Search is incomplete. If you installed Jetpack Search from GitHub, please refer to <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">this document</a> to set up your development environment. Jetpack Search must have Composer dependencies installed and built via the build command."
+msgstr "Jetpack 検索のインストールが不完全です。GitHub から Jetpack 検索をインストールした場合は、<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">こちらのドキュメント</a>を参照して開発環境を設定してください。 Jetpack 検索を使用するには、Composer 依存関係をインストールし、build コマンドでビルドする必要があります。"
+
+#. translators: Placeholder is a link to a support document.
+#: jetpack-search.php:52
+msgid "Your installation of Jetpack Search is incomplete. If you installed Jetpack Search from GitHub, please refer to this document to set up your development environment: %1$s"
+msgstr "Jetpack 検索のインストールが不完全です。GitHub から Jetpack 検索をインストールした場合は、こちらのドキュメントを参照して開発環境を設定してください。%1$s"
+
+#. Author URI of the plugin
+msgid "https://jetpack.com/"
+msgstr "https://ja.jetpack.com/"
+
+#. Plugin URI of the plugin
+msgid "https://jetpack.com/search/"
+msgstr "https://ja.jetpack.com/upgrade/search/"
+
+#. Plugin Name of the plugin
+#: jetpack_vendor/automattic/jetpack-my-jetpack/src/products/class-search.php:76
+#: jetpack_vendor/automattic/jetpack-search/src/customberg/class-customberg.php:62
+#: jetpack_vendor/automattic/jetpack-search/src/customizer/class-customizer.php:39
+#: jetpack_vendor/automattic/jetpack-search/src/dashboard/class-dashboard.php:101
+#: jetpack_vendor/automattic/jetpack-search/src/dashboard/class-dashboard.php:112
+#: jetpack_vendor/automattic/jetpack-search/build/customberg/jp-search-configure.js:10
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:9
+#: jetpack_vendor/automattic/jetpack-search/build/dashboard/jp-search-dashboard.js:17
+msgid "Jetpack Search"
+msgstr "Jetpack Search"

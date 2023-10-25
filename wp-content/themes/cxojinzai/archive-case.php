@@ -113,7 +113,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <a class="num" href="">3</a>
         </div> -->
     </section>
-
+    
 </main>
 
 <?php get_footer(); ?>

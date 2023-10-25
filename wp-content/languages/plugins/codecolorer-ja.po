@@ -1,0 +1,156 @@
+# Translation of Plugins - CodeColorer - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - CodeColorer - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-09 15:05:25+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - CodeColorer - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://kpumuk.info/"
+msgstr "https://kpumuk.info/"
+
+#. Author of the plugin/theme
+msgid "Dmytro Shteflyuk"
+msgstr "Dmytro Shteflyuk"
+
+#. Description of the plugin/theme
+msgid "This plugin allows you to insert code snippets to your posts with nice syntax highlighting powered by <a href=\"http://qbnz.com/highlighter/\">GeSHi</a> library. After enabling this plugin visit <a href=\"options-general.php?page=codecolorer.php\">the options page</a> to configure code style."
+msgstr "このプラグインは、<a href=\"http://qbnz.com/highlighter/\">GeSHi</a>ライブラリを利用し、きれいに文法ハイライトされたコードスニペットを投稿に挿入できます。このプラグインを有効にした後は、<a href=\"options-general.php?page=codecolorer.php\">設定ページ</a>でコードスタイルを設定してください。"
+
+#. Plugin URI of the plugin/theme
+msgid "https://kpumuk.info/projects/wordpress-plugins/codecolorer/"
+msgstr "https://kpumuk.info/projects/wordpress-plugins/codecolorer/"
+
+#. Plugin Name of the plugin/theme
+msgid "CodeColorer"
+msgstr "CodeColorer"
+
+#: codecolorer.php:192
+msgid "Support"
+msgstr "サポート"
+
+#: codecolorer.php:191
+msgid "FAQ"
+msgstr "FAQ"
+
+#: codecolorer.php:183
+msgid "Settings"
+msgstr "設定"
+
+#: codecolorer-core.php:358
+msgid "We found another plugin based on GeSHi library in your system. CodeColorer will work, but our version of GeSHi contain some patches, so we can't guarantee an ideal code highlighting now. Please review your <a href=\"%1$s\">plugins</a>, maybe you don't need them all."
+msgstr "お使いのシステム上にGeSHiライブラリをベースとした別のプラグインが見つかりました。CodeColorerは動作しますが、CodeColorerバージョンのGeSHiはいくつかのパッチを含んでいるため、現在はコードハイライトが実現できるかどうか保証できません。どちらも必要というわけではないでしょうから、お使いの<a href=\"%1$s\">プラグイン</a>を再検討してみてください。"
+
+#: codecolorer-core.php:358
+msgid "CodeColorer has detected a problem."
+msgstr "CodeColorerにて問題が見つかりました。"
+
+#: codecolorer-core.php:351
+msgid "Close"
+msgstr "閉じる"
+
+#: codecolorer-admin.php:181
+msgid "Save Options"
+msgstr "設定を保存"
+
+#: codecolorer-admin.php:173
+msgid "Code Example"
+msgstr "コード例"
+
+#: codecolorer-admin.php:169
+msgid "Preview"
+msgstr "プレビュー"
+
+#: codecolorer-admin.php:164
+msgid "These custom CSS rules will be appended to the CodeColorer default CSS file."
+msgstr "これらのカスタムCSSルールは、CodeColorerのデフォルトCSSファイルを適用した上に、さらに追加されます。"
+
+#: codecolorer-admin.php:161
+msgid "Custom CSS Styles"
+msgstr "カスタムCSSスタイル"
+
+#: codecolorer-admin.php:147
+msgid "Disable keyword linking"
+msgstr "キーワードをリンクしない"
+
+#: codecolorer-admin.php:142
+msgid "Show line numbers"
+msgstr "行番号を表示する"
+
+#: codecolorer-admin.php:138
+msgid "Formatting"
+msgstr "整形"
+
+#: codecolorer-admin.php:133
+msgid "Default color scheme for inline code blocks."
+msgstr "インラインブロックのデフォルト配色."
+
+#: codecolorer-admin.php:128
+msgid "Inline Theme"
+msgstr "インラインテーマ"
+
+#: codecolorer-admin.php:123
+msgid "Default color scheme."
+msgstr "デフォルト配色."
+
+#: codecolorer-admin.php:118
+msgid "Theme"
+msgstr "テーマ"
+
+#: codecolorer-admin.php:113
+msgid "Indicating how many spaces would represent TAB symbol."
+msgstr "タブを表すスペースの数を指定します。"
+
+#: codecolorer-admin.php:110
+msgid "Tab size"
+msgstr "タブの大きさ"
+
+#: codecolorer-admin.php:105
+msgid "Default code block width in RSS. See Width option description."
+msgstr "RSSにおけるコードブロックのデフォルト幅です。幅についての説明を参考にしてください。"
+
+#: codecolorer-admin.php:102
+msgid "Width in RSS"
+msgstr "RSSにおける表示幅"
+
+#: codecolorer-admin.php:97
+msgid "When code has more than &quot;Lines to Scroll&quot; lines, block height will be set to this value."
+msgstr "コードが「スクロール表示にする行数」よりも多い場合、ブロックの高さにはこの値が使われます。"
+
+#: codecolorer-admin.php:94
+msgid "Height"
+msgstr "高さ"
+
+#: codecolorer-admin.php:89
+msgid "Default code block width. Integer means pixels, also you can specify <tt>em</tt> or <tt>%</tt> suffix. Could be omitted to use whole width."
+msgstr "コードブロックのデフォルト幅です。 数字はピクセルを意味しますが、接尾辞に<tt>em</tt>あるいは<tt>%</tt>も使用できます。なお、これは全体の幅です。"
+
+#: codecolorer-admin.php:86
+msgid "Width"
+msgstr "幅"
+
+#: codecolorer-admin.php:81
+msgid "If your code lines number is less than this value, block height would not be fixed. Set to <b>-1</b> to remove vertical scroll."
+msgstr "この値よりもコードの行数が少なければ、ブロックの高さは固定されません。垂直スクロールをしない場合は<b>-1</b>を設定してください。"
+
+#: codecolorer-admin.php:78
+msgid "Lines to scroll"
+msgstr "スクロール表示にする行数"
+
+#: codecolorer-admin.php:69
+msgid "Code Highlighting Options"
+msgstr "コードハイライトの設定"
+
+#: codecolorer-admin.php:52
+msgid "CodeColorer translation is incomplete."
+msgstr "CodeColorer の翻訳は未完成です。"
+
+#: codecolorer-admin.php:51
+msgid "Your current locale is %1$s, and CodeColorer has incomplete or does not have a translation into your language. It would be great, if you have a time to <a href=\"%2$s\">help us to translate</a> it."
+msgstr "現在のロケールは %1$s です。CodeColorerは、お使いの言語への翻訳が未完成であるか、あるいはまだ翻訳されていません。 もしお時間があれば、<a href=\"%2$s\">翻訳へご協力</a>いただければ光栄です。"

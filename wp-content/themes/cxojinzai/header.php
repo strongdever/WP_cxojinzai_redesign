@@ -82,12 +82,12 @@ $path_parts = pathinfo($path_parts);
                 <?php get_search_form(); ?>                
                 <ul class="contact-btns">
                     <li>
-                        <a class="btn long-term" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-08-02/bcd7">
+                        <a class="btn long-term" href="<?php echo HOME . 'pre-entry'; ?>">
                             <span>中長期のキャリア相談</span>
                         </a>    
                     </li>
                     <li>
-                        <a class="btn job-consult" href="https://go.cxo-jinzaibank.jp/l/1022123/2023-04-14/3byc">
+                        <a class="btn job-consult" href="<?php echo HOME . 'entry'; ?>">
                             <span>具体的な転職相談</span>
                         </a>    
                     </li>
@@ -134,34 +134,63 @@ $path_parts = pathinfo($path_parts);
         <nav class="mobile-nav-container">
             <ul class="mobile-nav-menu">
                 <li>
+                    <a href="<?php echo HOME; ?>" class="menu-link">
+                        <span>CxO人材バンクTOP</span>
+                    </a>
+                </li>
+                <li>
                     <a href="<?php echo HOME . 'news'; ?>" class="menu-link">
                         <span>CxO人材バンクNEWS</span>
                     </a>
                 </li>
-                <li>
+                <li class="has-submenu">
                     <a href="<?php echo HOME . 'features'; ?>" class="menu-link">
                         <span>CxO人材バンクの特長</span>
                     </a>
+                    <div class="sub-menus">
+                        <a href="<?php echo HOME . 'features/media'; ?>" class="sub-link">
+                            <span>CxO人材バンク関連コミュニティ</span>
+                        </a>
+                        <a href="<?php echo HOME . 'features/background'; ?>" class="sub-link">
+                            <span>CxO人材バンクのバックグラウンド</span>
+                        </a>
+                    </div>
                 </li>
                 <li>
                     <a href="<?php echo HOME . 'case'; ?>" class="menu-link">
                         <span>転職成功事例</span>
                     </a>
                 </li>
-                <li>
+                <li class="has-submenu">
                     <a href="<?php echo HOME . 'flow'; ?>" class="menu-link">
                         <span>転職支援の流れ</span>
                     </a>
+                    <div class="sub-menus">
+                        <a href="<?php echo HOME . 'flow/consultsdiffer'; ?>" class="sub-link">
+                            <span>2つの相談窓口の違い</span>
+                        </a>
+                        <a href="<?php echo HOME . 'flow/support'; ?>" class="sub-link">
+                            <span>社外取締役・監査役への就任支援</span>
+                        </a>
+                    </div>
                 </li>
                 <li>
                     <a href="<?php echo HOME . 'interview'; ?>" class="menu-link">
                         <span>CxOインタビュー</span>
                     </a>
                 </li>
-                <li>
+                <li class="has-submenu">
                     <a href="<?php echo HOME . 'column'; ?>" class="menu-link">
                         <span>転職コラム</span>
                     </a>
+                    <div class="sub-menus">
+                        <a href="<?php echo HOME . 'research'; ?>" class="sub-link">
+                            <span>CxO人材研究所</span>
+                        </a>
+                        <a href="<?php echo HOME . 'consult'; ?>" class="sub-link">
+                            <span>転職相談室</span>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </nav>

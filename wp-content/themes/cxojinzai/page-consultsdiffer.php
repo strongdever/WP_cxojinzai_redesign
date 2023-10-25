@@ -27,8 +27,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     具体的な転職相談と中長期のキャリア相談の違い
                 </h2>
                 <p class="desc">
-                    CxO人材バンクでは、キャリアアップを考える方と成長企業の縁をつなぎ、人材のキャリアアップを支援するにあたって、<br>
-                    現在の人材の方々と背景を考え、中長期のキャリア相談窓口を用意しています。
+                CxO人材バンクでは、転職への温度感に応じて、2つの窓口をご用意しております。
                 </p>
                 <ul class="concept">
                     <li class="specific">
@@ -36,9 +35,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             具体的な転職相談とは
                         </h4>
                         <p class="content">
-                            現在、キャリアアップを目指している<br class="pc">
-                            転職支援をご希望の方と<br class="pc">
-                            面談から候補企業を選定し紹介を行っていきます。
+                        今すぐ・もしくは近いうちにご転職を検討している方向けに現状や希望条件などのヒアリング、求人のご紹介をいたします。
                         </p>
                     </li>
                     <li class="long-term">
@@ -46,43 +43,32 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             中長期のキャリア相談とは
                         </h4>
                         <p class="content">
-                        今すぐ転職を希望しない方の<br class="pc">
-                        今後のキャリアアップ支援として、<br class="pc">
-                        面談やイベント開催を通じて、情報提供を行っています。
+                        中長期的にご転職を視野に入れたり、情報収集をしている方向けにご面談やイベントを通じて、情報提供を行います。
                         </p>
                     </li>
                 </ul>
             </div>
             <div class="part2">
                 <h2 class="maintitle">
-                    具体的な転職を考えるタイミング以外でも<br>
-                    人材にとって多くの成長機会の提供を行う理由
+                転職のタイミング以外でもご支援をする理由
                 </h2>
                 <p class="content">
-                当社では、上場企業・上場準備中企業に特化したサービス展開を元に、経営者との勉強会やコミュニティなど、様々な形で交流を行い、成長促進に重要な人材との縁をつくっています。<br>
-                ですので、経営に必要なCxO人材が欲しいという企業に対して、ふさわしい人材を紹介するだけではなく、経営者からの声を多くの人材にお伝えしながら、今後のキャリアアップを目指す人材へのキャリア相談をお受けしています。
+                成長企業は日々変化するものです。さらに、CxO人材の求人はタイミングやご縁も大きいものですので、短期的なご支援ではなく、中長期でのお付き合いをしております。<br>ベストなタイミングでの新しい企業とのマッチングを実現した方がいらっしゃいます。
                 </p>
-                <h3 class="subtitle first">
-                    CxO人材バンクグループが<br class="sp">運営するサービスと<br class="sp">コミュニティ
-                </h3>
-                <img src="<?php echo T_DIRE_URI; ?>/assets/img/consults-differ01.png" class="img1 pc">
-                <img src="<?php echo T_DIRE_URI; ?>/assets/img/consults-differ01-sp.png" class="img1 sp">
                 <h3 class="subtitle second">
                 今すぐではなく、中長期のキャリア相談を希望される方との交流
                 </h3>
                 <p class="desc">
-                    また、将来のキャリア相談だけでなく、CxOというハイクラスのポジションへとキャリアアップした方と今後、<br>
-                    自身のキャリアアップを考えている方との交流を行ったり、時には、成長企業の経営者、経営幹部の方も交えた交流の場を提供することもあります。
+                CxO人材バンクは、単に求人案件を紹介するだけでなく、コンサルタントとオフラインで交流できる機会も創っており、皆さまとの表面的ではない繋がりや、双方の理解を深めることを大切にしています。
                 </p>
                 <div class="sweet-blues">
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/consult-differ02.png" class="img2">
                     <div class="wrapper">
                         <h5 class="seet-title">
-                            Sweet 19 blues
+                        Sweet 19 Blues
                         </h5>
                         <p class="desc">
-                            毎月、水曜日に開催される転職希望者同士や、<br>
-                            転職にてキャリアアップを実現した方を交えたカジュアルな交流会
+                        CxO人材バンク経由で転職された方々、転職支援中の方々をお招きして、毎月19日※に「Sweet 19 Blues」という交流会を開催しています！<br>当社コンサルタントと直接会うことで、双方の理解が深まるだけでなく、参加者同士の交流もできます。<br>※金曜日・土日祝は除く　
                         </p>
                         <a class="btn-rightarrow" href="<?php echo HOME . 'features/media/'; ?>">
                             CxO人材バンク関連<br class="sp">コミュニティについて
@@ -94,17 +80,6 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 </div>
             </div>
             <div class="part3">
-                <h2 class="maintitle">
-                    企業と人材の成長を長く伴走し、<br class="pc">
-                    人材の中長期のキャリア相談を実施しています
-                </h2>
-                <p class="desc">
-                    企業も人材も日々変化成長しています。<br>
-                    成長企業、成長産業の経営者の成長を伴走するサービスを数多く行っているCxO人材バンクグループだからこそ、<br>
-                    企業と人材の成長におけるベストタイミングでのマッチングを行えます。<br>
-                    これまでも、企業勤務しつつ人材としての成長を重ねながら3年8月を経て、<br>
-                    ベストなタイミングでの新しい企業とのマッチングを実現した方がいらっしゃいます。
-                </p>
                 <h3 class="subtitle">
                     現在の企業に勤務しながら、自己成長も兼ねた交流や情報提供
                 </h3>
@@ -120,47 +95,6 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 社外取締役・監査役への就任支援
             </a>
         </div>
-
-        <div class="fixed-btns mobile">
-            <ul class="contact-btns">
-                <li>
-                    <a class="btn long-term">
-                        <span>中長期のキャリア相談</span>
-                    </a>    
-                </li>
-                <li>
-                    <a class="btn job-consult">
-                        <span>具体的な転職相談</span>
-                    </a>    
-                </li>
-            </ul>
-        </div>
-
-        <div class="fixed-btns window">
-            <div class="end-wrapper">
-                <img class="female" src="<?php echo T_DIRE_URI; ?>/assets/img/female-half.png" alt="">
-                <ul class="contact-btns">
-                    <li>
-                        <p class="desc">
-                            ＼ まずはご相談から始めたい方はこちら ／
-                        </p>
-                        <a class="btn long-term">
-                            <span>中長期のキャリア相談</span>
-                        </a>    
-                    </li>
-                    <li>
-                        <p class="desc">
-                            ＼ まずはご相談から始めたい方はこちら ／
-                        </p>   
-                        <a class="btn job-consult">
-                            <span>具体的な転職相談</span>
-                        </a>
-                    </li>
-                </ul>
-                <img class="male" src="<?php echo T_DIRE_URI; ?>/assets/img/male-half.png" alt="">
-            </div>
-        </div>
-
     </main>
 
 <?php get_footer();?>

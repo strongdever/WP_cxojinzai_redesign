@@ -21,10 +21,7 @@ $cat_slug = get_query_var('interview-category') ? get_query_var('interview-categ
     </div>
     <div class="container">
         <p class="desc">
-            優秀であり、能力ある方々のキャリアや仕事論を、分析・言語化し、<br>
-            「CxOとして企業で活躍したい！」「本気でキャリアアップを目指したい！」という方に役立つ情報をお届けしています。<br>
-            実際の上場企業CxO経験者からお聞きした“キャリア”や”仕事論”をお聞きしながらその方たちの転職のタイミングや、意思決定した理由などをインタビューしました。<br>
-            ”CxOになるまでの裏側”や”CxOとして活躍し続けるための共通項”を紐解くことで、本気でキャリアアップを目指す皆様のキャリアアップを支援します。
+        上場企業や上場準備中企業で活躍する経営者やCxOに“キャリア”や”仕事論”をお聞きしながら、転職のタイミングや意思決定のプロセスなどをインタビューしました。<br>「CxOとして活躍したい！」「本気でキャリアアップを目指したい！」という方に役立つ記事になっていますので、ぜひご覧ください。
         </p>
         <?php
             $args = [
@@ -57,9 +54,9 @@ $cat_slug = get_query_var('interview-category') ? get_query_var('interview-categ
             <div class="slider-item">
                 <div class="item-wrapper">
                 <?php if( has_post_thumbnail() ): ?>
-                    <img class="thumb" src="<?php echo get_the_post_thumbnail_url(); ?>">
+                    <a href="<?php the_permalink(); ?>"><img class="thumb" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
                 <?php else: ?>
-                    <img class="thumb" src="<?php echo catch_that_image(); ?>">
+                    <a href="<?php the_permalink(); ?>"><img class="thumb" src="<?php echo catch_that_image(); ?>"></a>
                 <?php endif; ?>
                     <div class="content-wrapper pc">
                         <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?>
@@ -149,6 +146,7 @@ $cat_slug = get_query_var('interview-category') ? get_query_var('interview-categ
         </div>
         
     </div>
+
 </main>
 
 <?php get_footer(); ?>

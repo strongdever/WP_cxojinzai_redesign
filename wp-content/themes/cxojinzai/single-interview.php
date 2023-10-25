@@ -4,7 +4,10 @@
     <div class="page-status">
         <a class="home" href="<?php echo HOME; ?>">トップページ</a>
         <img src="<?php echo T_DIRE_URI; ?>/assets/img/goto-mark.png">
-        <div class="this-page">CxOインタビュー</div>
+        <a class="home" href="<?php echo HOME; ?>interview">CxOインタビュー
+</a>
+        <img src="<?php echo T_DIRE_URI; ?>/assets/img/goto-mark.png">
+        <div class="this-page"><?php the_title(); ?></div>
     </div>
 
     <div class="container">
@@ -99,7 +102,7 @@
                 <?php if( have_rows('theory') ): ?>
                 <div class="right-wrapper">
                     <div class="content-wrapper">
-                        <h4 class="title">西脇流CxOの仕事論</h4>
+                        <h4 class="title">CxOの仕事論</h4>
                         <?php 
                         $number = 1;
                         while( have_rows('theory') ) : the_row(); 
@@ -124,30 +127,64 @@
         <?php if( $articles ): ?>
         <div class="articles">
             <div class="label">インタビュー記事</div>
+            <br>
+            <div class="title-list">
+                <h4 class="list-label" style="text-align: center;">目次</h4>
+                <br>
+                <?php  foreach( $articles as $row ) : ?>
+                <h4><a href="#<?php echo $row['article-title']; ?>"><?php echo $row['article-title']; ?></a></h4>
+                <?php endforeach; ?>
+            </div>
+            <br><br>
             <?php  foreach( $articles as $row ) : ?>
             <div class="eara">
-                <div class="sub-title"><?php echo $row['article-title']; ?></div>
+                <div class="sub-title" id="<?php echo $row['article-title']; ?>"><?php echo $row['article-title']; ?></div>
                 <?php $question_answer = $row['question-answer']; ?>
                 <?php if( $question_answer ): ?>
                 <?php  foreach( $question_answer as $row ) : ?>
+                <?php
+                $avatars = get_field("interview_avtrs");
+                if($avatars) {
+                    $q_avatar = $avatars['avatar_question'];
+                    $a_avatar = $avatars['avatar_answer'];
+                }
+                ?>
+                <?php if($row["question"]) : ?>
                 <div class="question-wrapper">
+                    <?php if($q_avatar) { ?>
+                    <img src="<?php echo $q_avatar; ?>">
+                    <?php
+                    } else {
+                    ?>
                     <img src="<?php echo T_DIRE_URI; ?>/assets/img/features108.png">
+                    <?php
+                    }
+                    ?>
                     <div class="q-message">
                         <div class="triangle-left"></div>
                         <h3 class="question desc"><?php echo $row["question"]; ?></h3>
                     </div>
                 </div>
+                <?php endif; ?>
+                <?php if($row["answer"]) : ?>
                 <div class="answer-wrapper">
                     <div class="a-message">
                         <div class="triangle-right"></div>
                         <p class="answer desc"><?php echo $row["answer"]; ?></p>
                     </div>
+                    <?php if($a_avatar) { ?>
+                    <img src="<?php echo $a_avatar; ?>">
+                    <?php
+                    } else {
+                    ?>
                     <?php if( has_post_thumbnail() ): ?>
                     <img class="thumb" src="<?php echo get_the_post_thumbnail_url(); ?>">
                     <?php else: ?>
                     <img class="thumb" src="<?php echo catch_that_image(); ?>">
                     <?php endif; ?>
+                    <?php } ?>
                 </div>
+                <?php endif; ?>
                 <?php endforeach; ?>
                 <?php endif; ?>
             </div>
@@ -191,8 +228,8 @@
         <a class="btn-leftarrow" href="<?php echo HOME . 'interview'; ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M2.46172 10.6631L8.08672 16.2881C8.26284 16.4642 8.50171 16.5631 8.75078 16.5631C8.99985 16.5631 9.23872 16.4642 9.41484 16.2881C9.59096 16.1119 9.68991 15.8731 9.68991 15.624C9.68991 15.3749 9.59096 15.136 9.41484 14.9599L5.39062 10.9373H16.875C17.1236 10.9373 17.3621 10.8385 17.5379 10.6627C17.7137 10.4869 17.8125 10.2484 17.8125 9.99977C17.8125 9.75113 17.7137 9.51267 17.5379 9.33686C17.3621 9.16104 17.1236 9.06227 16.875 9.06227H5.39062L9.41328 5.03727C9.5894 4.86115 9.68834 4.62228 9.68834 4.37321C9.68834 4.12414 9.5894 3.88527 9.41328 3.70915C9.23716 3.53303 8.99829 3.43408 8.74922 3.43408C8.50015 3.43408 8.26128 3.53303 8.08516 3.70915L2.46016 9.33415C2.37274 9.42136 2.30342 9.52498 2.25616 9.63907C2.20891 9.75315 2.18466 9.87544 2.18481 9.99892C2.18495 10.1224 2.20949 10.2446 2.25701 10.3586C2.30453 10.4726 2.3741 10.576 2.46172 10.6631Z" fill="#0099BD"/>
-                </svg>
-                インタビュー記事一覧へ
+            </svg>
+            インタビュー記事一覧へ
         </a>
     </div>
 </main>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Single News Template
+Template Name: Column Template
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -29,10 +29,10 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
             <ul class="contents">
                 <li class="content-item">
                     <div class="career-wrapper">
-                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female.png">
+                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female_.png">
                         <div class="career-text">
                             <h3 class="title">
-                            CxO人材研究所
+                                <a href="<?php echo HOME . 'research'; ?>">CxO人材研究所</a>
                             </h3>
                             <p class="desc">
                                 CxOとは何か、さらに各CxOの年収や<br class="pc">
@@ -141,10 +141,10 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 </li>
                 <li class="content-item">
                     <div class="career-wrapper">
-                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-male.png">
+                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-male_.png">
                         <div class="career-text">
                             <h3 class="title">
-                                転職相談室
+                                <a href="<?php echo HOME . 'consult'; ?>">転職相談室</a>
                             </h3>
                             <p class="desc">
                             転職の不安やお悩みに、<br>一問一答形式でお答えします。
@@ -201,6 +201,7 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 </li>
             </ul>
         </div>
+
     </main>
 
 <?php get_footer();?>

@@ -1,5 +1,11 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
+add_shortcode('url', function ( $atts ) {
+    if(isset($atts['arg'])) {
+        return site_url($atts['arg']);
+    }
+    return get_theme_file_uri();
+} );
 
 // サイト情報
 define( 'HOME', home_url( '/' ) );
@@ -55,6 +61,13 @@ if(!function_exists('initialize_tinymce_styles')) {
 }
 
 add_filter('tiny_mce_before_init', 'initialize_tinymce_styles', 10000);
+
+add_filter('query_vars', function($vars) {
+	$vars[] = 'employee';
+    $vars[] = 'occupation';
+    $vars[] = 'id';
+	return $vars;
+});
 
 // オプションページを追加
 if(function_exists('acf_add_options_page')) {
@@ -221,5 +234,11 @@ function catch_that_image() {
     }
     return $first_img;
 }
+
+//add css style to the admin dashboard
+function custom_dashboard_css() {
+  wp_enqueue_style( 'custom-dashboard-css', T_DIRE_URI.'/assets/css/admin-dashboard.css' );
+}
+add_action( 'admin_enqueue_scripts', 'custom_dashboard_css' );
 
 ?>
