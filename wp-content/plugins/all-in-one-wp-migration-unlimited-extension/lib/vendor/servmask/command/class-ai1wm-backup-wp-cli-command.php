@@ -72,7 +72,7 @@ if ( class_exists( 'Ai1wm_Backup_WP_CLI_Base' ) && ! class_exists( 'Ai1wm_Backup
 		 * [--exclude-database]
 		 * : Do not export database (sql)
 		 *
-		 * [--exclude-tables]
+		 * [--exclude-tables[=<comma_separated_names>]]
 		 * : Do not export selected database tables (sql)
 		 *
 		 * [--exclude-email-replace]

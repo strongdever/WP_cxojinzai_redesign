@@ -30,14 +30,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Ai1wm_Import_Clean {
 
 	public static function execute( $params ) {
-		global $wpdb;
-
 		// Get database client
-		if ( empty( $wpdb->use_mysqli ) ) {
-			$mysql = new Ai1wm_Database_Mysql( $wpdb );
-		} else {
-			$mysql = new Ai1wm_Database_Mysqli( $wpdb );
-		}
+		$mysql = Ai1wm_Database_Utility::create_client();
 
 		// Flush mainsite tables
 		$mysql->add_table_prefix_filter( ai1wm_table_prefix( 'mainsite' ) );

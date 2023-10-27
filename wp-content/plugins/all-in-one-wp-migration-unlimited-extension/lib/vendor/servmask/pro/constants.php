@@ -30,55 +30,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 // ================
 // = Package path =
 // ================
-if ( ! defined( 'AI1WMVE_PATH' ) ) {
-	define( 'AI1WMVE_PATH', dirname( __FILE__ ) );
-}
+define( 'AI1WMVE_PATH', dirname( __FILE__ ) );
 
 // ===================
 // = Controller Path =
 // ===================
-if ( ! defined( 'AI1WMVE_CONTROLLER_PATH' ) ) {
-	define( 'AI1WMVE_CONTROLLER_PATH', AI1WMVE_PATH . DIRECTORY_SEPARATOR . 'controller' );
-}
+define( 'AI1WMVE_CONTROLLER_PATH', AI1WMVE_PATH . DIRECTORY_SEPARATOR . 'controller' );
 
 // ==============
 // = Model Path =
 // ==============
-if ( ! defined( 'AI1WMVE_MODEL_PATH' ) ) {
-	define( 'AI1WMVE_MODEL_PATH', AI1WMVE_PATH . DIRECTORY_SEPARATOR . 'model' );
-}
+define( 'AI1WMVE_MODEL_PATH', AI1WMVE_PATH . DIRECTORY_SEPARATOR . 'model' );
 
 // =============
 // = View Path =
 // =============
-if ( ! defined( 'AI1WMVE_TEMPLATES_PATH' ) ) {
-	define( 'AI1WMVE_TEMPLATES_PATH', AI1WMVE_PATH . DIRECTORY_SEPARATOR . 'view' );
-}
+define( 'AI1WMVE_TEMPLATES_PATH', AI1WMVE_PATH . DIRECTORY_SEPARATOR . 'view' );
 
 // ===========================
 // = Purchase Activation URL =
 // ===========================
-if ( ! defined( 'AI1WMVE_PURCHASE_ACTIVATION_URL' ) ) {
-	define( 'AI1WMVE_PURCHASE_ACTIVATION_URL', 'https://servmask.com/purchase/activations' );
-}
+define( 'AI1WMVE_PURCHASE_ACTIVATION_URL', 'https://servmask.com/purchase/activations' );
 
 // ======================
 // = ServMask Stats URL =
 // ======================
-if ( ! defined( 'AI1WMVE_STATS_URL' ) ) {
-	define( 'AI1WMVE_STATS_URL', 'https://servmask.com/api/stats' );
-}
+define( 'AI1WMVE_STATS_URL', 'https://servmask.com/api/stats' );
 
 // =================
 // = Max File Size =
 // =================
-if ( ! defined( 'AI1WMVE_MAX_FILE_SIZE' ) ) {
-	define( 'AI1WMVE_MAX_FILE_SIZE', 0 );
-}
+define( 'AI1WMVE_MAX_FILE_SIZE', 0 );
 
 // ============================
 // = Schedules Events Options =
 // ============================
-if ( ! defined( 'AI1WMVE_SCHEDULES_OPTIONS' ) ) {
-	define( 'AI1WMVE_SCHEDULES_OPTIONS', 'ai1wmve_schedule_events' );
-}
+define( 'AI1WMVE_SCHEDULES_OPTIONS', 'ai1wmve_schedule_events' );

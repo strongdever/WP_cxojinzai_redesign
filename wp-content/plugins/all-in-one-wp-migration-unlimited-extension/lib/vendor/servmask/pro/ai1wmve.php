@@ -27,6 +27,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Kangaroos cannot jump here' );
 }
 
+if ( defined( 'AI1WMVE_PATH' ) ) {
+	// Here we check if retention classes are loaded
+	// as it might happen some extension to have
+	// older version of the pro package loaded
+	if ( ! class_exists( 'Ai1wmve_Export_Retention_Base' ) ) {
+		require_once dirname( __FILE__ ) .
+			DIRECTORY_SEPARATOR .
+			'model' .
+			DIRECTORY_SEPARATOR .
+			'export' .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wmve-export-retention-base.php';
+
+		require_once dirname( __FILE__ ) .
+			DIRECTORY_SEPARATOR .
+			'model' .
+			DIRECTORY_SEPARATOR .
+			'export' .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wmve-export-retention-file.php';
+	}
+
+	return;
+}
+
 // Include constants
 require_once dirname( __FILE__ ) .
 	DIRECTORY_SEPARATOR .
@@ -36,6 +61,11 @@ require_once dirname( __FILE__ ) .
 require_once dirname( __FILE__ ) .
 	DIRECTORY_SEPARATOR .
 	'exceptions.php';
+
+// Include functions
+require_once dirname( __FILE__ ) .
+	DIRECTORY_SEPARATOR .
+	'functions.php';
 
 require_once AI1WMVE_CONTROLLER_PATH .
 	DIRECTORY_SEPARATOR .
@@ -66,3 +96,15 @@ require_once AI1WMVE_MODEL_PATH .
 	'schedule' .
 	DIRECTORY_SEPARATOR .
 	'class-ai1wmve-schedule-event-log.php';
+
+require_once AI1WMVE_MODEL_PATH .
+	DIRECTORY_SEPARATOR .
+	'export' .
+	DIRECTORY_SEPARATOR .
+	'class-ai1wmve-export-retention-base.php';
+
+require_once AI1WMVE_MODEL_PATH .
+	DIRECTORY_SEPARATOR .
+	'export' .
+	DIRECTORY_SEPARATOR .
+	'class-ai1wmve-export-retention-file.php';

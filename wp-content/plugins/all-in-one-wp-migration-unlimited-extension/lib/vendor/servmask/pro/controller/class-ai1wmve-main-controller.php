@@ -557,6 +557,20 @@ if ( ! class_exists( 'Ai1wmve_Main_Controller' ) ) {
 					),
 				)
 			);
+
+			wp_localize_script(
+				'ai1wmve_schedules',
+				'ai1wmve_site_list',
+				array(
+					'ajax'          => array(
+						'sites_paginator' => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wmme_sites_paginator' ) ),
+					),
+					'title'         => __( 'Subsite selection', AI1WM_PLUGIN_NAME ),
+					'loading_sites' => __( 'Loading sites...', AI1WM_PLUGIN_NAME ),
+					'button_all'    => __( 'Export entire network', AI1WM_PLUGIN_NAME ),
+					'button_manual' => __( 'Select manually', AI1WM_PLUGIN_NAME ),
+				)
+			);
 		}
 
 		/**
@@ -599,7 +613,7 @@ if ( ! class_exists( 'Ai1wmve_Main_Controller' ) ) {
 		 * Export and import buttons
 		 */
 		public function ai1wmve_buttons() {
-			add_filter( 'ai1wm_export_buttons_schedules', 'Ai1wmve_Schedules_Controller::buttons' );
+			add_filter( 'ai1wmve_export_buttons_schedules', 'Ai1wmve_Schedules_Controller::buttons' );
 			add_filter( 'ai1wm_pro', array( $this, 'ai1wmve_pro' ), 20 );
 
 			$this->ai1wm_buttons();
@@ -623,6 +637,10 @@ if ( ! class_exists( 'Ai1wmve_Main_Controller' ) ) {
 			if ( $this->min_ai1wm_version ) {
 				add_filter( 'ai1wm_export', array( $this, 'ai1wmve_compatibility_check' ), 10 );
 				add_filter( 'ai1wm_import', array( $this, 'ai1wmve_compatibility_check' ), 10 );
+			}
+
+			if ( $this->needs_file_retention() ) {
+				add_filter( 'ai1wm_export', 'Ai1wmve_Export_Retention_File::execute', 270 );
 			}
 
 			$this->activate_filters();
@@ -781,6 +799,20 @@ if ( ! class_exists( 'Ai1wmve_Main_Controller' ) ) {
 			}
 
 			throw new Ai1wm_Compatibility_Exception( $message );
+		}
+
+		private function needs_file_retention() {
+			// Check for Unlimited or Multisite
+			if ( defined( 'AI1WMUE_PLUGIN_NAME' ) || defined( 'AI1WMME_PLUGIN_NAME' ) ) {
+				return false;
+			}
+
+			// Check if we already added filter
+			if ( has_filter( 'ai1wm_export', 'Ai1wmve_Export_Retention_File::execute' ) ) {
+				return false;
+			}
+
+			return ai1wmve_is_running();
 		}
 	}
 }

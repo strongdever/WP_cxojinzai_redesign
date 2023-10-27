@@ -1699,6 +1699,10 @@ function ai1wm_is_scheduled_backup() {
 		return false;
 	}
 
+	if ( isset( $_GET['ai1wm_manual_reset'] ) || isset( $_POST['ai1wm_manual_reset'] ) ) {
+		return false;
+	}
+
 	return true;
 }
 

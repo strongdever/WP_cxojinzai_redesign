@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 							<div class="ai1wm-event-row" v-if="advancedTypeOptions.length">
 								<div class="ai1wm-event-field">
-									<label class="ai1wm-event-label" for="ai1wm-event-advanced-options"><?php _e( 'Advanced options', AI1WM_PLUGIN_NAME ); ?></label>
+									<label class="ai1wm-event-label"><?php _e( 'Advanced options', AI1WM_PLUGIN_NAME ); ?></label>
 									<multiselect id="ai1wm-event-advanced-options" v-model="form.options" :options="advancedTypeOptions" multiple taggable :searchable="false">
 										<template v-slot:tag="props">
 											<span class="multiselect__tag">
@@ -122,6 +122,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<db-tables v-show="showDbExcluder" :value="this.excludedDbTables" :db-tables='<?php echo json_encode( $tables, JSON_HEX_APOS ); ?>'></db-tables>
 								</div>
 							</div>
+						</div>
+
+						<div class="ai1wm-event-fieldset" v-if="form.type">
+							<h2><?php _e( 'Storage', AI1WM_PLUGIN_NAME ); ?></h2>
+							<div class="ai1wm-event-row">
+								<div class="ai1wm-event-field">
+									<label class="ai1wm-event-label" for="ai1wm-event-storage"><?php _e( 'Storage', AI1WM_PLUGIN_NAME ); ?></label>
+									<select class="ai1wm-event-input" id="ai1wm-event-storage" name="storage" v-model="form.storage" required>
+										<option value="" disabled><?php _e( 'Select storage', AI1WM_PLUGIN_NAME ); ?></option>
+										<?php foreach ( apply_filters( 'ai1wmve_export_buttons_schedules', array() ) as $button ) : ?>
+											<?php echo $button; ?>
+										<?php endforeach; ?>
+									</select>
+								</div>
+								<div class="ai1wm-event-field"></div>
+							</div>
+
+							<div class="ai1wm-event-row" v-if="storageLink">
+								<a :href="storageLink" v-if="this.isServMaskLink" target="_blank"
+									v-html="'<?php _e( 'To use <strong>%s</strong> storage, purchase it here.', AI1WM_PLUGIN_NAME ); ?>'.replace('%s', storageName)"></a>
+								<a :href="storageLink" v-else
+									v-html="'<?php _e( 'To use <strong>%s</strong> storage, you need to configure it first.', AI1WM_PLUGIN_NAME ); ?>'.replace('%s', storageName)"></a>
+							</div>
+
 						</div>
 
 						<div class="ai1wm-event-fieldset" v-if="form.type">
@@ -203,6 +227,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</div>
 						</div>
 
+						<div class="ai1wm-event-fieldset" v-if="hasRetention">
+							<h2><?php _e( 'Retention settings', AI1WM_PLUGIN_NAME ); ?></h2>
+							<div class="ai1wm-event-row ai1wm-column">
+								<div class="ai1wm-event-field">
+									<label for="ai1wmve-backups">
+										<?php _e( 'Keep the most recent', AI1WM_PLUGIN_NAME ); ?>
+										<input class="ai1wm-event-input" type="number" min="0" name="retention[backups]" id="ai1wmve-backups" v-model="form.retention.backups" />
+									</label>
+									<?php _e( 'backups. Default: 0 unlimited', AI1WM_PLUGIN_NAME ); ?>
+								</div>
+
+								<div class="ai1wm-event-field">
+									<label for="ai1wmve-total">
+										<?php _e( 'Limit the total size of backups to', AI1WM_PLUGIN_NAME ); ?>
+										<input class="ai1wm-event-input" type="number" min="0" name="retention[total]" id="ai1wmve-total" v-model="form.retention.total" />
+									</label>
+									<select class="ai1wm-event-input" name="retention[total_unit]" id="ai1wmve-total-unit" v-model="form.retention.total_unit">
+										<option value="MB"><?php _e( 'MB', AI1WM_PLUGIN_NAME ); ?></option>
+										<option value="GB"><?php _e( 'GB', AI1WM_PLUGIN_NAME ); ?></option>
+									</select>
+									<?php _e( 'Default: 0 unlimited', AI1WM_PLUGIN_NAME ); ?>
+								</div>
+
+								<div class="ai1wm-event-field">
+									<label for="ai1wmve-days">
+										<?php _e( 'Remove backups older than ', AI1WM_PLUGIN_NAME ); ?>
+										<input class="ai1wm-event-input" type="number" min="0" name="retention[days]" id="ai1wmve-days" v-model="form.retention.days" />
+									</label>
+									<?php _e( 'days. Default: 0 off', AI1WM_PLUGIN_NAME ); ?>
+								</div>
+							</div>
+						</div>
+
 						<div class="ai1wm-event-fieldset" v-if="form.type">
 							<h2><?php _e( 'Notification', AI1WM_PLUGIN_NAME ); ?></h2>
 							<div class="ai1wm-event-row">
@@ -229,6 +286,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 								</div>
 							</div>
 						</div>
+
+						<?php if ( is_multisite() ) : ?>
+							<sub-sites v-if="form.type" :checked="form.sites"></sub-sites>
+						<?php endif; ?>
 
 						<div class="ai1wm-event-fieldset" v-if="form.type">
 							<h2><?php _e( 'Status', AI1WM_PLUGIN_NAME ); ?></h2>

@@ -30,7 +30,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'Ai1wmve_Schedule_Events' ) ) {
 	class Ai1wmve_Schedule_Events {
 
-
 		protected $events = array();
 
 		public function __construct() {
@@ -87,7 +86,7 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Events' ) ) {
 		}
 
 		public function delete( $id ) {
-			if ( isset( $this->events[ $id ] ) && ( $event = $this->find( $id ) ) ) {
+			if ( $event = $this->find( $id ) ) {
 				$event->clear_schedule()
 					->delete_data();
 				unset( $this->events[ $id ] );
@@ -96,6 +95,23 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Events' ) ) {
 			}
 
 			throw new Ai1wmve_Schedules_Exception( __( 'Unable to find scheduled event', AI1WM_PLUGIN_NAME ) );
+		}
+
+		public function clear( $extension = null ) {
+			if ( is_null( $extension ) ) {
+				delete_option( AI1WMVE_SCHEDULES_OPTIONS );
+				return;
+			}
+
+			foreach ( $this->events as $event_id => $event ) {
+				if ( $event->storage() === $extension ) {
+					$this->delete( $event_id );
+				}
+			}
+
+			if ( empty( $this->events ) ) {
+				delete_option( AI1WMVE_SCHEDULES_OPTIONS );
+			}
 		}
 
 		protected function update_option() {
@@ -107,16 +123,65 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Events' ) ) {
 
 			$this->save(
 				array(
+					'event_id'     => time(),
 					'title'        => __( 'Daily backup' ),
 					'type'         => Ai1wmve_Schedule_Event::TYPE_EXPORT,
+					'storage'      => 'file',
 					'status'       => Ai1wmve_Schedule_Event::STATUS_DISABLED,
 					'schedule'     => array(
 						'interval' => Ai1wmve_Schedule_Event::INTERVAL_DAILY,
-						'hour'     => 0,
+						'hour'     => 2,
 						'minute'   => 0,
 					),
 					'notification' => array(
 						'reminder' => Ai1wmve_Schedule_Event::REMINDER_NONE,
+					),
+					'retention'    => array(
+						'backups' => 7,
+					),
+				)
+			);
+
+			$this->save(
+				array(
+					'event_id'     => time() + 1,
+					'title'        => __( 'Weekly backup' ),
+					'type'         => Ai1wmve_Schedule_Event::TYPE_EXPORT,
+					'storage'      => 'file',
+					'status'       => Ai1wmve_Schedule_Event::STATUS_DISABLED,
+					'schedule'     => array(
+						'interval' => Ai1wmve_Schedule_Event::INTERVAL_WEEKLY,
+						'weekday'  => 'sunday',
+						'hour'     => 3,
+						'minute'   => 0,
+					),
+					'notification' => array(
+						'reminder' => Ai1wmve_Schedule_Event::REMINDER_NONE,
+					),
+					'retention'    => array(
+						'backups' => 4,
+					),
+				)
+			);
+
+			$this->save(
+				array(
+					'event_id'     => time() + 2,
+					'title'        => __( 'Monthly backup' ),
+					'type'         => Ai1wmve_Schedule_Event::TYPE_EXPORT,
+					'storage'      => 'file',
+					'status'       => Ai1wmve_Schedule_Event::STATUS_DISABLED,
+					'schedule'     => array(
+						'interval' => Ai1wmve_Schedule_Event::INTERVAL_MONTHLY,
+						'day'      => 1,
+						'hour'     => 1,
+						'minute'   => 0,
+					),
+					'notification' => array(
+						'reminder' => Ai1wmve_Schedule_Event::REMINDER_NONE,
+					),
+					'retention'    => array(
+						'backups' => 12,
 					),
 				)
 			);

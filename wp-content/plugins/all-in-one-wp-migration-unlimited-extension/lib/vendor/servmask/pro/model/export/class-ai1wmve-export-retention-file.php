@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2020 ServMask Inc.
+ * Copyright (C) 2014-2023 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,9 +23,38 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Kangaroos cannot jump here' );
 }
 
-printf( ' <span class="ai1wm-icon-bullhorn" title="%s"></span>', __( 'Notification', AI1WM_PLUGIN_NAME ) );
+if ( ! class_exists( 'Ai1wmve_Export_Retention_File' ) ) {
+	class Ai1wmve_Export_Retention_File extends Ai1wmve_Export_Retention_Base {
+
+		protected function setup_client( $client ) {
+		}
+
+		protected function get_files() {
+			return Ai1wm_Backups::get_files();
+		}
+
+		protected function delete_file( $backup ) {
+			Ai1wm_Backups::delete_file( $backup[ $this->file_name_key() ] );
+		}
+
+		protected function file_name_key() {
+			return 'filename';
+		}
+
+		protected function file_size_key() {
+			return 'size';
+		}
+
+		protected function file_date_key() {
+			return 'mtime';
+		}
+
+		protected function get_options_prefix() {
+			return 'ai1wmve';
+		}
+	}
+}

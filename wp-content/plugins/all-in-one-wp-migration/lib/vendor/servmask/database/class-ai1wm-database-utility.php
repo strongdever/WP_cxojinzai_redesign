@@ -30,6 +30,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Ai1wm_Database_Utility {
 
 	/**
+	 * Get MySQLClient to be used for DB manipulation
+	 *
+	 * @return Ai1wm_Database
+	 */
+	public static function create_client() {
+		global $wpdb;
+
+		if ( PHP_MAJOR_VERSION >= 7 ) {
+			return new Ai1wm_Database_Mysqli( $wpdb );
+		}
+
+		if ( empty( $wpdb->use_mysqli ) ) {
+			return new Ai1wm_Database_Mysql( $wpdb );
+		}
+
+		return new Ai1wm_Database_Mysqli( $wpdb );
+	}
+
+	/**
 	 * Replace all occurrences of the search string with the replacement string.
 	 * This function is case-sensitive.
 	 *

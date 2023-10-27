@@ -5,7 +5,7 @@
  * Description: Extension for All-in-One WP Migration that enables unlimited size exports and imports
  * Author: ServMask
  * Author URI: https://servmask.com/
- * Version: 2.52
+ * Version: 2.53
  * Text Domain: all-in-one-wp-migration-unlimited-extension
  * Domain Path: /languages
  * Network: True

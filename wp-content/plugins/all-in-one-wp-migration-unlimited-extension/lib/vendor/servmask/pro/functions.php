@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2020 ServMask Inc.
+ * Copyright (C) 2014-2023 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,12 +23,30 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	die( 'Kangaroos cannot jump here' );
+if ( ! function_exists( 'ai1wmve_clear_scheduled_events' ) ) {
+	/**
+	 * Clears all scheduled events for selected storage type
+	 * If $extension is null then it clears ALL the events
+	 *
+	 * @param $extension
+	 */
+	function ai1wmve_clear_scheduled_events( $extension = null ) {
+		$events = new Ai1wmve_Schedule_Events();
+		$events->clear( $extension );
+	}
 }
 
-class Ai1wm_Whats_New_Controller {
-	public static function index() {
-		Ai1wm_Template::render( 'whats-new/index' );
+if ( ! function_exists( 'ai1wmve_is_running' ) ) {
+	/**
+	 * Check whether export/import is running
+	 *
+	 * @return boolean
+	 */
+	function ai1wmve_is_running() {
+		if ( isset( $_GET['file'] ) || isset( $_POST['file'] ) ) {
+			return true;
+		}
+
+		return false;
 	}
 }

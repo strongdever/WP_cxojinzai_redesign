@@ -60,7 +60,7 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Event' ) ) {
 
 		protected $type = '';
 
-		protected $storage = 'file';
+		protected $storage = '';
 
 		protected $status = self::STATUS_ENABLED;
 
@@ -92,6 +92,15 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Event' ) ) {
 		protected $password;
 
 		protected $incremental = false;
+
+		protected $sites = array();
+
+		protected $retention = array(
+			'backups'    => 0,
+			'total'      => 0,
+			'total_unit' => 'MB',
+			'days'       => 0,
+		);
 
 		public function __construct( $data ) {
 			foreach ( $data as $name => $value ) {
@@ -182,6 +191,8 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Event' ) ) {
 				'excluded_db_tables' => $this->excluded_db_tables,
 				'password'           => $this->password(),
 				'incremental'        => $this->incremental,
+				'sites'              => array_map( 'intval', $this->sites ),
+				'retention'          => $this->retention,
 			);
 		}
 
@@ -209,10 +220,13 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Event' ) ) {
 				$this->is_running = true;
 				$this->create_schedule();
 				$params = array(
-					'event_id'     => $this->event_id,
-					'secret_key'   => get_option( AI1WM_SECRET_KEY ),
-					$this->storage => 1,
-					'options'      => array(),
+					'event_id'                => $this->event_id,
+					'secret_key'              => get_option( AI1WM_SECRET_KEY ),
+					$this->storage            => 1,
+					'options'                 => array(),
+					'event_retention_days'    => $this->retention['days'],
+					'event_retention_size'    => (int) $this->retention['total'] . trim( $this->retention['total_unit'] ),
+					'event_retention_backups' => $this->retention['backups'],
 				);
 				foreach ( $this->options as $option ) {
 					$params['options'][ $option ] = 1;
@@ -236,6 +250,20 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Event' ) ) {
 				if ( $this->incremental ) {
 					$params['incremental'] = 1;
 				}
+
+				$blog_id = null;
+				if ( ! empty( $this->sites ) ) {
+					$params['options']['sites'] = $this->sites;
+					if ( count( $this->sites ) === 1 ) {
+						$blog_id = array_shift( $this->sites );
+					}
+				}
+
+				$params['archive'] = str_replace(
+					'.wpress',
+					sprintf( '-%s.wpress', $this->event_id ),
+					ai1wm_archive_file( $blog_id )
+				);
 
 				Ai1wm_Export_Controller::export( $params );
 			} catch ( Exception $e ) {
@@ -434,7 +462,6 @@ if ( ! class_exists( 'Ai1wmve_Schedule_Event' ) ) {
 		public function delete_data() {
 			delete_option( self::option_key( 'last_run', $this->event_id ) );
 			delete_option( self::option_key( 'log', $this->event_id ) );
-
 		}
 
 		public static function option_key( $option, $event_id ) {

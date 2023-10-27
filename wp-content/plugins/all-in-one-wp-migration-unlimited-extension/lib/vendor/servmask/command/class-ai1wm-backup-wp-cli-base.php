@@ -160,38 +160,46 @@ if ( defined( 'WP_CLI' ) && ! class_exists( 'Ai1wm_Backup_WP_CLI_Base' ) ) {
 						$mysql->add_table_prefix_filter( $table_name );
 					}
 				}
+				$all_tables = $mysql->get_tables();
 
-				$tables = new cli\Table;
+				if ( $assoc_args['exclude-tables'] === true || empty( $assoc_args['exclude-tables'] ) ) {
+					$tables = new cli\Table;
 
-				$tables->setHeaders(
-					array(
-						'name' => sprintf( 'Tables (%s)', DB_NAME ),
-					)
-				);
-
-				foreach ( $all_tables = $mysql->get_tables() as $table_name ) {
-					$tables->addRow(
+					$tables->setHeaders(
 						array(
-							'name' => $table_name,
+							'name' => sprintf( 'Tables (%s)', DB_NAME ),
 						)
 					);
-				}
 
-				$tables->display();
-				$excluded_tables = array();
-
-				while ( $table = trim( readline( 'Enter table name to exclude from backup (q=quit, empty=continue): ' ) ) ) {
-					switch ( $table ) {
-						case 'q':
-							exit;
-
-						default:
-							if ( ! in_array( $table, $all_tables ) ) {
-								WP_CLI::warning( __( 'Unknown table: ', AI1WM_PLUGIN_NAME ) . $table );
-								break;
-							}
-							$excluded_tables[] = $table;
+					foreach ( $all_tables as $table_name ) {
+						$tables->addRow(
+							array(
+								'name' => $table_name,
+							)
+						);
 					}
+
+					$tables->display();
+					$excluded_tables = array();
+
+					while ( $table = trim( readline( 'Enter table name to exclude from backup (q=quit, empty=continue): ' ) ) ) {
+						switch ( $table ) {
+							case 'q':
+								exit;
+
+							default:
+								if ( ! in_array( $table, $all_tables ) ) {
+									WP_CLI::warning( __( 'Unknown table: ', AI1WM_PLUGIN_NAME ) . $table );
+									break;
+								}
+								$excluded_tables[] = $table;
+						}
+					}
+				} else {
+					$excluded_tables = array_intersect(
+						$all_tables,
+						array_filter( array_map( 'trim', explode( ',', $assoc_args['exclude-tables'] ) ) )
+					);
 				}
 
 				if ( ! empty( $excluded_tables ) ) {

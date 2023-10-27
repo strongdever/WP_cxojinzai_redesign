@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Ai1wm_Export_Config {
 
 	public static function execute( $params ) {
-		global $table_prefix, $wp_version, $wpdb;
+		global $table_prefix, $wp_version;
 
 		// Set progress
 		Ai1wm_Status::info( __( 'Preparing configuration file...', AI1WM_PLUGIN_NAME ) );
@@ -39,11 +39,7 @@ class Ai1wm_Export_Config {
 		$options = wp_load_alloptions();
 
 		// Get database client
-		if ( empty( $wpdb->use_mysqli ) ) {
-			$mysql = new Ai1wm_Database_Mysql( $wpdb );
-		} else {
-			$mysql = new Ai1wm_Database_Mysqli( $wpdb );
-		}
+		$mysql = Ai1wm_Database_Utility::create_client();
 
 		$config = array();
 

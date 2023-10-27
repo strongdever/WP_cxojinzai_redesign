@@ -1,3 +1,9 @@
+= 7.73 =
+* Better support for PHP 8.1
+
+= 7.72 =
+* Backups time based on selected WordPress time zone
+
 = 7.71 =
 * Removed the AI1WM_MAX_FILE_SIZE constant. This constant is no longer necessary
 

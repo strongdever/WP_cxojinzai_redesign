@@ -126,8 +126,8 @@ class Ai1wm_Main_Controller {
 		// Enqueue backups scripts and styles
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_backups_scripts_and_styles' ), 5 );
 
-		// Enqueue what's new scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_whats_new_scripts_and_styles' ), 5 );
+		// Enqueue schedules scripts and styles
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_schedules_scripts_and_styles' ), 5 );
 
 		// Enqueue updater scripts and styles
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_updater_scripts_and_styles' ), 5 );
@@ -661,15 +661,17 @@ class Ai1wm_Main_Controller {
 			'Ai1wm_Backups_Controller::index'
 		);
 
-		// Sub-level What's new menu
-		add_submenu_page(
-			'ai1wm_export',
-			__( 'What\'s new', AI1WM_PLUGIN_NAME ),
-			__( 'What\'s new', AI1WM_PLUGIN_NAME ) . Ai1wm_Template::get_content( 'main/whats-new', array() ),
-			'import',
-			'ai1wm_whats_new',
-			'Ai1wm_Whats_New_Controller::index'
-		);
+		if ( ! defined( 'AI1WMVE_PATH' ) ) {
+			// Sub-level Schedules
+			add_submenu_page(
+				'ai1wm_export',
+				__( 'Schedules', AI1WM_PLUGIN_NAME ),
+				__( 'Schedules', AI1WM_PLUGIN_NAME ),
+				'export',
+				'ai1wm_schedules',
+				'Ai1wm_Schedules_Controller::index'
+			);
+		}
 	}
 
 	/**
@@ -1136,8 +1138,8 @@ class Ai1wm_Main_Controller {
 	 * @param  string $hook Hook suffix
 	 * @return void
 	 */
-	public function enqueue_whats_new_scripts_and_styles( $hook ) {
-		if ( stripos( 'all-in-one-wp-migration_page_ai1wm_whats_new', $hook ) === false ) {
+	public function enqueue_schedules_scripts_and_styles( $hook ) {
+		if ( stripos( 'all-in-one-wp-migration_page_ai1wm_schedules', $hook ) === false ) {
 			return;
 		}
 
@@ -1149,15 +1151,20 @@ class Ai1wm_Main_Controller {
 
 		if ( is_rtl() ) {
 			wp_enqueue_style(
-				'ai1wm_whats_new',
-				Ai1wm_Template::asset_link( 'css/whats-new.min.rtl.css' )
+				'ai1wm_schedules',
+				Ai1wm_Template::asset_link( 'css/schedules.min.rtl.css' )
 			);
 		} else {
 			wp_enqueue_style(
-				'ai1wm_whats_new',
-				Ai1wm_Template::asset_link( 'css/whats-new.min.css' )
+				'ai1wm_schedules',
+				Ai1wm_Template::asset_link( 'css/schedules.min.css' )
 			);
 		}
+
+		wp_enqueue_script(
+			'ai1wm_schedules',
+			Ai1wm_Template::asset_link( 'javascript/schedules.min.js' )
+		);
 	}
 
 

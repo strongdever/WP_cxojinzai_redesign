@@ -30,8 +30,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'Ai1wmve_Schedule_Event_Log' ) ) {
 	class Ai1wmve_Schedule_Event_Log {
 
-
-
 		const MAX_RECORDS = 30;
 
 		protected $event_id;

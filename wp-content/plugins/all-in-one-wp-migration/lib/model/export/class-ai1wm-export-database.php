@@ -30,8 +30,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Ai1wm_Export_Database {
 
 	public static function execute( $params ) {
-		global $wpdb;
-
 		// Set exclude database
 		if ( isset( $params['options']['no_database'] ) ) {
 			return $params;
@@ -91,11 +89,7 @@ class Ai1wm_Export_Database {
 		ai1wm_close( $tables_list );
 
 		// Get database client
-		if ( empty( $wpdb->use_mysqli ) ) {
-			$mysql = new Ai1wm_Database_Mysql( $wpdb );
-		} else {
-			$mysql = new Ai1wm_Database_Mysqli( $wpdb );
-		}
+		$mysql = Ai1wm_Database_Utility::create_client();
 
 		// Exclude spam comments
 		if ( isset( $params['options']['no_spam_comments'] ) ) {
