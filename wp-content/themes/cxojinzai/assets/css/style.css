@@ -12663,11 +12663,12 @@ screen and (min-width: 992px) {
   padding: 1.1rem !important;
 }
 
-.main-form textarea {
+.main-form li textarea.desc {
   border-radius: 4px;
   border: 1px solid #D2D2D2 !important;
   background-color: rgba(0, 153, 189, 0.08);
   padding: 1.1rem !important;
+  line-height: 22px !important;
 }
 
 .main-form .common-firstview {
@@ -12716,6 +12717,11 @@ screen and (min-width: 992px) {
 
 .main-form li .submit-error.desc {
   line-height: 3.2rem !important;
+}
+
+.main-form li .error {
+  color: #F24040;
+  display: none;
 }
 
 .main-form .vertical-wrapper {
@@ -12812,9 +12818,6 @@ screen and (min-width: 992px) {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -12874,12 +12877,9 @@ screen and (min-width: 992px) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-column-gap: 0.8rem !important;
   -moz-column-gap: 0.8rem !important;
   column-gap: 0.8rem !important;
@@ -12898,6 +12898,12 @@ screen and (min-width: 992px) {
   line-height: 1.5;
   letter-spacing: 1.6px;
   color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .mw_wp_form .input-privacy .vertical-wrapper .error {
@@ -13187,6 +13193,10 @@ screen and (min-width: 992px) {
 .custom-option:hover,
 .custom-option.selection {
   background: #f9f9f9;
+}
+
+#candidate-form input[type=checkbox] {
+  margin: 0 !important;
 }
 
 input[type=checkbox] {
