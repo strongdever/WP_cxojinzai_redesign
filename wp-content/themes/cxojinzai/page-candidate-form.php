@@ -86,56 +86,60 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
     <script type="text/javascript">
         !(function ($) {
             $(document).ready(function(){
+                $(".interest-checkbox").prop('checked', true);
                 $('#myForm').submit(function(event) {
                     event.preventDefault(); // Prevent default form submission
-                    var fValidate = true;
+                    this.submit();
+                    window.location.href = "<?php echo HOME . 'candidate-list/thanks'; ?>";
+                    // event.preventDefault(); // Prevent default form submission
+                    // var fValidate = true;
 
-                    var company_Input = $('#company');
-                    if (!company_Input.val()) {  //company validation
-                        $(".company-error").show();
-                        fValidate = false;
-                    } else {
-                        $(".company-error").hide();
-                    }
+                    // var company_Input = $('#company');
+                    // if (!company_Input.val()) {  //company validation
+                    //     $(".company-error").show();
+                    //     fValidate = false;
+                    // } else {
+                    //     $(".company-error").hide();
+                    // }
 
-                    var lastname_Input = $('#lastname');
-                    if (!lastname_Input.val()) {  //lastname validation
-                        $(".lastname-error").show();
-                        fValidate = false;
-                    } else {
-                        $(".lastname-error").hide();
-                    }
+                    // var lastname_Input = $('#lastname');
+                    // if (!lastname_Input.val()) {  //lastname validation
+                    //     $(".lastname-error").show();
+                    //     fValidate = false;
+                    // } else {
+                    //     $(".lastname-error").hide();
+                    // }
 
-                    var firstname_Input = $('#firstname');
-                    if (!firstname_Input.val()) {  //firstname validation
-                        $(".firstname-error").show();
-                        fValidate = false;
-                    } else {
-                        $(".firstname-error").hide();
-                    }
+                    // var firstname_Input = $('#firstname');
+                    // if (!firstname_Input.val()) {  //firstname validation
+                    //     $(".firstname-error").show();
+                    //     fValidate = false;
+                    // } else {
+                    //     $(".firstname-error").hide();
+                    // }
 
-                    var email_Input = $('#email');
-                    if (!email_Input.val()) {  //email validation
-                        $(".email-error").show();
-                        fValidate = false;
-                    } else {
-                        $(".email-error").hide();
-                    }
+                    // var email_Input = $('#email');
+                    // if (!email_Input.val()) {  //email validation
+                    //     $(".email-error").show();
+                    //     fValidate = false;
+                    // } else {
+                    //     $(".email-error").hide();
+                    // }
 
-                    var privacyCheckbox = $('#privacyok');  //check if the checkbox is checked
-                    if (!privacyCheckbox.is(':checked')) {
-                        $(".privacyok-error").show();
-                        fValidate = false;
-                    } else {
-                        $(".privacyok-error").hide();
-                    }
+                    // var privacyCheckbox = $('#privacyok');  //check if the checkbox is checked
+                    // if (!privacyCheckbox.is(':checked')) {
+                    //     $(".privacyok-error").show();
+                    //     fValidate = false;
+                    // } else {
+                    //     $(".privacyok-error").hide();
+                    // }
 
-                    if (fValidate ) {   //if form is validated, submit
-                        this.submit();
-                        window.location.href = "<?php echo HOME . 'candidate-list/thanks'; ?>";
-                    } else {    //if form is not validated, do nothing
-                        return 0;
-                    }
+                    // if (fValidate ) {   //if form is validated, submit
+                    //     this.submit();
+                    //     window.location.href = "";
+                    // } else {    //if form is not validated, do nothing
+                    //     return 0;
+                    // }
                 });
             });
 
