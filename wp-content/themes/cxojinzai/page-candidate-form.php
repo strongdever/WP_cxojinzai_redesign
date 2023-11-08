@@ -76,7 +76,7 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
                         <div class="privacyok-error error">この項目は必須項目です。</div>
                     </li>
                     <li class="horizontal-wrapper input-button">
-                        <a class="action-btn white-btn" href="javascript:history.go(-1)"><span>戻る</span></a>
+                        <a class="action-btn white-btn back-btn"><span>戻る</span></a>
                         <button type="submit" class="action-btn submit-btn"><span>送信する</span></a>
                     </li>
                 </ul>
@@ -141,6 +141,20 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
                     //     return 0;
                     // }
                 });
+
+                $('.back-btn').click(function() {    //goto previous page
+                    let checkbox_elements = $('.interest-checkbox');
+                    let checkbox_list = [];
+                    $.each(checkbox_elements, function(index, checkbox_element) {
+                        checkbox_list.push(checkbox_element.id);
+                    });
+                    $.cookie('checkbox_list', checkbox_list, {
+                    expires: 1,
+                    path: '/candidate-list/',
+                    // domain: 'localhost'
+                    });
+                    window.history.back();
+                })
             });
 
             var company_Input = $('#company');

@@ -56,9 +56,27 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
     </main>
     <script type="text/javascript">
         !(function ($) {
+            let checked_list = [];
             $(document).ready(function(){
                 let employee = $(".tab.active").attr('data-employee');
                 let occupation = $(".category.active").attr('data-occupation');
+                let nCheckedCount = checked_list.length;
+
+                if($.cookie('checkbox_list')) {
+                    checked_list = ($.cookie('checkbox_list')).split(',');
+                    nCheckedCount = checked_list.length;
+                    $.cookie('checkbox_list', '', { path: '/candidate-list/' });
+                }
+                let footer_btn = $('.footer-btn');
+                if( nCheckedCount > 0 ) {
+                    if( !footer_btn.hasClass('active') ) {
+                        footer_btn.addClass('active');
+                    }
+                } else {
+                    if( footer_btn.hasClass('active') ) {
+                        footer_btn.removeClass('active');
+                    }
+                }
 
                 employee = localStorage.getItem("employee");
                 occupation = localStorage.getItem("occupation");
@@ -104,21 +122,24 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
                     async_Request(employee, occupation);
                 });
 
-                let nCheckedCount = $('input[class="interest-checkbox"]:checked').length;
-                let footer_btn = $('.footer-btn');
-                if( nCheckedCount > 0 ) {
-                    if( !footer_btn.hasClass('active') ) {
-                        footer_btn.addClass('active');
+                $('.cards-wrapper').on('change', '.cards-list .card label .interest-checkbox', function() {                    
+                    let current_id = $(this).attr('id');
+                    if($(this).prop('checked')) {   //checked checkbox lists
+                        if( !checked_list.includes(current_id) ) {
+                            checked_list.push(current_id);
+                        }
+                    } else {
+                        if( checked_list.includes(current_id) ) {
+                            var index = checked_list.indexOf(current_id);
+                            if (index !== -1) {
+                                checked_list.splice(index, 1);
+                            }
+                        }
                     }
-                } else {
-                    if( footer_btn.hasClass('active') ) {
-                        footer_btn.removeClass('active');
-                    }
-                }
-                $('.cards-wrapper').on('change', '.cards-list .card label .interest-checkbox', function() {
-                    nCheckedCount = $('input[class="interest-checkbox"]:checked').length;
+
+                    nCheckedCount = checked_list.length;
                     let footer_btn = $('.footer-btn');
-                    if( nCheckedCount > 0 ) {
+                    if( nCheckedCount > 0 ) {  //activate or deactivate of the 候補者との面談を希望する button
                         if( !footer_btn.hasClass('active') ) {
                             footer_btn.addClass('active');
                         }
@@ -134,12 +155,11 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
                         return 0;
                     }
                     let url = "<?php echo HOME . 'candidate-list/form/?'; ?>";
-                    let checkedInputs = $('input[class="interest-checkbox"]:checked');
-                    nCheckedCount = checkedInputs.length;
+                    nCheckedCount = checked_list.length;
                     for( i = 0 ; i < nCheckedCount - 1 ; i++ ) {
-                        url = url + 'id[' + i + ']=' + checkedInputs[i].value + '&';
+                        url = url + 'id[' + i + ']=' + checked_list[i] + '&';
                     }
-                    url = url + 'id[' + (nCheckedCount - 1) + ']=' + checkedInputs[nCheckedCount - 1].value;
+                    url = url + 'id[' + (nCheckedCount - 1) + ']=' + checked_list[nCheckedCount - 1];
                     window.location.href = url;
                 })
             });
@@ -147,9 +167,6 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
             function async_Request(employee, occupation) {
                 localStorage.setItem("employee", employee);
                 localStorage.setItem("occupation", occupation);
-                if( $('.footer-btn').hasClass("active") ) {
-                    $('.footer-btn').removeClass('active');
-                }
                 var data = {
                     employee: employee,
                     occupation: occupation,
@@ -169,6 +186,10 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
                         $('.cards-wrapper').empty();
                         $('.cards-wrapper').append(cards_data);
                         $(".lds-spinner").hide();
+                        
+                        $.each(checked_list, function(index, value) {
+                            $('#' + value).prop('checked', true);
+                        });
                     },
                 });
             }

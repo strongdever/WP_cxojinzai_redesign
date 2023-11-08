@@ -12476,8 +12476,17 @@ screen and (min-width: 992px) {
 }
 
 .main-form input,
-.main-form input.desc .main-form textarea,
+.main-form input.desc,
+.main-form textarea,
 .main-form textarea.desc {
+  color: #333 !important;
+}
+
+input::placeholder {
+  color: #8F8F8F !important;
+}
+
+textarea::placeholder {
   color: #8F8F8F !important;
 }
 
@@ -13492,7 +13501,7 @@ input[type=checkbox]:before {
 }
 
 #candidate-list .cards-wrapper {
-  height: 50vw;
+  min-height: 50vw;
 }
 
 .candidate .cards-list {
@@ -13516,7 +13525,7 @@ input[type=checkbox]:before {
   }
 
   #candidate-list .cards-wrapper {
-    height: 120vw;
+    min-height: 120vw;
   }
 }
 

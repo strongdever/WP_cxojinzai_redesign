@@ -105,6 +105,7 @@ function theme_add_files() {
     wp_enqueue_style('c-theme', T_DIRE_URI.'/style.css', [], '1.0', 'all');
 
     wp_enqueue_script('s-jquery', T_DIRE_URI.'/assets/js/jquery.min.js', [], '1.0', false);
+    wp_enqueue_script('s-cookie', T_DIRE_URI.'/assets/js/jquery.cookie.js', [], '1.0', false);
     wp_enqueue_script('s-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js', [], '1.0', true);
     // wp_enqueue_script('s-fontawesome', 'https://kit.fontawesome.com/8cbdf0a85f.js', [], '1.0', true);  
     // wp_enqueue_script('s-common', T_DIRE_URI.'/assets/js/common.js', [], '1.0', true);  
@@ -323,5 +324,27 @@ function handle_ajax_request() {
 }
 add_action( 'wp_ajax_my_ajax_action', 'handle_ajax_request' );
 add_action( 'wp_ajax_nopriv_my_ajax_action', 'handle_ajax_request' );
+
+//add 雇用形態 item to イチオシ人材のご紹介 post table.
+function add_set_column( $columns ) {
+    
+    $columns['employee_column'] = '雇用形態'; // Add the new column
+    return $columns;
+}
+add_filter( 'manage_candidate_posts_columns', 'add_set_column', 10, 1 );
+
+//set the value of 雇用形態 column on the イチオシ人材のご紹介 post table.
+function populate_set_column( $column, $post_id ) {
+    if ( $column === 'employee_column' ) {  //雇用形態
+        $emp_cats = get_the_terms($post_id, 'candidate-category');
+        $value = '';
+        foreach( $emp_cats as $emp_cat ) {
+            $value = $value . $emp_cat->name . ', ';
+        }
+        $value = substr($value, 0, strlen($value) - 2); //delete the last string', ' from the value
+        echo $value;
+    }
+}
+add_action( 'manage_candidate_posts_custom_column', 'populate_set_column', 10, 2 );
 
 ?>
