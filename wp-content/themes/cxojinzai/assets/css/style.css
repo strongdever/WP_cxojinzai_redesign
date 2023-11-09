@@ -12452,7 +12452,7 @@ screen and (min-width: 992px) {
   position: relative;
   width: 105rem;
   margin-top: 2.4rem;
-  margin-bottom: 16rem;
+  margin-bottom: 24rem;
 }
 
 .main-form .half-length {
@@ -12550,7 +12550,7 @@ textarea::placeholder {
 @media only screen and (max-width: 768px) {
   .main-form .container {
     padding: 0 1.6rem !important;
-    margin-bottom: 8.0rem;
+    margin-bottom: 14.0rem;
   }
 
   .main-form-thankyou .head-thankyou {
@@ -12590,10 +12590,6 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
-  .main-form .container {
-    padding: 0 1.6rem !important;
-  }
-
   .main-form .form-wrapper {
     width: 100%;
     box-shadow: none;
@@ -13501,7 +13497,7 @@ input[type=checkbox]:before {
 }
 
 #candidate-list .cards-wrapper {
-  min-height: 50vw;
+  min-height: 40vw;
 }
 
 .candidate .cards-list {
@@ -13525,7 +13521,7 @@ input[type=checkbox]:before {
   }
 
   #candidate-list .cards-wrapper {
-    min-height: 120vw;
+    min-height: 100vw;
   }
 }
 

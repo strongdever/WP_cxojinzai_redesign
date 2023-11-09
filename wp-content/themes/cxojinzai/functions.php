@@ -259,7 +259,7 @@ function handle_ajax_request() {
     $employee_value = $employee ? $employee : '正規雇用';
     if( $employee_value ) {
         $tax_query[] = [
-            'taxonomy' => 'candidate-category',
+            'taxonomy' => 'employee-category',
             'field' => 'name',
             'terms' => $employee_value,
         ];
@@ -270,14 +270,14 @@ function handle_ajax_request() {
 
     $occupation_value = $occupation ? $occupation : '経理財務課長';
     if( $occupation_value ) {
-        $meta_query[] = array(
-            'key'     => 'occupation',
-            'value'   => $occupation_value, 
-            'compare' => 'LIKE',
-        );
+        $tax_query[] = [
+            'taxonomy' => 'occupation-category',
+            'field' => 'name',
+            'terms' => $occupation_value,
+        ];
     }
-    if( !empty($meta_query) ) {
-        $args['meta_query'] = $meta_query;
+    if ( !empty($tax_query) ) {
+        $args['tax_query'] = $tax_query;
     }
 
     $custom_query = new WP_Query( $args );
@@ -290,9 +290,11 @@ function handle_ajax_request() {
         '<li class="card">';
     $cards_data = $cards_data . 
             '<p class="id">' . get_the_title() . '</p>';
-            $occup = get_field('occupation');
+            $occu_terms = get_the_terms(get_the_ID(), 'occupation-category');
+            foreach( $occu_terms as $occu_term ) {
     $cards_data = $cards_data . 
-            '<p class="occupation">' . $occup . '</p>';
+            '<p class="occupation">' . $occu_term->name . '</p>';
+            }
     $cards_data = $cards_data . 
             '<img src="' . (get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : T_DIRE_URI . '/assets/img/noimage.png') . '">';
     $cards_data = $cards_data . 
@@ -327,8 +329,8 @@ add_action( 'wp_ajax_nopriv_my_ajax_action', 'handle_ajax_request' );
 
 //add 雇用形態 item to イチオシ人材のご紹介 post table.
 function add_set_column( $columns ) {
-    
-    $columns['employee_column'] = '雇用形態'; // Add the new column
+    $columns['employee_column'] = '雇用形態'; // Add the 雇用形態 column
+    $columns['occupation_column'] = '業種'; // Add the 業種 column
     return $columns;
 }
 add_filter( 'manage_candidate_posts_columns', 'add_set_column', 10, 1 );
@@ -336,10 +338,20 @@ add_filter( 'manage_candidate_posts_columns', 'add_set_column', 10, 1 );
 //set the value of 雇用形態 column on the イチオシ人材のご紹介 post table.
 function populate_set_column( $column, $post_id ) {
     if ( $column === 'employee_column' ) {  //雇用形態
-        $emp_cats = get_the_terms($post_id, 'candidate-category');
+        $emp_cats = get_the_terms($post_id, 'employee-category');
         $value = '';
         foreach( $emp_cats as $emp_cat ) {
             $value = $value . $emp_cat->name . ', ';
+        }
+        $value = substr($value, 0, strlen($value) - 2); //delete the last string', ' from the value
+        echo $value;
+    }
+
+    if ( $column === 'occupation_column' ) {  //業種
+        $occu_cats = get_the_terms($post_id, 'occupation-category');
+        $value = '';
+        foreach( $occu_cats as $occu_cat ) {
+            $value = $value . $occu_cat->name . ', ';
         }
         $value = substr($value, 0, strlen($value) - 2); //delete the last string', ' from the value
         echo $value;

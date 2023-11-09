@@ -24,25 +24,38 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
             <span class="red-color">※候補者とのご面談をご希望される企業様は「人材紹介契約」の締結が必要となります。</span><br><br>
             </p>
 
+            <?php
+            $emp_terms = get_terms( array(
+                'taxonomy'   => 'employee-category',
+                'hide_empty' => false,
+            ) );
+            ?>
+            <?php if( $emp_terms ) : ?>
             <ul class="tabs">
-                <li class="tab 正規雇用" data-employee="正規雇用">
-                    <a>正規雇用</a>
+                <?php foreach( $emp_terms as $emp_term ) : ?>
+                <li class="tab <?php echo $emp_term->name; ?>" data-employee="<?php echo $emp_term->name; ?>">
+                    <a><?php echo $emp_term->name; ?></a>
                 </li>
-                <li class="tab 社外取締役・監査役" data-employee="社外取締役・監査役">
-                    <a>社外取締役・監査役</a>
-                </li>
-                <li class="tab 業務委託" data-employee="業務委託">
-                    <a>業務委託</a>
-                </li>
+                <?php endforeach; ?>
             </ul>
+            <?php endif; ?>
 
+            <?php
+            $occu_terms = get_terms( array(
+                'taxonomy'   => 'occupation-category',
+                'orderby'    => 'post_date',
+                'order'      => 'DESC',
+                'hide_empty' => false,
+            ) );
+            ?>
+            <?php if( $occu_terms ) : ?>
             <div class="categories">
-                <a class="category 経理財務課長" data-occupation="経理財務課長">経理財務課長</a>
-                <a class="category マーケティング" data-occupation="マーケティング">マーケティング</a>
-                <a class="category エンジニア" data-occupation="エンジニア">エンジニア</a>
-                <a class="category IR" data-occupation="IR">IR</a>
+                <?php foreach( $occu_terms as $occu_term ) : ?>
+                <a class="category <?php echo $occu_term->name; ?>" data-occupation="<?php echo $occu_term->name; ?>"><?php echo $occu_term->name; ?></a>
+                <?php endforeach; ?>
                 <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
+            <?php endif; ?>
 
             <div class="cards-wrapper">
                 <!-- card-list body -->
