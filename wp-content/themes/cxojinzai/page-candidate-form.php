@@ -60,12 +60,25 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
                                 <label for="<?php echo get_the_ID(); ?>" class="id">
                                     <input type="checkbox" class="interest-checkbox" id="<?php echo get_the_ID(); ?>" name="custom_multi_field" value="<?php echo get_the_ID(); ?>">&nbsp;&nbsp;<span><?php the_title(); ?></span>
                                 </label>
+                                <div class="cats-wrapper">
+                                <?php
+                                $emp_terms = get_the_terms(get_the_ID(), 'employee-category');
+                                ?>
+                                <?php if( $emp_terms ) : ?>
+                                <?php foreach( $emp_terms as $emp_term ) : ?>
+                                <p class="cat-item"><?php echo $emp_term->name; ?></p>
+                                <?php endforeach; ?>
+                                <?php endif; ?>
                                 <?php
                                 $occu_terms = get_the_terms(get_the_ID(), 'occupation-category');
                                 ?>
+                                <?php if( $occu_terms ) : ?>
+                                /
                                 <?php foreach( $occu_terms as $occu_term ) : ?>
-                                <p class="occupation"><?php echo $occu_term->name; ?></p>
+                                <p class="cat-item"><?php echo $occu_term->name; ?></p>
                                 <?php endforeach; ?>
+                                <?php endif; ?>
+                                </div>
                                 <img src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : T_DIRE_URI . '/assets/img/noimage.png'; ?>">
                             </li>
                             <?php endwhile; ?>

@@ -268,8 +268,14 @@ function handle_ajax_request() {
         $args['tax_query'] = $tax_query;
     }
 
-    $occupation_value = $occupation ? $occupation : '経理財務課長';
-    if( $occupation_value ) {
+    // $occupation_value = $occupation ? $occupation : '経理財務課長';
+    $occupation_value = $occupation;
+    if( $occupation_value == '' ) {
+        $tax_query[] = [
+            'taxonomy' => 'occupation-category',
+            'operator' => 'NOT EXISTS',
+        ];
+    } else {
         $tax_query[] = [
             'taxonomy' => 'occupation-category',
             'field' => 'name',
@@ -290,11 +296,25 @@ function handle_ajax_request() {
         '<li class="card">';
     $cards_data = $cards_data . 
             '<p class="id">' . get_the_title() . '</p>';
-            $occu_terms = get_the_terms(get_the_ID(), 'occupation-category');
-            foreach( $occu_terms as $occu_term ) {
     $cards_data = $cards_data . 
-            '<p class="occupation">' . $occu_term->name . '</p>';
+            '<div class="cats-wrapper">';
+            $emp_terms = get_the_terms(get_the_ID(), 'employee-category');
+            if( $emp_terms ) {
+                foreach( $emp_terms as $emp_term ) {
+    $cards_data = $cards_data . 
+            '<p class="cat-item">' . $emp_term->name . '</p>';
+                }
             }
+            $occu_terms = get_the_terms(get_the_ID(), 'occupation-category');
+            if( $occu_terms ) {
+    $cards_data = $cards_data . '/';
+                foreach( $occu_terms as $occu_term ) {
+    $cards_data = $cards_data . 
+            '<p class="cat-item">' . $occu_term->name . '</p>';
+                }
+            }
+    $cards_data = $cards_data . 
+            '</div>';
     $cards_data = $cards_data . 
             '<img src="' . (get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : T_DIRE_URI . '/assets/img/noimage.png') . '">';
     $cards_data = $cards_data . 

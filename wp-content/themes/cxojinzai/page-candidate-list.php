@@ -97,7 +97,9 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
                     employee = '正規雇用';
                 }
                 if( !occupation ) {
-                    occupation = '経理財務課長';
+                    if( occupation != '') {
+                        occupation = '経理財務課長';
+                    }
                 }
                 //active of tab when loading
                 if( $('.tab').hasClass('active') ) {
@@ -111,8 +113,10 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
                 if( $('.category').hasClass('active') ) {
                     $('.category').removeClass('active');
                 }
-                if( !$('.category.' + occupation).hasClass('active') ) {
-                    $('.category.' + occupation).addClass('active');
+                if( occupation != '' ) {
+                    if( !$('.category.' + occupation).hasClass('active') ) {
+                        $('.category.' + occupation).addClass('active');
+                    }
                 }
                 
                 async_Request(employee, occupation);    //display the cards list when loading
@@ -130,8 +134,15 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
                     if( $('.category').hasClass('active') ) {
                         $('.category').removeClass('active');
                     }
-                    $(this).addClass('active');
-                    occupation = $(this).attr('data-occupation');
+                    if( occupation == $(this).attr('data-occupation') ) {
+                        occupation = '';
+                        if( $(this).hasClass('active') ) {
+                            $(this).removeClass('active');
+                        }
+                    } else {
+                        $(this).addClass('active');
+                        occupation = $(this).attr('data-occupation');
+                    }
                     async_Request(employee, occupation);
                 });
 

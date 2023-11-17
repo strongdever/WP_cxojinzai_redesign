@@ -54,7 +54,6 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             <option value="1500万以上" >
                             1500万以上		</option>
                         </select>
-
                     </li>
                     <li class="horizontal-wrapper pc-only">
                         <div class="vertical-wrapper input-item">
