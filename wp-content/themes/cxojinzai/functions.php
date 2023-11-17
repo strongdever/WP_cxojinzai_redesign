@@ -152,8 +152,8 @@ function theme_custom_setup() {
     add_theme_support( 'post-thumbnails' ); 
     add_image_size( "thumbnail", 150, 100, true );
     add_image_size( "candidate-thumbnail", 96, 96, true );
-    add_image_size( "medium", 480, 320, true );
-    set_post_thumbnail_size( 480, 320, true );
+    // add_image_size( "medium", 480, 320, true );
+    // set_post_thumbnail_size( 480, 320, true );
     add_editor_style('assets/css/reset.css');
     add_editor_style('assets/css/common.css');
     add_editor_style('assets/css/style.css');

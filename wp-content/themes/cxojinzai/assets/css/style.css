@@ -5258,7 +5258,7 @@ screen and (min-width: 769px) {
 
 .interview .slider-wrapper .slider-item .item-wrapper img {
   border-radius: 6px;
-  aspect-ratio: 480 / 320;
+  aspect-ratio: 1412 / 778;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -10582,7 +10582,7 @@ img {
 
 #interview .container .wrapper .slider-item .item-wrapper img {
   border-radius: 6px;
-  aspect-ratio: 480 / 320;
+  aspect-ratio: 1412 / 778;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
