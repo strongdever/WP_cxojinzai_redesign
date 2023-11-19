@@ -21,7 +21,7 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
             <p class="desc heading">「職務経歴書」のボタンから候補者のマスクレジュメをご確認いただけます。<br>
             ご興味をお持ち頂いた人材の「興味あり」にチェックした後、「候補者との面談を希望する」のボタンから、必要情報をご入力し送信してください。<br>
             すぐに候補者ご本人に応募意思の確認をいたします。<br>
-            <span class="red-color">※候補者とのご面談をご希望される企業様は「人材紹介契約」の締結が必要となります。</span><br><br>
+            <!-- <span class="red-color">※候補者とのご面談をご希望される企業様は「人材紹介契約」の締結が必要となります。</span><br><br> -->
             </p>
 
             <?php
