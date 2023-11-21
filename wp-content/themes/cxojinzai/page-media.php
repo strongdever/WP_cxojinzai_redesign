@@ -57,8 +57,12 @@ $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                         <h5 class="title">第2回</h5>
                     </li>
                     <li>
-                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/community007.png">
+                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
                         <h5 class="title">第3回</h5>
+                    </li>
+                    <li>
+                        <img src="<?php echo T_DIRE_URI; ?>/assets/img/features07.png">
+                        <h5 class="title">第4回</h5>
                     </li>
                 </ul>
                 <!-- <a class="btn-rightarrow" href="<?php echo HOME . 'news'; ?>">

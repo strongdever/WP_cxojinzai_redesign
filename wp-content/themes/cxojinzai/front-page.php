@@ -128,7 +128,7 @@
                     </div>
                     <div class="image-wrapper">
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
-                        <p class="desc">↑候補者との交流会「Sweet 19 Blues」の第1回目</p>
+                        <p class="desc">↑候補者との交流会「Sweet 19 Blues」の第3回目</p>
                     </div>
                 </div>
                 <a class="btn-rightarrow" href="<?php echo HOME . 'features'; ?>">
@@ -192,7 +192,7 @@
                     </div>
                     <div class="image-wrapper">
                         <img src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
-                        <p class="desc">↑候補者との交流会「Sweet 19 Blues」の第1回目</p>
+                        <p class="desc">↑候補者との交流会「Sweet 19 Blues」の第3回目</p>
                     </div>
                 </div>
                 <a class="btn-rightarrow" href="<?php echo HOME . 'features'; ?>">
@@ -240,7 +240,7 @@
                 </div>
                 <div class="slider-item">
                     <div class="item-wrapper">
-                        <img classs="thumb" src="<?php echo T_DIRE_URI; ?>/assets/img/community003.png">
+                        <img classs="thumb" src="<?php echo T_DIRE_URI; ?>/assets/img/feature004.png">
                         <div class="content-wrapper">
                             <h4 class="title">Sweet 19 Blues</h4>
                             <p class="content">
@@ -781,7 +781,7 @@
                                 転職の不安やお悩みに、<br>一問一答形式でお答えします。
                                 </p>
                             </div>
-                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-male.png">
+                            <img src="<?php echo T_DIRE_URI; ?>/assets/img/half-female2.png">
                         </div>
                         <h3 class="article-text">
                             よく読まれている記事
