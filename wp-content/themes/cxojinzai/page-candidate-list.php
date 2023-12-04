@@ -4,7 +4,7 @@ Template Name: Top Recommend Template
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
-get_header('contact');
+get_header('candidate');
 
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $employee = get_query_var('employee') ? get_query_var('employee') : '';
@@ -18,10 +18,8 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
             <h5 class="eng-title">TOP RECOMMENDED</h5>
         </div>
         <div class="container">
-            <p class="desc heading">「職務経歴書」のボタンから候補者のマスクレジュメをご確認いただけます。<br>
-            ご興味をお持ち頂いた人材の「興味あり」にチェックした後、「候補者との面談を希望する」のボタンから、必要情報をご入力し送信してください。<br>
-            すぐに候補者ご本人に応募意思の確認をいたします。<br>
-            <!-- <span class="red-color">※候補者とのご面談をご希望される企業様は「人材紹介契約」の締結が必要となります。</span><br><br> -->
+            <p class="desc heading">
+            「職務経歴書」のボタンを押して頂くと、候補者の職務経歴書をご確認いただけます。<br>ご興味をお持ち頂いた人材の「興味あり」にチェックした後、「候補者との面談を希望する」のボタンを選択。<br>問合せフォームの項目をご入力し「送信」ボタンを押して頂くと、2営業日以内に弊社担当より詳細のご連絡をいたします。<br><br>※以下に表示されている候補者の情報につきまして、お問い合わせのタイミングによってはご紹介できない場合がございます。予めご了承下さい。<br>※候補者に関する情報については、採用目的でのみご利用いただき、第三者への公開・漏洩はしないようご配慮ください。
             </p>
 
             <?php
@@ -44,7 +42,7 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
             $occu_terms = get_terms( array(
                 'taxonomy'   => 'occupation-category',
                 'orderby'    => 'post_date',
-                'order'      => 'DESC',
+                'order'      => 'ASC',
                 'hide_empty' => false,
             ) );
             ?>
@@ -219,4 +217,4 @@ $occupation = get_query_var('occupation') ? get_query_var('occupation') : '';
             }
         })(jQuery);
     </script>
-<?php get_footer('contact');?>
+<?php get_footer('candidate');?>

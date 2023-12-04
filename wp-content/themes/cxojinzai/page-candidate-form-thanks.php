@@ -4,7 +4,7 @@ Template Name: Top Recommend Form Thanks Template
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
-get_header('contact');
+get_header('candidate');
 
 ?>
 

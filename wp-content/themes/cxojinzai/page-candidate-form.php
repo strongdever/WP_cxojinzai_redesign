@@ -4,7 +4,7 @@ Template Name: Top Recommend Form Template
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
-get_header('contact');
+get_header('candidate');
 
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $ids = get_query_var('id') ? get_query_var('id') : 0;
@@ -14,9 +14,8 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
     <main id="candidate-form" class="main-form candidate candidate-form">
         <h3 class="section-title">面談のご希望</h3>
         <div class="container">
-            <p class="desc heading">ご興味を持っていただいた人材の方に応募意思の確認をいたします。<br>以下のフォームに必要情報をご入力し送信してください。<br>
-            <span class="red-color">※候補者とのご面談をご希望される場合は「人材紹介契約」の締結が必要となります。</span></p>
-            <form action="https://go.cxo-jinzaibank.jp/l/1022123/2023-10-24/k5wj" method="post" id="myForm">
+            <p class="desc heading">ご興味を持っていただいた人材の方に応募意思の確認をいたします。<br>以下のフォームに必要情報をご入力し送信してください。</p>
+            <form action="https://go.cxo-jinzaibank.jp/l/1022123/2023-10-24/k5wj" method="post">
                 <ul class="form-wrapper">
                     <li class="vertical-wrapper input-item">
                         <label for="company" class="required desc bold">会社名</label>
@@ -90,7 +89,7 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
 
                     <li class="vertical-wrapper input-privacy">
                         <label for="privacyok">
-                            <input type="checkbox" id="privacyok" name="privacyok"><span><a href="https://ir-robotics.co.jp/privacypolicy/">&nbsp;個人情報保護方針</a></span>に同意します
+                            <input type="checkbox" id="privacyok" name="privacyok"><span><a href="https://ir-robotics.co.jp/privacypolicy/" target="_blank">&nbsp;個人情報保護方針</a></span>に同意します
                         </label>
                         <div class="privacyok-error error">この項目は必須項目です。</div>
                     </li>
@@ -107,8 +106,8 @@ $ids = get_query_var('id') ? get_query_var('id') : 0;
             $(document).ready(function(){
                 $(".interest-checkbox").prop('checked', true);
                 $('#myForm').submit(function(event) {
-                    event.preventDefault(); // Prevent default form submission
-                    this.submit();
+                    // event.preventDefault(); // Prevent default form submission
+                    // this.submit();
                     window.location.href = "<?php echo HOME . 'candidate-list/thanks'; ?>";
                     // event.preventDefault(); // Prevent default form submission
                     // var fValidate = true;
